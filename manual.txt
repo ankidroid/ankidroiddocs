@@ -1,0 +1,633 @@
+:toc:
+
+AnkiDroid 2 User Manual
+_________________________
+
+Introduction
+============
+
+Thank you for using AnkiDroid, the Android client for the popular 
+http://ankisrs.net/[Anki] spaced repetition system. 
+
+AnkiDroid is currently intended to be used in conjunction with Anki on your computer. 
+While it is possible to download shared decks and study without using the desktop 
+version at all, card layout editing and many advanced operations can only be done
+ on a computer. While this is expected to change over time, for now please ensure you
+ have access to a computer in order to perform some of the operations mentioned below.
+ 
+This manual is intended as a supplement for the main http://ankisrs.net/docs/manual.html[Anki manual],
+and many references will be made to it. It is *strongly recommended* to at least read 
+http://ankisrs.net/docs/manual.html#the-basics[The Basics] section of the Anki Desktop manual, 
+to understand the meaning of terms such as "Card", "Deck", "Note", "Field", "Card Template", 
+"Note Type", and "Collection" used in this manual.
+
+= Help & Bugs =
+
+Please see the https://code.google.com/p/ankidroid/wiki/Help[Help] page for how to get help with
+ an issue, or report a bug.
+
+= Changes =
+
+For information on recent changes, please see the main 
+https://github.com/ankidroid/Anki-Android/blob/master/res/values/13-newfeatures.xml[release notes]
+in the github repository.
+
+= The Deck List =
+The deck list is the screen you see when you start AnkiDroid. It displays a 
+list of your card decks, and allows you to perform various actions:
+
+++++++++++
+<img src="img/1-decks.png">
+++++++++++
+
+At the top of the screen is the Action Bar, with buttons for performing various actions:
+
+AnkiDroid Icon :: Tapping the app icon on the left will show the <<drawer,navigation drawer>> for quickly navigating between the main parts of the app.
+
+Add button :: The + icon is used for adding new content to AnkiDroid, as described in the <<adding,adding decks>> section.
+
+Sync button :: The circular button with arrows on the right is for synchronizing your cards with the cloud, as described in the 
+<<ankiweb,adding decks from cloud>> section.
+
+**Hint:** long tapping on a button in the action bar will display a hint describing what the 
+button does!
+
+== Studying a Deck ==
+To study cards in a deck, simply tap on the deck, then tap the *Study* button and AnkiDroid will switch to study mode.
+
+== Other Deck Actions ==
+Long tapping on a deck will show a list of other actions available to perform on that deck:
+
+Show / Hide subdecks :: It's possible to store subdecks inside your top level decks, and you can use this option to show or hide them. See the 
+http://ankisrs.net/docs/manual.html#decks[Anki Desktop manual] for more info on how to use subdecks.
+
+Rename deck :: Use this option to rename a deck
+
+Delete :: Use this option to delete a deck (note: this action is not reversible)
+
+Deck options :: Tapping on deck options allows you to configure various deck specific study options.
+Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
+
+== Advanced Actions ==
+Some additional actions are located in the menu for less common tasks such as exporting decks to
+computer, and options for fixing or restoring your collection from backup if it gets corrupted.
+These are discussed elsewhere in the manual.
+
+== Deck Counts == 
+You will notice that next to each deck, three numbers are displayed. The left, blue number, corresponds to how 
+many new cards you have to learn today. Anki will introduce 20 new cards a day by default, 
+and you can customize this number if you'd like. The red number in the middle is for the cards 
+due to be studied today which are currently in the learning phase, and the green number is the 
+cards which are due for review (i.e. cards which are no longer in the learning phase). On a deck 
+you've never studied before, these numbers will both be zero.
+
+[[adding]]
+= Adding Decks =
+
+To start using AnkiDroid, we need to add some cards to study. From the Decks List, we can either
+download card decks that other people have shared, create new empty decks directly from AnkiDroid, 
+or add existing decks from the computer. 
+
+== Shared Decks ==
+
+To download a shared deck directly to your mobile device:
+
+ . Ensure you're connected to the internet.
+ . Tap the add button in the Action Bar at the top.
+ . Choose *Get shared decks*. AnkiWeb will open.
+ . Select a category, or type in a search.
+ . Tap *Info* on a deck you'd like to study.
+ . Scroll down and tap *Download*.
+ . You browser will download the file and display a "download complete" notification. 
+ Tap this button.
+ . AnkiDroid will appear, and show a confirmation dialog. Tap the *Add* button.
+ . When the import completes, your deck should be ready to study.
+
+Information on reviewing is available further below.
+
+== New Decks ==
+To add new flashcards directly from AnkiDroid:
+
+ . Tap the Add button in the Action Bar at the top
+ . Choose "Create deck"
+ . Choose a name for the deck, for example "New Japanese"
+ . Tap on the newly created deck to open it
+ . You can now add new cards to the deck by tapping the Add button in the Action bar again
+ 
+See the <<addingNotes,adding notes>> section below for detailed information on adding new cards to a deck.
+ 
+[[ankiweb]]
+== Existing Decks from Computer via Cloud Sync ==
+
+Anki has a free cloud synchronization service called AnkiWeb that makes it
+easy to keep your card decks in sync between mobile devices and your computer.
+
+To sync with AnkiWeb, you'll first need to create an account. If you have used
+AnkiWeb in the past, you can skip this step.
+
+ . Visit https://ankiweb.net and click the *Sign Up* button.
+ . Type in your email address and a password of your choice.
+
+Once the signup is complete, return to your computer, and simply click the
+synchronization button at the top right of the Anki window - it has two arrows
+in a circle. Anki will upload all your cards, images and audio to AnkiWeb. If
+you have a lot of media, this may take some time.
+
+Once the synchronization has completed, return to your mobile device, and tap the
+*Sync* button in the action bar at the top of the screen. 
+After entering your email and password, AnkiDroid will download all your cards and media, 
+and remember your login information for next time.
+
+After the first synchronization has completed, you can click the sync button
+again any time you wish to synchronize your changes to the cloud. Only changes
+made since the previous sync will be sent, so subsequent syncs are a lot
+faster.
+
+If you add some new cards on the desktop computer and want to sync them to
+AnkiDroid, you'd repeat the same process: sync on desktop (or close the
+program, as it syncs automatically on close by default), and then tap the sync
+button on AnkiDroid.
+
+== Existing Decks from Computer via USB ==
+
+If you don't have regular internet access, it's still possible to copy decks
+back and forth to your device, by using USB.
+
+The USB method works by importing or exporting all your decks at once. 
+This means that unlike syncing via AnkiWeb, you can't make changes from
+two locations at once and then merge them. Instead, if you wish to add cards
+on the desktop, you need to make sure you export the latest version of your
+collection from your mobile device first, or you'll end up losing any reviews
+done on the mobile device.
+
+Thus the workflow you would typically use is to export your collection from
+your mobile device and import it into the desktop, make modifications on the
+desktop, and then export your collection and import it back into your mobile
+device.
+
+AnkiDroid can't directly import text files. If you wish to do that, you'll
+need to do that with the desktop program, and then import your collection into
+AnkiDroid.
+
+=== From computer to mobile device ===
+
+On your computer:
+
+ . Open the desktop program.
+ . Choose File>Export from the menu.
+
+ . Click the 'Export...' button. Make sure to leave "all decks" selected, as
+ it's not possible to import individual decks into AnkiDroid. "Include
+ scheduling information" must also remain checked.
+ . Anki will automatically create a collection.apkg on your desktop. If the
+   file is named something else, please see the previous step again.
+ . Connect your Android device to your computer via the USB cable.
+ . Open the file explorer on your computer and view the contents of your Android device.
+ . Locate the AnkiDroid folder.
+ . Drag the collection.apkg file from your desktop into this AnkiDroid folder.
+ 
+Then in AnkiDroid:
+
+ . Tap the Add button in the Action Bar at the top.
+ . Choose "Import file"
+ . Tap on "Collection" and then confirm
+
+Once complete, the decks on your device will have been replaced with the decks
+from your desktop.
+
+=== From mobile device to computer ===
+
+On AnkiDroid:
+
+ . Tap the *Export* item in the menu.
+ . Tap *OK* 
+ 
+Then on your computer:
+
+ . Connect your Android device to your computer via the USB cable.
+ . Open the file explorer and view the contents of your Android device.
+ . Locate the AnkiDroid folder.
+ . Drag the collection.apkg file from your device to your desktop.
+ . Double-click on the file to start Anki.
+ . Confirm you wish to replace, so that the deck from your mobile device
+   overwrites the old data on your desktop.
+ . After importing, you can delete the file on your desktop if you wish.
+ 
+Note that currently it is not possible to include media in collection.apkg file exported by AnkiDroid. 
+You can however manually copy media to you your computer using USB, from the "collection.media" folder in the AnkiDroid folder, to the 
+corresponding folder in Anki Desktop.
+
+[[drawer]]
+= The Navigation Drawer =
+++++++++++
+<img src="img/2-navigation_drawer.png">
+++++++++++
+
+The navigation drawer can be opened from most places in the application by pressing the app icon, 
+or alternatively swiping outwards from anywhere on the far left side of the screen. It is used
+for quickly navigating between different parts of the application.
+
+From the drawer you can open the Card Browser (which shows you a list of all your cards), the
+statistics screen (which helps you track your study progress), *settings* which allows you 
+to customize the app, *help* (which opens this web page), and *send feedback* 
+(for contacting the AnkiDroid team).
+
+= The Deck Overview Screen =
+When you tap on a deck in the deck list, the study options screen for that deck will load. From here you can 
+study the deck, add new cards, change deck study options, and build custom study decks. If you wish to change to a different deck, 
+you can do so by tapping the hardware back button to go back to the decks screen, or you use the navigation drawer.
+
+*Deck Options* allows you to configure some options related to the current 
+deck, such as the number of new cards and reviews to introduce each day.
+Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
+
+= The Study Screen =
+Tapping the *study* button from the study options screen will take you to the study screen where you do your study. 
+
+If you have not used Anki on a computer before, you may like to have a look at the
+first http://ankisrs.net/docs/manual.html#_intro_videos[intro video]
+before reading on, as it explains the basic review process.
+
+On the top left of the screen you'll see three numbers. From the left, these
+correspond to new cards, learning cards, and cards to review. These are
+explained in more detail in the intro videos for the desktop program, so
+please http://ankisrs.net/docs/manual.html#_intro_videos[check them out]
+if you haven't already.
+
+When you've looked at a card's question and remembered the answer, or decided
+you don't know it, tap the *show answer* button. When you do, the bottom area will change to display 2-4 answer buttons,
+depending on how you've answered the card previously. The buttons will display
+the time a card will next be shown, so 10m means "10 minutes" and "5d" means
+"5 days". You can tap directly on these buttons to choose a particular answer. 
+
+To make reviewing faster, you can configure gestures (for example taps and swipes) to answer cards without using the buttons. 
+See the preferences for more information on configuring gestures.
+
+When you've finished the cards that are due to be studied today, you'll be
+shown a congratulations message. If you have other decks, you can return to the decks list 
+in the usual way and select a different one. If you've finished studying for the day, you can simply tap the home button in order to
+close AnkiDroid (and you can also do this in the middle of reviews if you
+wish).
+
+If you wish to keep studying the same cards after the congratulations message
+is displayed, please see the <<filtered,filtered deck>> section.
+
+[[addingNotes]]
+= Add Note Screen =
+++++++++++
+<img src="img/3-adding.png">
+++++++++++
+
+To add a new note, tap the + button in the action bar at the top of the Deck List, or the Deck Overview screen.
+
+The "Type" button at the top allows you to select the type of note you'd like
+to add. For more information about note types, please see the introduction in
+the http://ankisrs.net/docs/manual.html#basics[desktop manual].
+
+When you tap on a field, a keyboard will come up, allowing you to type in
+information. You can use the next and previous buttons to move between fields,
+and the done button to hide the keyboard.
+
+The media icon allows you to add media to your note (This feature is currently in the experimental phase). 
+You can add images either via your device's camera (if it has one), or from your photo library. 
+Record audio allows you to record your voice and place it into a field. The advanced editor lets you automatically 
+search for either translations, pronunciation audio files, or images.
+
+When you've typed in the content of a note, tap the tick icon at the top to add it to
+your collection.
+
+= Edit Note Screen =
+
+To edit a note, tap the "Edit" button while reviewing.
+
+The edit screen is similar to the add new note screen mentioned above, with some key
+differences:
+
+ * There is no note type selection button or deck selection button. If you
+   want to change the type of an existing note or which deck it's in, you
+   currently need to do so with the desktop client.
+ * An eye icon is shown in the top right, which allows you to see a preview of the card
+
+= Finding/Searching/Browsing =
+
+You can search for or browse cards by tapping the "Card browser" button from anywhere in the app via the navigation drawer.
+
+The browser screen starts by displaying all the cards in the currently selected deck.  You can search for cards in the selected deck 
+by tapping the magnifiying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
+dropdown list on the top left.
+
+AnkiDroid supports all the search strings that the desktop version of Anki
+does, allowing you to perform quite complex searches. Some examples:
+
+ tag:marked :: show cards that with the tag "marked"
+ is:due :: show only cards that are waiting for review
+ front:rabbit :: show only cards where the front field is exactly "rabbit" 
+
+For a full list of the possibilities, please see the section in the
+http://ankisrs.net/docs/manual.html#searching[desktop manual].
+
+When a search returns one or more cards, you can tap on a card to edit it, or
+perform various actions like previewing it, deleting it, showing information
+about it, and so on.
+
+[[filtered]]
+= Filtered Decks =
+
+Anki is designed to optimize the learning process, so that you study the
+minimum amount necessary to remember the majority of your cards. Once the
+congratulations screen is reached, further study becomes a case of diminishing
+returns: the amount of extra time spent going over the same cards again is
+generally not worth the moderate increase in retention you'll see.
+
+That said, if you have a test looming, or simply want to pass some time, it's
+possible to keep reviewing once the congratulations screen is reached.
+
+A 'filtered deck' is a temporary deck that contains cards based on various
+criteria, such as "forgotten today", "is tagged 'hard'", and so on. After
+studying cards in a filtered deck, or when the filtered deck is deleted, the
+cards are automatically returned to their original deck.
+
+The easiest way to create a filtered deck is by using the "custom study"
+feature in the deck overview screen.
+
+Advanced users can create a filtered deck manually, by choosing "Create filtered deck" from the main menu in the deck list screen.
+
+For further information on filtered decks, please see the http://ankisrs.net/docs/manual.html#filtered[desktop documentation].
+
+= Automatic Backups =
+
+AnkiDroid will automatically create backups of your collection for
+you. The backups include all your cards and statistics, but do not include
+sounds or images.
+
+The backup is taken when you first start the app. A backup will only happen if more than an
+a day has elapsed since the last time a backup was created. By default, AnkiDroid will store the last 5 backups; this number can be changed
+in the main settings.
+
+= Preferences =
+
+The preferences screen can be accessed by opening the navigation drawer, and choosing "Settings".
+ It allows you to customize various application settings and how AnkiDroid appears.
+
+The Preferences screen is divided up into different sections, which are
+covered below.
+
+== AnkiDroid ==
+These are the general settings which affect the whole app:
+
+Collection path:: Change the location where AnkiDroid's data is stored
+
+AnkiWeb account:: Change the account used for syncing with the cloud. For more information on syncing, please see <<ankiweb,this
+section>>.
+
+Fetch media on sync:: By default, AnkiDroid will sync sounds and images as well as your cards and review history. 
+ If you disable this option, sounds and images will not be synced by AnkiDroid.
+ 
+Deck for new cards:: The default of "When adding, default to current deck" means that Anki saves the last-used note type for each deck 
+and selects it again then next time you choose the deck (and, in addition, will start with the current deck selected when choosing 
+Add from anywhere). The other option, "Change deck depending on note type," saves the last-used deck for each note type 
+(and opens the add window to the last-used note type when you choose Add). This may be more convenient if you always use a single note 
+type for each deck.
+
+Language:: Change the language. Note: AnkiDroid translations are contributed by volunteers. If you find missing or incorrect translations, 
+feel free to contribute to the translation project. More details can be found on the https://code.google.com/p/ankidroid/wiki/Contribution#Translate_AnkiDroid_into_your_language[AnkiDroid Wiki].
+
+Error reporting mode:: Control whether or not AnkiDroid asks your permission before sending error reports to our error reporting system
+when AnkiDroid crashes. You can also disable the reporting feature entirely if you wish.
+
+=== Notifications ===
+This subsection allows you to set a notification system, where AnkiDroid shows an alert in the Android notification bar when it's time to review.
+
+Notify when more than:: Threshold for minimum number of cards due to be reviewed before a notification is shown
+
+Vibrate:: Checking this will make your device vibrate when showing a notification
+
+Blink light::  Checking this will make your device light blink when an unread notification exists (if your device has a notification LED)
+
+
+== Reviewing ==
+
+The reviewing screen allows you to customize how AnkiDroid behaves when you're
+reviewing cards. Note that only the reviewing settings which are applied to *all decks* are shown here. There are more settings related 
+to reviewing which are *deck specific*. These deck specific settings are located in *Deck options*.
+
+New card position :: Controls when new cards are shown: either mixed with, after, or before all reviews.
+
+Start of next day :: Controls when AnkiDroid should start showing the next day’s cards. 
+The default setting of 4AM ensures that if you’re studying around midnight, you won’t have two days' worth of cards shown to you in one 
+session. If you stay up very late or wake up very early, you may want to adjust this to a time you’re usually sleeping.
+
+Learn ahead limit :: The Learn ahead limit tells AnkiDroid how to behave when there is nothing left to study in the current deck 
+but cards in learning. The default setting of 20 minutes tells AnkiDroid that cards should be shown early if they are due to be shown in 
+less than 20 minutes and there’s nothing else to do. If you set this to 0, Anki will always wait the full period, showing the congratulations 
+screen until the remaining cards are ready to be reviewed.
+
+Timebox limit:: Timeboxing is a technique to help you focus by dividing a longer activity (such as a 30 minute study session) into smaller 
+blocks. If you set the timebox time limit to a non-zero number of minutes, AnkiDroid will periodically show a message saying you how many 
+cards you’ve managed to study during the prescribed time limit.
+
+Disable typing answer :: If you have set up your cards to ask you to type in the
+answer (as explained in http://ankisrs.net/docs/manual.html#templates[this
+section] of the desktop manual), AnkiDroid will display a keyboard on such
+cards and allow you to check your answer. If you find typing on a mobile
+device inconvenient, you can use this option to disable the keyboard for all
+cards.
+
+=== Display ===
+This subsection relates to the way cards are displayed during reviewing
+
+Keep screen on :: Ignore the automatic screen timeout setting in Android to always keep the screen on.
+
+Fullscren mode :: Hide the Android notification bar so that you can use more of the screen
+
+Center align ::  By default AnkiDroid tries to show cards exactly as they are shown on Anki Desktop, however if you prefer your cards 
+to be center aligned vertically in AnkiDroid then you can enable this feature.
+
+Show button time :: By default, the answer buttons will display the time a card will
+next be shown. If you disable this option, the times will not appear, and only labels like "Again", "Good" and
+"Easy" will be shown.
+
+Answer button size :: If you find it difficult to press the answer button, you can use this setting to make it bigger.
+
+Show remaining :: Disabling this allows you to hide the card count in the top left of the screen, which will allow you to use more of the screen.
+
+Quieten Music :: When on, AnkiDroid will lower the volume of background music while
+Anki is active, so that audio on cards can be better heard.
+
+=== Whiteboard ===
+This subsection controls the whiteboard in the reviewer.
+Note: the whiteboard must be enabled in each deck individually from the menu in the study screen.
+
+Stroke width :: Control the stroke width of the whiteboard. Reducing the stroke width may allow you to draw with more detail.
+
+Black strokes :: Use black strokes instead of color, which may reduce memory usage. Note: this setting doesn't apply when night mode is enabled.
+
+=== Automatic display answer ===
+The automatic display answer feature allows you to have the answer shown automatically after some timeout period. You can also have the next 
+question shown automatically; in this case the card is assumed to be failed (i.e. the again button is automatically chosen)
+
+Time to show answer :: Time to wait until answer is automatically shown
+
+Time to show next question :: Time to wait until next question is automatically shown.
+
+== Fonts ==
+In this screen you can change the font used by AnkiDroid, and some scaling options related to fonts.
+
+Default font :: Chose the default font used by AnkiDroid reviewer
+
+Default font applicability :: The default setting is to only use the default font when no font has been specified in the card styling 
+via Anki Desktop, however you can also force the default font to be applied, ignoring any font specification in the card styling.
+
+Browser and editor font :: The font to be used by the browser and editor
+
+Reviewer font scaling :: Allows you to increase or decrease the size of the text on cards without modifying how they appear on a computer. 
+It is not specific to a deck - when changed, it changes all cards in all decks in the same way.
+
+Reviewer image scaling :: This feature may be useful if you want images to also be scaled in the same proportion as the font
+
+Card browser font scaling :: Lets you change the font size used in the card browser.
+
+[[gestures]]
+== Gestures ==
+AnkiDroid allows you to customize the interface, so that actions you perform
+frequently can be accomplished quickly by using tap and swipe gestures.
+
+=== Actions ===
+The following gestures can be used:
+
+ * Swipe up
+ * Swipe down
+ * Swipe left
+ * Swipe right
+ * Double touch
+ * Touch top
+ * Touch bottom
+ * Touch left
+ * Tough right
+ * Long press
+
+The following actions are available for each gesture:
+
+No action :: Don't do anything. Useful if you want to disable certain swipes, tap
+zones and so on.
+
+Answer button 1 :: When the answer screen is shown, choose the red
+button, indicating you wish to review the card again soon. This is useful when
+you forgot a card or wish to review it more frequently.
+
+Answer button 2 :: When the answer screen is shown, choose the second button from the left, 
+generally indicating you found the card hard to remember.
+
+Answer button 3 :: When the answer screen is shown, choose the third button from the left.
+
+Answer button 4 :: When the answer screen is shown, choose the fourth button from the left (when applicable).
+
+Answer recommended (green) :: When the answer screen is shown, choose the green button.
+This is the button you should end up using the most.
+
+Answer better than recommended :: When the answer screen is shown, choose the button on the
+right, indicating you found the card too easy to remember and would like a
+much longer delay.
+
+Undo :: Undoes the last action.
+
+Edit card :: Edits the current card.
+
+Mark :: Adds a tag called "Marked" the current note, so it can be easily found
+in a search.
+
+Lookup expression :: When the lookup feature is enabled (in advanced settings), lookup an expression
+in the selected dictionary. Note: the expression needs to be copied to the clipboard before this action will work.
+
+Bury card :: Hides the current card from review. When you return to the deck list,
+it will be added back for review.
+
+Suspend Card :: Prevent current card from being shown during review until you
+unsuspend it via the search action.
+
+Delete Card :: Deletes the currently shown note and all of its cards. If
+you're not studying in multiple directions, this will just delete a single
+card.
+
+Play media :: Replay any audio on the card
+
+Abort learning :: Stop reviewing and go back to the deck overview page
+
+== Advanced ==
+Some less common features for advanced users are shown here
+
+Fast Card Browser Open :: 
+Usually when the card browser is opened, a search is automatically performed which displays the list of all cards in that deck. This can take a very long time (> 1min) when there are a large number of cards in the deck. Enabling this preference disables the automatic initial search.
+
+Safe Display Mode ::
+The safe display mode setting may be useful for users of e-ink devices such as Nooks who experience problems with content display, as well as for some users of older devices where custom fonts cause an `OutOfMemory` error. When enabled the setting does the following:
+
+ * Disable all transition animations
+ * Disable scrollbar fading
+ * Use safer (but slower) method of drawing flashcards, where the underlying `Webview` is recreated for each flashcard.
+
+See https://code.google.com/p/ankidroid/issues/detail?id=762[issue 762], https://code.google.com/p/ankidroid/issues/detail?id=1253[issue 1253], and https://code.google.com/p/ankidroid/issues/detail?id=687[issue 687] for more details.
+
+Simple Interface ::
+Displays the card content in a simple `ScrollTextView` instead of the usual `WebView`. Consequently, cards are displayed much faster, but only simple text information can be rendered. This feature is a bit buggy.
+
+Tags to Exclude ::
+A comma separated list of content to exclude when using the simple interface, in order to avoid seeing the html code for content which can't be rendered.
+
+Disable Backups ::
+Disable the automatic creation of backups. Not recommended.
+
+Input Workaround ::
+Some older devices couldn't gain focus into the text input box for typed-answer fields, so this was added (Hidden for API > 14).
+
+Longclick Workaround ::
+Some older devices couldn't detect longclick for initiating selecting/copying of text, so this was added (Hidden for API > 10).
+ 
+Fix for Hebrew Vowels ::
+Some older devices couldn't render Hebrew text, so this feature was added which allows the user to download and install a Hebrew font which is known to work.
+
+Improve Arabic Display ::
+This is a workaround to allow displaying of Arabic even on Android 2.2 (Hidden for API > 8).
+
+Text to Speech ::
+A broken / partially supported feature which is designed to allow the reading of card content by a text to speech engine. Use with caution.
+
+_This feature will likely be removed in the future in favor of a plugin_
+
+Lookup Dictionary ::
+Dictionary to use to lookup words copied to the clipboard in the reviewer. After setting up a dictionary, do the following to perform the lookup:
+
+ * Longclick on the text you want to copy in the reviewer
+ * After selecting the word you want to copy, press the "copy" icon in the action bar at the top of the screen
+ * Tap once anywhere on the flashcard
+ * A magnifying class icon should appear, which performs the lookup when clicked
+
+Alternatively, the lookup action can be performed via a gesture.
+
+_This feature will likely be removed in the future in favor of a plugin_
+
+Reset Languages ::
+Useful for resetting the TTS language
+
+eReader (up/down buttons) ::
+Support for eReader hardware buttons (see https://code.google.com/p/ankidroid/issues/detail?id=722[issue 722])
+
+_This feature will likely be removed in the future in favor of a plugin_
+
+eReader Double Scrolling ::
+Double the scrolling distance when using the eReader hardware buttons
+
+
+= Advanced Features =
+
+== Custom Fonts ==
+
+AnkiDroid allows you to use non-system fonts on your cards. To set them up,
+the desktop client is required. Please see
+http://ankisrs.net/docs/manual.html#installingfonts[the section in the desktop
+manual] for more information.
+
+Please note that AnkiDroid has to load the entire font into memory in order
+to use it, and fonts for Asian languages can be quite large. If you have an
+older device and notice AnkiDroid crashing frequently after installing a
+font, you may have exceeded your device's memory limits.
