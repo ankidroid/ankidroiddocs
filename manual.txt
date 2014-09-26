@@ -14,24 +14,21 @@ version at all, card layout editing and many advanced operations can only be don
  on a computer. While this is expected to change over time, for now please ensure you
  have access to a computer in order to perform some of the operations mentioned below.
  
-This manual is intended as a supplement for the main http://ankisrs.net/docs/manual.html[Anki manual],
-and many references will be made to it. It is *strongly recommended* to at least read 
-http://ankisrs.net/docs/manual.html#the-basics[The Basics] section of the Anki Desktop manual, 
-to understand the meaning of terms such as "Card", "Deck", "Note", "Field", "Card Template", 
-"Note Type", and "Collection" used in this manual.
+It is *strongly recommended* to at least read http://ankisrs.net/docs/manual.html#the-basics[The Basics section of the main Anki manual] to understand the terminology used here.
 
 == Help & Bugs
 
-Please see the https://code.google.com/p/ankidroid/wiki/Help[Help] page for how to get help with
- an issue, or report a bug.
+Please see the link:help.html[Help] page for how to get help with an issue, or report a bug.
 
 == Changes
 
-For information on recent changes, please see the main 
-https://github.com/ankidroid/Anki-Android/blob/master/res/values/13-newfeatures.xml[release notes]
+For information on recent changes, please see the https://github.com/ankidroid/Anki-Android/blob/master/res/values/13-newfeatures.xml[release notes]
 in the github repository.
 
+[[deckPicker]]
 == The Deck List
+*_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#the-basics[decks and cards] are_
+
 The deck list is the screen you see when you start AnkiDroid. It displays a 
 list of your card decks, and allows you to perform various actions:
 
@@ -67,9 +64,10 @@ Delete :: Use this option to delete a deck (note: this action is not reversible)
 Deck options :: Tapping on deck options allows you to configure various deck specific study options.
 Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
 
+Export :: This option can be used to share a deck with other users. See the <<exporting, exporting decks>> section for more information.
+
 === Advanced Actions
-Some additional actions are located in the menu for less common tasks such as exporting decks to
-computer, and options for fixing or restoring your collection from backup if it gets corrupted.
+Some additional actions are located in the menu for less common tasks such as options for fixing or restoring your collection from backup if it gets corrupted. 
 These are discussed elsewhere in the manual.
 
 === Deck Counts
@@ -199,22 +197,18 @@ from your desktop.
 On AnkiDroid:
 
  . Tap the *Export* item in the menu.
- . Tap *OK* 
+ . Tap *OK* using default options
+ . Email the exported apkg file to yourself
  
 Then on your computer:
 
- . Connect your Android device to your computer via the USB cable.
- . Open the file explorer and view the contents of your Android device.
- . Locate the AnkiDroid folder.
- . Drag the collection.apkg file from your device to your desktop.
+ . Save the file "collection.apkg" to your desktop
  . Double-click on the file to start Anki.
  . Confirm you wish to replace, so that the deck from your mobile device
    overwrites the old data on your desktop.
- . After importing, you can delete the file on your desktop if you wish.
+ . After importing, you can delete the apkg file on your desktop if you wish.
  
-Note that currently it is not possible to include media in collection.apkg file exported by AnkiDroid. 
-You can however manually copy media to you your computer using USB, from the "collection.media" folder in the AnkiDroid folder, to the 
-corresponding folder in Anki Desktop.
+If you can't use email for some reason, you can copy the apkg file from your device to your desktop via USB.
 
 [[drawer]]
 == The Navigation Drawer
@@ -224,22 +218,39 @@ corresponding folder in Anki Desktop.
 
 The navigation drawer can be opened from most places in the application by pressing the app icon, 
 or alternatively swiping outwards from anywhere on the far left side of the screen. It is used
-for quickly navigating between different parts of the application.
+for quickly navigating between different parts of the application. You can switch to the following screens:
 
-From the drawer you can open the Card Browser (which shows you a list of all your cards), the
-statistics screen (which helps you track your study progress), *settings* which allows you 
-to customize the app, *help* (which opens this web page), and *send feedback* 
-(for contacting the AnkiDroid team).
+Decks :: Takes you to the top level of the app where the list of cards are shown (<<deckPicker,more info here>>)
+Card Browser :: Shows a list of all your cards (<<browser,more info here>>)
+Statistics :: Helps you track your study progress (http://ankisrs.net/docs/manual.html#statistics[more info in Anki manual])
+Settings :: Allows you to customize the app (<<settings,more info here>>)
+Help :: Opens this web page
+Send feedback :: Get support from the AnkiDroid team
 
+[[deckOverview]]
 == The Deck Overview Screen
+++++++++++
+<img src="img/3-deck_overview.png">
+++++++++++
 When you tap on a deck in the deck list, the study options screen for that deck will load. From here you can 
 study the deck, add new cards, change deck study options, and build custom study decks. If you wish to change to a different deck, 
-you can do so by tapping the hardware back button to go back to the decks screen, or you use the navigation drawer.
+you can do so by tapping the hardware back button to go back to the decks screen, or you can use the navigation drawer.
 
-*Deck Options* allows you to configure some options related to the current 
+Add :: Tap the + button to add new cards to the deck as per the <<addingNotes,adding notes section>>
+
+Night Mode :: The button with the moon and stars allows you to change to night mode in the reviewer, which will change your cards to use a black background.
+
+Deck Options :: Allows you to configure some options related to the current 
 deck, such as the number of new cards and reviews to introduce each day.
 Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
 
+Custom Study :: Allows you to do extra reviews outside your normal schedule, or study only certain cards inside a deck. 
+See the <<filtered,filtered deck section>> for more information on this.
+
+[[reviewer]]
+++++++++++
+<img src="img/4-reviewer.png">
+++++++++++
 == The Study Screen
 Tapping the *study* button from the study options screen will take you to the study screen where you do your study. 
 
@@ -273,8 +284,9 @@ is displayed, please see the <<filtered,filtered deck>> section.
 
 [[addingNotes]]
 == Add Note Screen
+*_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#notes-&-fields[notes, fields, card templates, and note types] are_
 ++++++++++
-<img src="img/3-adding.png">
+<img src="img/5-adding.png">
 ++++++++++
 
 To add a new note, tap the + button in the action bar at the top of the Deck List, or the Deck Overview screen.
@@ -307,13 +319,24 @@ differences:
    currently need to do so with the desktop client.
  * An eye icon is shown in the top right, which allows you to see a preview of the card
 
+[[browser]]
 == Finding/Searching/Browsing
+++++++++++
+<img src="img/6-browser.png">
+++++++++++
 
 You can search for or browse cards by tapping the "Card browser" button from anywhere in the app via the navigation drawer.
 
 The browser screen starts by displaying all the cards in the currently selected deck.  You can search for cards in the selected deck 
 by tapping the magnifiying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
 dropdown list on the top left.
+
+From the search results, you can tap on a card to edit it, or long-tapping on it will show a menu allowing you to 
+perform various actions like previewing it, and deleting it.
+
+The first column shown in the browser is the first field of the note which the card belongs to. The second column can be configured 
+to show many different parameters by tapping the drop down menu in the column heading. Note that the content of the second column loads
+in the background after a search is complete, which can take a long time if you have a lot of cards.
 
 AnkiDroid supports all the search strings that the desktop version of Anki
 does, allowing you to perform quite complex searches. Some examples:
@@ -325,9 +348,7 @@ does, allowing you to perform quite complex searches. Some examples:
 For a full list of the possibilities, please see the section in the
 http://ankisrs.net/docs/manual.html#searching[desktop manual].
 
-When a search returns one or more cards, you can tap on a card to edit it, or
-perform various actions like previewing it, deleting it, showing information
-about it, and so on.
+Alternatively, some more commonly used filters (marked, suspended, and tagged cards) can be quickly applied without manually typing them by choosing them from the main menu.
 
 [[filtered]]
 == Filtered Decks
@@ -355,14 +376,15 @@ For further information on filtered decks, please see the http://ankisrs.net/doc
 
 == Automatic Backups
 
-AnkiDroid will automatically create backups of your collection for
-you. The backups include all your cards and statistics, but do not include
+AnkiDroid will automatically create backups of your collection for you. The backups include all your cards and statistics, but do not include
 sounds or images.
 
-The backup is taken when you first start the app. A backup will only happen if more than an
-a day has elapsed since the last time a backup was created. By default, AnkiDroid will store the last 5 backups; this number can be changed
-in the main settings.
+The backup is taken in the background when you first start the app. A backup will only happen if more than 5 hours has elapsed since the last time a backup was created. 
+By default, AnkiDroid will store the last 8 backups; this number can be changed in the main settings.
 
+You can restore a backup by choosing the *restore from backup* option in the menu of the <<deckPicker,decks screen>>.
+
+[[settings]]
 == Preferences
 
 The preferences screen can be accessed by opening the navigation drawer, and choosing "Settings".
