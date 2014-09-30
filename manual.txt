@@ -25,6 +25,45 @@ Please see the link:help.html[Help] page for how to get help with an issue, or r
 For information on recent changes, please see the https://github.com/ankidroid/Anki-Android/blob/master/res/values/13-newfeatures.xml[release notes]
 in the github repository.
 
+[[gettingStarted]]
+== Getting started
+To start using AnkiDroid, we need to add some cards to study. From the main screen, we can either
+download card decks that other people have shared, create new empty decks directly from AnkiDroid, 
+or add existing decks from the computer. 
+
+If you are an existing user of Anki Desktop wishing to import your decks from the computer, 
+please jump directly to the <<AnkiDesktop, using AnkiDroid with Anki Desktop>> section. Other users may like
+to start by trying out some shared decks:
+
+=== Shared Decks
+
+To download a shared deck directly to your mobile device:
+
+ . Ensure you're connected to the internet.
+ . Tap the + button at the top of the screen.
+ . Choose *Get shared decks*. AnkiWeb will open.
+ . Select a category, or type in a search.
+ . Tap *Info* on a deck you'd like to study.
+ . Scroll down and tap *Download*.
+ . You browser will download the file and display a "download complete" notification. 
+ Tap this button.
+ . AnkiDroid will appear, and show a confirmation dialog. Tap the *Add* button.
+ . When the import completes, your deck should be ready to study.
+
+You can start studying the shared deck by tapping on it, and then pressing the "study" button, 
+as discussed in more detail in the <<reviewer, studying section>> below.
+
+=== New Decks
+To add new flashcards directly from AnkiDroid:
+
+ . Tap the Add button in the Action Bar at the top
+ . Choose "Create deck"
+ . Choose a name for the deck, for example "New Japanese"
+ . Tap on the newly created deck to open it
+ . You can now add new cards to the deck by tapping the Add button in the Action bar again
+ 
+See the <<addingNotes,adding notes>> section below for detailed information on adding new cards to a deck.
+
 [[deckPicker]]
 == The Deck List
 *_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#the-basics[decks and cards] are_
@@ -36,14 +75,16 @@ list of your card decks, and allows you to perform various actions:
 <img src="img/1-decks.png">
 ++++++++++
 
-At the top of the screen is the Action Bar, with buttons for performing various actions:
+=== Action Bar
+At the top of each screen in AnkiDroid is the Action Bar, with buttons for performing various actions. 
+The following actions are available from the action bar in the deck list:
 
 AnkiDroid Icon :: Tapping the app icon on the left will show the <<drawer,navigation drawer>> for quickly navigating between the main parts of the app.
 
-Add button :: The + icon is used for adding new content to AnkiDroid, as described in the <<adding,adding decks>> section.
+Add button :: The + button is used for adding new content to AnkiDroid, as described in the <<adding,adding decks>> section.
 
 Sync button :: The circular button with arrows on the right is for synchronizing your cards with the cloud, as described in the 
-<<ankiweb,adding decks from cloud>> section.
+<<AnkiDesktop,adding decks from cloud>> section.
 
 **Hint:** long tapping on a button in the action bar will display a hint describing what the 
 button does!
@@ -75,141 +116,10 @@ You will notice that next to each deck, three numbers are displayed. The left, b
 many new cards you have to learn today. Anki will introduce 20 new cards a day by default, 
 and you can customize this number if you'd like. The red number in the middle is for the cards 
 due to be studied today which are currently in the learning phase, and the green number is the 
-cards which are due for review (i.e. cards which are no longer in the learning phase). On a deck 
+cards which are due for review (i.e. cards which have already graduated from the learning phase). On a deck 
 you've never studied before, these numbers will both be zero.
 
-[[adding]]
-== Adding Decks
-
-To start using AnkiDroid, we need to add some cards to study. From the Decks List, we can either
-download card decks that other people have shared, create new empty decks directly from AnkiDroid, 
-or add existing decks from the computer. 
-
-=== Shared Decks
-
-To download a shared deck directly to your mobile device:
-
- . Ensure you're connected to the internet.
- . Tap the add button in the Action Bar at the top.
- . Choose *Get shared decks*. AnkiWeb will open.
- . Select a category, or type in a search.
- . Tap *Info* on a deck you'd like to study.
- . Scroll down and tap *Download*.
- . You browser will download the file and display a "download complete" notification. 
- Tap this button.
- . AnkiDroid will appear, and show a confirmation dialog. Tap the *Add* button.
- . When the import completes, your deck should be ready to study.
-
-Information on reviewing is available further below.
-
-=== New Decks
-To add new flashcards directly from AnkiDroid:
-
- . Tap the Add button in the Action Bar at the top
- . Choose "Create deck"
- . Choose a name for the deck, for example "New Japanese"
- . Tap on the newly created deck to open it
- . You can now add new cards to the deck by tapping the Add button in the Action bar again
  
-See the <<addingNotes,adding notes>> section below for detailed information on adding new cards to a deck.
- 
-[[ankiweb]]
-=== Existing Decks from Computer via Cloud Sync
-
-Anki has a free cloud synchronization service called AnkiWeb that makes it
-easy to keep your card decks in sync between mobile devices and your computer.
-
-To sync with AnkiWeb, you'll first need to create an account. If you have used
-AnkiWeb in the past, you can skip this step.
-
- . Visit https://ankiweb.net and click the *Sign Up* button.
- . Type in your email address and a password of your choice.
-
-Once the signup is complete, return to your computer, and simply click the
-synchronization button at the top right of the Anki window - it has two arrows
-in a circle. Anki will upload all your cards, images and audio to AnkiWeb. If
-you have a lot of media, this may take some time.
-
-Once the synchronization has completed, return to your mobile device, and tap the
-*Sync* button in the action bar at the top of the screen. 
-After entering your email and password, AnkiDroid will download all your cards and media, 
-and remember your login information for next time.
-
-After the first synchronization has completed, you can click the sync button
-again any time you wish to synchronize your changes to the cloud. Only changes
-made since the previous sync will be sent, so subsequent syncs are a lot
-faster.
-
-If you add some new cards on the desktop computer and want to sync them to
-AnkiDroid, you'd repeat the same process: sync on desktop (or close the
-program, as it syncs automatically on close by default), and then tap the sync
-button on AnkiDroid.
-
-=== Existing Decks from Computer via USB
-
-If you don't have regular internet access, it's still possible to copy decks
-back and forth to your device, by using USB.
-
-The USB method works by importing or exporting all your decks at once. 
-This means that unlike syncing via AnkiWeb, you can't make changes from
-two locations at once and then merge them. Instead, if you wish to add cards
-on the desktop, you need to make sure you export the latest version of your
-collection from your mobile device first, or you'll end up losing any reviews
-done on the mobile device.
-
-Thus the workflow you would typically use is to export your collection from
-your mobile device and import it into the desktop, make modifications on the
-desktop, and then export your collection and import it back into your mobile
-device.
-
-AnkiDroid can't directly import text files. If you wish to do that, you'll
-need to do that with the desktop program, and then import your collection into
-AnkiDroid.
-
-==== From computer to mobile device
-
-On your computer:
-
- . Open the desktop program.
- . Choose File>Export from the menu.
-
- . Click the 'Export...' button. Make sure to leave "all decks" selected, as
- it's not possible to import individual decks into AnkiDroid. "Include
- scheduling information" must also remain checked.
- . Anki will automatically create a collection.apkg on your desktop. If the
-   file is named something else, please see the previous step again.
- . Connect your Android device to your computer via the USB cable.
- . Open the file explorer on your computer and view the contents of your Android device.
- . Locate the AnkiDroid folder.
- . Drag the collection.apkg file from your desktop into this AnkiDroid folder.
- 
-Then in AnkiDroid:
-
- . Tap the Add button in the Action Bar at the top.
- . Choose "Import file"
- . Tap on "Collection" and then confirm
-
-Once complete, the decks on your device will have been replaced with the decks
-from your desktop.
-
-==== From mobile device to computer
-
-On AnkiDroid:
-
- . Tap the *Export* item in the menu.
- . Tap *OK* using default options
- . Email the exported apkg file to yourself
- 
-Then on your computer:
-
- . Save the file "collection.apkg" to your desktop
- . Double-click on the file to start Anki.
- . Confirm you wish to replace, so that the deck from your mobile device
-   overwrites the old data on your desktop.
- . After importing, you can delete the apkg file on your desktop if you wish.
- 
-If you can't use email for some reason, you can copy the apkg file from your device to your desktop via USB.
-
 [[drawer]]
 == The Navigation Drawer
 ++++++++++
@@ -248,12 +158,13 @@ Custom Study :: Allows you to do extra reviews outside your normal schedule, or 
 See the <<filtered,filtered deck section>> for more information on this.
 
 [[reviewer]]
+== The Study Screen
+Tapping the *study* button from the study options screen will take you to the study screen where you do your study. 
 ++++++++++
 <img src="img/4-reviewer.png">
 ++++++++++
-== The Study Screen
-Tapping the *study* button from the study options screen will take you to the study screen where you do your study. 
 
+=== Basics
 If you have not used Anki on a computer before, you may like to have a look at the
 first http://ankisrs.net/docs/manual.html#_intro_videos[intro video]
 before reading on, as it explains the basic review process.
@@ -271,8 +182,25 @@ the time a card will next be shown, so 10m means "10 minutes" and "5d" means
 "5 days". You can tap directly on these buttons to choose a particular answer. 
 
 To make reviewing faster, you can configure gestures (for example taps and swipes) to answer cards without using the buttons. 
-See the preferences for more information on configuring gestures.
+See the <<settings, preferences section>> for more information on configuring gestures.
 
+=== Action Bar
+The Action Bar at the top of the study screen has several buttons for performing various common actions. The number of buttons which are shown 
+is determined automatically by Android based on the size and resolution of your screen. If there is not enough space to show the button 
+for a given action, then the action will be available from the menu instead. If you are unsure what a button does, you can long-tap on it to 
+see the name of the action. The following action are available:
+
+Undo :: Undo the answer you chose for the last card you studied (button always shown).
+Mark Card :: Adds a "marked" tag to the current note, so it can be easily found in the browser. 
+This is useful when you want to take some action on the note at a later date, such as looking up a word when you get home. Marked cards also show a small star in the upper-right-hand corner during reviews.
+Edit Card :: Open the edit note screen, where you can change the content displayed on the flashcard (see the <<editingNotes, editing notes section>> for more help)
+Dismiss Note :: Give various options for removing the current card or note from your study schedule (see http://ankisrs.net/docs/manual.html#editing-and-more[Anki Desktop manual] for more on these)
+Replay Audio :: If the card has audio on the front or back, it will be played again.
+Enable / Disable Whiteboard :: This action enables or disables the whiteboard feature for the current deck. The whiteboard feature allows you to draw on the screen, 
+which is particularly useful for practicing drawing characters from languages such as Japanese. When the whiteboard has been enabled for the current deck, 
+two new actions will become available for clearing and hiding the whiteboard. Disabling the whiteboard will hide these actions as well as the whiteboard itself.
+
+=== Reaching the end of the study session
 When you've finished the cards that are due to be studied today, you'll be
 shown a congratulations message. If you have other decks, you can return to the decks list 
 in the usual way and select a different one. If you've finished studying for the day, you can simply tap the home button in order to
@@ -285,53 +213,66 @@ is displayed, please see the <<filtered,filtered deck>> section.
 [[addingNotes]]
 == Add Note Screen
 *_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#notes-&-fields[notes, fields, card templates, and note types] are_
+
+To add a new note, tap the + button in the action bar at the top of the Deck List, or the Deck Overview screen.
 ++++++++++
 <img src="img/5-adding.png">
 ++++++++++
 
-To add a new note, tap the + button in the action bar at the top of the Deck List, or the Deck Overview screen.
+The "Note type" drop-down selector at the top allows you to select the type of note you'd like to add. 
+For example if you would like to have a reverse card, you could chose the "Basic (and reversed card)" note type. 
+It's not currently possible to change the note type directly from AnkiDroid after a card has already been added, though this can 
+be done using Anki Desktop.
 
-The "Type" button at the top allows you to select the type of note you'd like
-to add. For more information about note types, please see the introduction in
-the http://ankisrs.net/docs/manual.html#basics[desktop manual].
+The "Note deck" drop-down selector below this allows you to change the deck the note will be added to.
 
-When you tap on a field, a keyboard will come up, allowing you to type in
-information. You can use the next and previous buttons to move between fields,
-and the done button to hide the keyboard.
+Below the deck selector are the fields for the note. When you tap on a field, a keyboard will come up, allowing you to type in
+information. Next to each field is a media button, which allows you to add media to your note 
+(this feature is currently in the experimental phase). 
 
-The media icon allows you to add media to your note (This feature is currently in the experimental phase). 
 You can add images either via your device's camera (if it has one), or from your photo library. 
 Record audio allows you to record your voice and place it into a field. The advanced editor lets you automatically 
 search for either translations, pronunciation audio files, or images.
 
-When you've typed in the content of a note, tap the tick icon at the top to add it to
-your collection.
+When you've finished typing in the content of a note, tap the tick icon in the action bar at the top to add it to
+your collection. Alternatively, if you want to go back to what you were doing without saving, you can tap the app icon, or 
+use the hardware back button.
 
+There is also an option, accessed from the main menu, to store the entered data for "later" without actually saving a note.
+This can be useful for adding data from an external dictionary. There is a corresponding "saved data" item in the menu for 
+recalling the data later.
+
+[[editingNotes]]
 == Edit Note Screen
-
-To edit a note, tap the "Edit" button while reviewing.
-
+The edit note screen can be opened by chosing edit while reviewing, or by opening a card in the browser. 
 The edit screen is similar to the add new note screen mentioned above, with some key
 differences:
 
- * There is no note type selection button or deck selection button. If you
-   want to change the type of an existing note or which deck it's in, you
+ * The note type selector is disabled. If you want to change the type of an existing note, you
    currently need to do so with the desktop client.
- * An eye icon is shown in the top right, which allows you to see a preview of the card
+ * An eye button is shown in the top right, which allows you to see a preview of the card
+ 
+There are also several advanced options available in the main menu:
+
+Add note :: Create a new empty note
+Copy card :: Copy the current note to a new editable note
+Reset progress :: Move the card to the end of the new card queue. The current state of the card is cleared, but not its revision history.
+Reschedule :: Allows you to reschedule as a review card on a given date. This is useful if you have imported already-learnt material, 
+and you want to start it off with higher initial intervals.
 
 [[browser]]
 == Finding/Searching/Browsing
+You can search for or browse cards by tapping the "Card browser" button from anywhere in the app via the navigation drawer.
+
 ++++++++++
 <img src="img/6-browser.png">
 ++++++++++
-
-You can search for or browse cards by tapping the "Card browser" button from anywhere in the app via the navigation drawer.
 
 The browser screen starts by displaying all the cards in the currently selected deck.  You can search for cards in the selected deck 
 by tapping the magnifiying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
 dropdown list on the top left.
 
-From the search results, you can tap on a card to edit it, or long-tapping on it will show a menu allowing you to 
+From the search results, you can tap on a card to edit it (see the <<editingNotes,edit note section>> above), or long-tapping on it will show a menu allowing you to 
 perform various actions like previewing it, and deleting it.
 
 The first column shown in the browser is the first field of the note which the card belongs to. The second column can be configured 
@@ -374,6 +315,190 @@ Advanced users can create a filtered deck manually, by choosing "Create filtered
 
 For further information on filtered decks, please see the http://ankisrs.net/docs/manual.html#filtered[desktop documentation].
 
+[[AnkiDesktop]]
+== Using Anki Desktop with AnkiDroid
+Anki has a free cloud synchronization service called AnkiWeb that makes it
+easy to keep your card decks in sync between mobile devices and your computer.
+If you cannot use sync for some reason, it's also possible to use USB, though this method is more laborious.
+
+=== Using Anki Desktop with AnkiDroid via Cloud Sync
+Before you can use AnkiWeb, you'll first need to create an account by visiting https://ankiweb.net and clicking the *Sign Up* button. If you have used
+AnkiWeb in the past, you can skip this step. After signing up, see the corresponding instructions below, depending on whether you want to sync from Anki Desktop 
+to AnkiDroid, or the other way around.
+
+==== Sync from Computer to AnkiDroid
+To copy your existing decks from Anki Desktop to AnkiDroid via AnkiWeb, click the
+synchronization button at the top right of the Anki Desktop window - it has two arrows
+in a circle. 
+
+If you have never used AnkiWeb before you will need to enter your credentials if prompted, and 
+then press the "Upload to AnkiWeb" button to confirm overwriting the empty collection on AnkiWeb with the collection 
+on Anki Desktop. Anki will upload all your cards, images and audio to AnkiWeb. If
+you have a lot of media, this may take some time.
+
+Once the synchronization has completed, return to your mobile device, and tap the
+*Sync* button in the action bar at the top of the main deck list. 
+After entering your AnkiWeb credentials, AnkiDroid will download all your cards and media, 
+and remember your login information for next time.
+
+Note that if you have any existing material in AnkiDroid before attempting to sync, you may be shown a message 
+asking you to choose to either download from AnkiWeb, or upload to AnkiWeb. If you are happy to lose the cards 
+in AnkiDroid then simply choose *Download*. If you need to merge the existing cards with AnkiDroid then see the 
+<<AnkiWebConflicts, resolving conflicts>> section.
+
+After the first synchronization has completed, you can click the sync button
+again any time you wish to synchronize your changes to the cloud. Only changes
+made since the previous sync will be sent, so subsequent syncs are a lot
+faster.
+
+If you add some new cards on the desktop computer and want to sync them to
+AnkiDroid, you'd repeat the same basic process: sync on desktop (or close the
+program, as it syncs automatically on close by default), and then tap the sync
+button on AnkiDroid.
+
+==== Sync from AnkiDroid to Computer
+The process of syncing from AnkiDroid to computer is essentially the same as syncing from computer to 
+AnkiDroid, but in reverse.
+
+From the deck list, tap the sync button. If it's your first time using AnkiWeb, you may need to 
+enter your login credentials, and then press the "upload" button to upload your AnkiDroid collection 
+to AnkiWeb.
+
+Once the synchronization has completed, open Anki Desktop on your computer and press the sync button there 
+(with two arrows in a circle), and Anki will download your collection.
+
+[[AnkiWebConflicts]]
+==== Dealing with merge conflicts on AnkiWeb
+Although it should not happen often, occasionally you may end up in the position where your cards on AnkiDroid can 
+not be automatically merged with the cards on AnkiWeb. In this case it's necessary to choose to either upload to or download from
+AnkiWeb, which would overwrite any changes on the other side. If you have new cards on both sides which you want to keep, 
+before syncing you can <<exporting,export a deck package>> for each deck containing new cards from AnkiDroid, then when you do the sync 
+choose "download" to download from AnkiWeb. After the synchronization has completed, you can import the decks you previously exported from AnkiDroid, 
+as per the <<importing, importing section>>.
+
+=== Using AnkiDesktop via USB
+
+If you don't have regular internet access, it's still possible to copy decks
+back and forth to your device, by using USB.
+
+The USB method works by importing or exporting all your decks at once. 
+This means that unlike syncing via AnkiWeb, you can't make changes from
+two locations at once and then merge them. Instead, if you wish to add cards
+on the desktop, you need to make sure you export the latest version of your
+collection from your mobile device first, or you'll end up losing any reviews
+done on the mobile device.
+
+Thus the workflow you would typically use is to export your collection from
+your mobile device and import it into the desktop, make modifications on the
+desktop, and then export your collection and import it back into your mobile
+device.
+
+AnkiDroid can't directly import text files. If you wish to do that, you'll
+need to do that with the desktop program, and then import your collection into
+AnkiDroid.
+
+==== Copy all decks from Anki Desktop to AnkiDroid via USB
+
+On your computer:
+
+ . Open the desktop program.
+ . Choose File>Export from the menu.
+
+ . Click the 'Export...' button. Make sure to leave "all decks" selected, as
+ it's not possible to import individual decks into AnkiDroid. "Include
+ scheduling information" must also remain checked.
+ . Anki will automatically create a collection.apkg on your desktop. If the
+   file is named something else, please see the previous step again.
+ . Connect your Android device to your computer via the USB cable.
+ . Open the file explorer on your computer and view the contents of your Android device.
+ . Locate the AnkiDroid folder.
+ . Drag the collection.apkg file from your desktop into this AnkiDroid folder.
+ 
+Then in AnkiDroid:
+
+ . From the main decks screen, tap "Import file" from the menu
+ . Tap on "Collection" and then confirm
+
+Once complete, the decks on your device will have been replaced with the decks from your desktop. See the section on 
+<<importing, importing apkg files>> for more help with importing.
+
+==== Copy all decks from AnkiDroid to Anki Desktop via USB
+
+The process to copy your decks from AnkiDroid to Anki Desktop is essentially the same as above, but in reverse.
+
+ . Choose "Export" from the main menu in the Deck Screen
+ . Ensure "Include scheduling information" remains checked and press *OK*
+ . Copy the "collection.apkg" from the path specified in the message to the desktop on your computer
+ . Double click on the file to import into Anki Desktop
+ 
+See the <<exporting, exporting section>> below for more detailed information on exporting from Anki Droid.
+
+[[importing]]
+== Importing Anki Files
+You can import Anki files (with .apkg file format) directly into AnkiDroid. Other file formats cannot be imported directly into AnkiDroid, however 
+flashcards from most other applictions can be imported into Anki Desktop on your computer, which can then be <<adding,added into AnkiDroid in the usual way>>. 
+See the http://ankisrs.net/docs/manual.html#importing[importing section of the Anki Desktop manual] for help on importing into Anki Desktop.
+
+As in Anki Desktop, AnkiDroid distinguishes between http://ankisrs.net/docs/manual.html#exporting-packaged-decks[the two types of .apkg files] 
+("collection package" and "deck package") based on the filename.  Collection packages have the name "collection.apkg", and when imported will 
+completely _replace all contents_ in AnkiDroid. Any apkg file which is _*not*_ named "collection.apkg" will be treated as a deck package, 
+which will be _merged with any existing content_ when imported into to AnkiDroid.
+
+You can import .apkg Anki collection files into AnkiDroid either by opening them using the standard Android system, or by manually 
+importing them from within AnkiDroid:
+
+=== Open the file using Android
+Apkg files are automatically associated with AnkiDroid, so for example if you open a .apkg email attachment which you sent to yourself, then 
+AnkiDroid will automatically open the file and confirm if you want to import it. Simply click OK and the apkg file will be imported.
+
+=== Import the file manually in AnkiDroid
+You can also manually import .apkg files as follows:
+
+ * Connect your device to your computer using USB
+ * Copy the .apkg from your computer to the AnkiDroid folder on your device
+ * Open AnkiDroid on your device
+ * From the main menu in the deck list, choose *Import*
+ * Choose the apkg file you just copied to your device when prompted
+ * Tap OK
+ 
+[[exporting]]
+== Exporting Anki Files
+AnkiDroid can export your flashcards in the .apkg Anki file format so that you can import them into Anki Desktop, or share them with other people. 
+As in Anki Desktop, you can either export a http://ankisrs.net/docs/manual.html#exporting-packaged-decks[collection package or deck package], depending 
+on what you are trying to acheive.
+
+There are two export options available: "include scheduling information" and "include media". Generally the default options are sufficient, 
+if you choose not to include scheduling information, Anki will assume that you are sharing the deck with other people, 
+and will remove marked and leech tags so that they will have a clean copy of it.
+
+=== Exporting collection package
+When exporting for use in Anki Desktop, you generally want to export your entire collection, including all your review history etc. 
+
+From the main menu in the decks screen:
+
+ . Tap the *Export* item in the menu.
+ . Tap *OK* using default options
+ . Tap *OK* again to email the exported collection.apkg file to yourself, or alternatively you can manually copy to your computer using USB
+ 
+To import the file on your computer:
+
+ . Save the file "collection.apkg" to your desktop
+ . Double-click on the file to start Anki.
+ . Confirm you wish to replace, so that the deck from your mobile device
+   overwrites the old data on your desktop.
+ . After importing, you can delete the apkg file on your desktop if you wish.
+ 
+=== Exporting deck package
+If you want to share a deck in AnkiDroid with another user, you can export a deck package. 
+
+From the main menu in the decks screen:
+
+ . Long tap on the deck you wish to export
+ . Tap *Export*
+ . Tap *OK* using the default options
+ . Tap *OK* again to email the exported apkg to another user
+ 
+
 == Automatic Backups
 
 AnkiDroid will automatically create backups of your collection for you. The backups include all your cards and statistics, but do not include
@@ -382,7 +507,7 @@ sounds or images.
 The backup is taken in the background when you first start the app. A backup will only happen if more than 5 hours has elapsed since the last time a backup was created. 
 By default, AnkiDroid will store the last 8 backups; this number can be changed in the main settings.
 
-You can restore a backup by choosing the *restore from backup* option in the menu of the <<deckPicker,decks screen>>.
+You can restore a backup by choosing the *restore from backup* option from the main menu of the <<deckPicker,decks screen>>.
 
 [[settings]]
 == Preferences
@@ -398,7 +523,7 @@ These are the general settings which affect the whole app:
 
 Collection path:: Change the location where AnkiDroid's data is stored
 
-AnkiWeb account:: Change the account used for syncing with the cloud. For more information on syncing, please see <<ankiweb,this
+AnkiWeb account:: Change the account used for syncing with the cloud. For more information on syncing, please see <<AnkiDesktop,this
 section>>.
 
 Fetch media on sync:: By default, AnkiDroid will sync sounds and images as well as your cards and review history. 
@@ -576,9 +701,6 @@ Abort learning :: Stop reviewing and go back to the deck overview page
 
 === Advanced
 Some less common features for advanced users are shown here
-
-Fast Card Browser Open :: 
-Usually when the card browser is opened, a search is automatically performed which displays the list of all cards in that deck. This can take a very long time (> 1min) when there are a large number of cards in the deck. Enabling this preference disables the automatic initial search.
 
 Safe Display Mode ::
 The safe display mode setting may be useful for users of e-ink devices such as Nooks who experience problems with content display, as well as for some users of older devices where custom fonts cause an `OutOfMemory` error. When enabled the setting does the following:
