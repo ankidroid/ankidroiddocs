@@ -762,7 +762,19 @@ Double the scrolling distance when using the eReader hardware buttons
 
 
 == Advanced Features
+[[reverseCards]]
+=== Reverse Cards
+The Anki system has http://ankisrs.net/docs/manual.html#note-types[built-in note types which allow you to review cards in both directions]. 
+When creating new material in AnkiDroid, you should choose one of these note types, such as "Basic (and reversed card)" which will automatically generate a reverse card for you.
 
+If you used the wrong note type when adding your material, you can change the note type for multiple cards at once using the browser in Anki Desktop. 
+To do this, follow the instructions in the <<AnkiDesktop,syncing with Anki Desktop section>>, then in Anki Desktop open the browser, 
+select the cards you want to change, then choose *Change note type* from the menu.
+
+Alternatively, if your cards are using a custom note type which doesn't include a reverse card, you can add a reverse card to that note type 
+by following the instructions in the http://ankisrs.net/docs/manual.html#reverse-cards[reverse cards section] of the Anki Desktop user manual.
+
+[[customFonts]]
 === Custom Fonts
 
 AnkiDroid allows you to use non-system fonts on your cards. To set them up,
@@ -770,7 +782,71 @@ the desktop client is required. Please see
 http://ankisrs.net/docs/manual.html#installingfonts[the section in the desktop
 manual] for more information.
 
+Only fonts in the ttf format are officially supported in Anki/AnkiDroid; 
+the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages.
+
 Please note that AnkiDroid has to load the entire font into memory in order
 to use it, and fonts for Asian languages can be quite large. If you have an
 older device and notice AnkiDroid crashing frequently after installing a
 font, you may have exceeded your device's memory limits.
+
+*Note 1*: If you have "Fetch media on sync" disabled, you may need to manually copy the font file from Anki Desktop to your AnkiDroid/collection.media folder.
+
+*Note 2*: Some fonts may have the extension .ttf, but are in fact in a different format such as .ttc, which has been found to not work on some devices. 
+We recommend only using official open source fonts, such as Google Noto. Post to the https://groups.google.com/forum/#!forum/anki-android[support forum] if you need specific font help.
+
+*Note 3*: Custom fonts generally don't work on Android 2.1 (Eclair). This is a limitation of the Android framework and not a problem with AnkiDroid.
+
+[[typeInAnswer]]
+=== Type in the answer feature
+
+AnkiDroid allows you to type in the correct answer and then compare it to the right answer. You have to set this up with Anki desktop, 
+as described in the http://ankisrs.net/docs/manual.html#checking-your-answer[Anki Desktop manual].
+
+Anki desktop replaces the “{{type:NN}}” field on
+the front of a card with an input box in the card. On AnkiDroid it is replaced with a “......” prompt instead, and a text
+input box is shown at the bottom. The comparison between typed text and
+the correct text is shown on the answer side in place of the
+“{{type:NN}}” field there, like on Anki desktop.
+
+The text input box and the soft keyboard can be hidden by ticking
+“Disable typing in answer” in the preferences.
+
+Even with typing disabled, the correct answer is shown on the answer
+side. This is done on purpose; otherwise the correct answer might not
+be shown at all.
+
+To hide the comparison (e.g. because the correct answer is shown anyway), the HTML id
+“typeans” can be used. Add “.mobile #typeans {display: none;}” to the
+http://ankisrs.net/docs/manual.html#cards-and-templates[card styling] using Anki Desktop.
+
+The type answer prompt and the comparison have more classes that
+can be used to change the way they are displayed. Some of these are
+the same as on Anki Desktop, some are specific to AnkiDroid.
+
+The comparison uses three classes, typeGood, typeBad and typeMissing
+to add green, red and gray background to the typing comparison. These
+three classes are used on Anki desktop as well.
+
+The “......” prompt has the class “typePrompt”.
+
+When typing is set to off in the preferences, the class “typeOff” is
+added to the prompt on the question side, and to the div element
+containing the comparison on the answer side. This class can be used
+to show the type prompt or to hide the typing comparison in
+this case.
+
+[[betaTesting]]
+=== Beta testing
+If you want to try out the latest features in AnkiDroid, you can sign up for the beta testing program as follows:
+
+ . Vist the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid support forum]
+ . Click *join group* at the top (select "no email" if you do not want to receive forum messages)
+ . Visit the https://play.google.com/apps/testing/com.ichi2.anki[Google Play Beta page]
+ . Click *Become a beta tester*
+ 
+After following these steps, the latest beta version will automatically be installed by Google Play in the same way as ordinary updates.
+If you are more adventurous, you can also become an alpha tester, by joining the https://groups.google.com/forum/#!forum/ankidroidalphatesters[alpha testers group]
+in addition to performing the above steps for beta testing.
+
+If you wish to leave the testing program at any time, simply visit the https://play.google.com/apps/testing/com.ichi2.anki[Google Play Beta page] and click *Leave the test*
