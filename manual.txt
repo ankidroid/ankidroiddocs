@@ -81,7 +81,8 @@ The following actions are available from the action bar in the deck list:
 
 AnkiDroid Icon :: Tapping the app icon on the left will show the <<drawer,navigation drawer>> for quickly navigating between the main parts of the app.
 
-Add button :: The + button is used for adding new content to AnkiDroid, as described in the <<adding,adding decks>> section.
+Add button :: The + button is used for adding new content to AnkiDroid. You can either <<addingNotes,add a new note>> or deck to create your own flashcards, 
+or you can download shared card decks that other people have shared, as per the <<gettingStarted, getting started section>>.
 
 Sync button :: The circular button with arrows on the right is for synchronizing your cards with the cloud, as described in the 
 <<AnkiDesktop,adding decks from cloud>> section.
