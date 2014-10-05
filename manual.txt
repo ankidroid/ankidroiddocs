@@ -195,7 +195,7 @@ Undo :: Undo the answer you chose for the last card you studied (button always s
 Mark Card :: Adds a "marked" tag to the current note, so it can be easily found in the browser. 
 This is useful when you want to take some action on the note at a later date, such as looking up a word when you get home. Marked cards also show a small star in the upper-right-hand corner during reviews.
 Edit Card :: Open the edit note screen, where you can change the content displayed on the flashcard (see the <<editingNotes, editing notes section>> for more help)
-Dismiss Note :: Give various options for removing the current card or note from your study schedule (see http://ankisrs.net/docs/manual.html#editing-and-more[Anki Desktop manual] for more on these)
+Hide / Delete :: Give various options for removing the current card or note from your study schedule (see http://ankisrs.net/docs/manual.html#editing-and-more[Anki Desktop manual] for more on these)
 Replay Audio :: If the card has audio on the front or back, it will be played again.
 Enable / Disable Whiteboard :: This action enables or disables the whiteboard feature for the current deck. The whiteboard feature allows you to draw on the screen, 
 which is particularly useful for practicing drawing characters from languages such as Japanese. When the whiteboard has been enabled for the current deck, 
@@ -427,8 +427,10 @@ Once complete, the decks on your device will have been replaced with the decks f
 
 The process to copy your decks from AnkiDroid to Anki Desktop is essentially the same as above, but in reverse.
 
+ . Start with your device disconnected from USB
  . Choose "Export" from the main menu in the Deck Screen
  . Ensure "Include scheduling information" remains checked and press *OK*
+ . Connect device to computer using USB
  . Copy the "collection.apkg" from the path specified in the message to the desktop on your computer
  . Double click on the file to import into Anki Desktop
  
