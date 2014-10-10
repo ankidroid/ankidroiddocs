@@ -97,11 +97,12 @@ To study cards in a deck, simply tap on the deck, then tap the *Study* button an
 Long tapping on a deck will show a list of other actions available to perform on that deck:
 
 Show / Hide subdecks :: It's possible to store subdecks inside your top level decks, and you can use this option to show or hide them. See the 
-http://ankisrs.net/docs/manual.html#decks[Anki Desktop manual] for more info on how to use subdecks.
+http://ankisrs.net/docs/manual.html#decks[Anki Desktop manual] for more info on how to use subdecks. 
+This will not have any effect if there are no subdecks.
 
 Rename deck :: Use this option to rename a deck
 
-Delete :: Use this option to delete a deck (note: this action is not reversible)
+Delete :: Use this option to delete a deck (note: this action is not reversible, although you can <<backups,restore from a backup>>)
 
 Deck options :: Tapping on deck options allows you to configure various deck specific study options.
 Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
@@ -502,6 +503,7 @@ From the main menu in the decks screen:
  . Tap *OK* again to email the exported apkg to another user
  
 
+[[backups]]
 == Automatic Backups
 
 AnkiDroid will automatically create backups of your collection for you. The backups include all your cards and statistics, but do not include
@@ -662,7 +664,8 @@ zones and so on.
 
 Answer button 1 :: When the answer screen is shown, choose the red
 button, indicating you wish to review the card again soon. This is useful when
-you forgot a card or wish to review it more frequently.
+you forgot a card or wish to review it more frequently. 
+When the question is shown, this action (and all other answer actions below) will simply show the answer.
 
 Answer button 2 :: When the answer screen is shown, choose the second button from the left, 
 generally indicating you found the card hard to remember.
@@ -852,4 +855,22 @@ After following these steps, the latest beta version will automatically be insta
 If you are more adventurous, you can also become an alpha tester, by joining the https://groups.google.com/forum/#!forum/ankidroidalphatesters[alpha testers group]
 in addition to performing the above steps for beta testing.
 
+Please submit any bugs you find in these development versions to the AnkiDroid issue tracker, as per the link:help.html[main help page].
+
 If you wish to leave the testing program at any time, simply visit the https://play.google.com/apps/testing/com.ichi2.anki[Google Play Beta page] and click *Leave the test*
+
+[[contributing]]
+== Contributing to AnkiDroid
+AnkiDroid is an open source project, and its development relies on contributions from volunteers. Here are some of the ways you can contribute to the AnkiDroid project:
+
+Get Involved :: Join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum], submit bug reports, become a <<betaTest, beta tester>>, etc.
+
+Donate :: Although AnkiDroid does not accept donations directly, we encourage you to http://ankisrs.net/support/[donate to the main Anki project] which provides some support to the AnkiDroid project, 
+in addition to developing and maintaining Anki Desktop, and the algorithms and cloud sync service used by AnkiDroid.
+
+Translate :: Translations of AnkiDroid and this user manual are all contributed by users, and are greatly appreciated. 
+See the https://code.google.com/p/ankidroid/wiki/Contribution#Translate_AnkiDroid_into_your_language[translating] wiki page for detailed instructions on how to contribute translations.
+
+Develop :: The source code for AnkiDroid is available on our main https://github.com/ankidroid/Anki-Android[Github page], and bug fixes as well as new features are very welcome. 
+Before investing a lot of time on working on a new feature, you may like to ask on the forum first if it's likely to be merged into the main project, as not all features will be accepted.
+If you are just getting started with Android programming, feel free to ask on the forum for some tips and/or tasks which are suitable for beginners.
