@@ -29,7 +29,10 @@ in the github repository.
 == Getting started
 To start using AnkiDroid, we need to add some cards to study. From the main screen, we can either
 download card decks that other people have shared, create new empty decks directly from AnkiDroid, 
-or add existing decks from the computer. 
+or add existing decks from the computer.
+
+http://www.youtube.com/watch?v=QS2G-k2hQyg[This introductory video] shows the basics of studying using a shared deck in the desktop version of Anki, 
+which is essentially the same as in AnkiDroid. AnkiDroid specific information which is not in the video is given below.
 
 If you are an existing user of Anki Desktop wishing to import your decks from the computer, 
 please jump directly to the <<AnkiDesktop, using AnkiDroid with Anki Desktop>> section. Other users may like
@@ -51,7 +54,7 @@ To download a shared deck directly to your mobile device:
  . When the import completes, your deck should be ready to study.
 
 You can start studying the shared deck by tapping on it, and then pressing the "study" button, 
-as discussed in more detail in the <<reviewer, studying section>> below.
+as discussed in more detail in the video above and the <<reviewer, studying section>> below.
 
 === New Decks
 To add new flashcards directly from AnkiDroid:
@@ -123,7 +126,7 @@ you've never studied before, these numbers will both be zero.
 
  
 [[drawer]]
-== The Navigation Drawer
+== Navigation Drawer
 ++++++++++
 <img src="img/2-navigation_drawer.png">
 ++++++++++
@@ -140,7 +143,7 @@ Help :: Opens this web page
 Send feedback :: Get support from the AnkiDroid team
 
 [[deckOverview]]
-== The Deck Overview Screen
+== Deck Overview Screen
 ++++++++++
 <img src="img/3-deck_overview.png">
 ++++++++++
@@ -160,7 +163,7 @@ Custom Study :: Allows you to do extra reviews outside your normal schedule, or 
 See the <<filtered,filtered deck section>> for more information on this.
 
 [[reviewer]]
-== The Study Screen
+== Study Screen
 Tapping the *study* button from the study options screen will take you to the study screen where you do your study. 
 ++++++++++
 <img src="img/4-reviewer.png">
@@ -223,9 +226,7 @@ To add a new note, tap the + button in the action bar at the top of the Deck Lis
 
 The "Type" drop-down selector at the top allows you to select the type of note you'd like to add. 
 For most purposes the "Basic" note type is sufficient, but for example if you would like an extra card generated which is the reverse of the main card  
-(i.e. shows the "Back" field on the front of the card), you could chose the "Basic (and reversed card)" note type. 
-It's not currently possible to change the note type directly from AnkiDroid after a card has already been added, though this can 
-be done using Anki Desktop.
+(i.e. shows the "Back" field on the front of the card), you could chose the "Basic (and reversed card)" note type.
 
 The "Deck" drop-down selector below this allows you to change the deck the generated card/cards will be added to.
 
@@ -338,7 +339,7 @@ If you cannot use sync for some reason, it's also possible to use USB, though th
 <img src="img/AnkiDesktop.png">
 ++++++++++
 
-=== Using Anki Desktop with AnkiDroid via Cloud Sync
+=== Via Cloud Sync
 Before you can use AnkiWeb, you'll first need to create an account by visiting https://ankiweb.net and clicking the *Sign Up* button. If you have used
 AnkiWeb in the past, you can skip this step. After signing up, see the corresponding instructions below, depending on whether you want to sync from Anki Desktop 
 to AnkiDroid, or the other way around.
@@ -377,7 +378,8 @@ button on AnkiDroid.
 The process of syncing from AnkiDroid to computer is essentially the same as syncing from computer to 
 AnkiDroid, but in reverse.
 
-From the <<deckPicker, deck list>>, tap the sync button. If it's your first time using AnkiWeb, you may need to 
+From the <<deckPicker, deck list>>, tap the sync button in the top right (it has two arrows
+in a circle). If it's your first time using AnkiWeb, you may need to 
 enter your login credentials, and then press the "upload" button to upload your AnkiDroid collection 
 to AnkiWeb.
 
@@ -388,12 +390,14 @@ Once the synchronization has completed, open Anki Desktop on your computer and p
 ==== Dealing with merge conflicts on AnkiWeb
 Although it should not happen often, occasionally you may end up in the position where your cards on AnkiDroid can 
 not be automatically merged with the cards on AnkiWeb. In this case it's necessary to choose to either upload to or download from
-AnkiWeb, which would overwrite any changes on the other side. If you have new cards on both sides which you want to keep, 
+AnkiWeb, which would overwrite any changes on the other side. 
+
+If you have new cards on both sides which you want to keep, 
 before syncing you can <<exporting,export a deck package>> for each deck containing new cards from AnkiDroid, then when you do the sync 
 choose "download" to download from AnkiWeb. After the synchronization has completed, you can import the decks you previously exported from AnkiDroid, 
 as per the <<importing, importing section>>.
 
-=== Using AnkiDesktop via USB
+=== Via USB
 
 If you don't have regular internet access, it's still possible to copy decks
 back and forth to your device, by using USB.
@@ -786,7 +790,8 @@ Double the scrolling distance when using the eReader hardware buttons
 [[reverseCards]]
 === Reverse Cards
 The Anki system has http://ankisrs.net/docs/manual.html#note-types[built-in note types which allow you to review cards in both directions]. 
-When creating new material in AnkiDroid, you should choose one of these note types, such as "Basic (and reversed card)" which will automatically generate a reverse card for you.
+When <<addingNotes, creating new material>> in AnkiDroid, you should choose one of these note types, such as "Basic (and reversed card)", 
+which will automatically generate a reverse card for you.
 
 If you used the wrong note type when adding your material, you can change the note type for multiple cards at once using the browser in Anki Desktop. 
 To do this, follow the instructions in the <<AnkiDesktop,syncing with Anki Desktop section>>, then in Anki Desktop open the browser, 
@@ -817,6 +822,11 @@ font, you may have exceeded your device's memory limits.
 We recommend only using official open source fonts, such as Google Noto. Post to the https://groups.google.com/forum/#!forum/anki-android[support forum] if you need specific font help.
 
 *Note 3*: Custom fonts generally don't work on Android 2.1 (Eclair). This is a limitation of the Android framework and not a problem with AnkiDroid.
+
+[[customizingCardLayout]]
+=== Custom Card Layout
+The layout of flashcards is completely customizable, although it is currently necessary to do the customization using <<AnkiDesktop, Anki Desktop>>.
+The http://ankisrs.net/docs/manual.html#cards-and-templates[card templates section] of the Anki Desktop manual has detailed instructions on how to do this.
 
 [[typeInAnswer]]
 === Type in the answer feature
