@@ -221,12 +221,13 @@ To add a new note, tap the + button in the action bar at the top of the Deck Lis
 <img src="img/5-adding.png">
 ++++++++++
 
-The "Note type" drop-down selector at the top allows you to select the type of note you'd like to add. 
-For example if you would like to have a reverse card, you could chose the "Basic (and reversed card)" note type. 
+The "Type" drop-down selector at the top allows you to select the type of note you'd like to add. 
+For most purposes the "Basic" note type is sufficient, but for example if you would like an extra card generated which is the reverse of the main card  
+(i.e. shows the "Back" field on the front of the card), you could chose the "Basic (and reversed card)" note type. 
 It's not currently possible to change the note type directly from AnkiDroid after a card has already been added, though this can 
 be done using Anki Desktop.
 
-The "Note deck" drop-down selector below this allows you to change the deck the note will be added to.
+The "Deck" drop-down selector below this allows you to change the deck the generated card/cards will be added to.
 
 Below the deck selector are the fields for the note. When you tap on a field, a keyboard will come up, allowing you to type in
 information. Next to each field is a media button, which allows you to add media to your note 
@@ -253,6 +254,8 @@ differences:
  * The note type selector is disabled. If you want to change the type of an existing note, you
    currently need to do so with the desktop client.
  * An eye button is shown in the top right, which allows you to see a preview of the card
+ * The "Deck" selector label is changed to "Card deck", and allows you to change the deck of the currently selected card.
+ If a note type is chosen which has more than one card, only the currently selected card will be moved to the new deck.
  
 There are also several advanced options available in the main menu:
 
@@ -264,7 +267,7 @@ and you want to start it off with higher initial intervals.
 
 [[browser]]
 == Finding/Searching/Browsing
-You can search for or browse cards by tapping the "Card browser" button from anywhere in the app via the navigation drawer.
+You can search for or browse cards by tapping the "Card browser" button from the <<drawer,navigation drawer>>.
 
 ++++++++++
 <img src="img/6-browser.png">
@@ -274,13 +277,21 @@ The browser screen starts by displaying all the cards in the currently selected 
 by tapping the magnifiying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
 dropdown list on the top left.
 
-From the search results, you can tap on a card to edit it (see the <<editingNotes,edit note section>> above), or long-tapping on it will show a menu allowing you to 
-perform various actions like previewing it, and deleting it.
-
-The first column shown in the browser is the first field of the note which the card belongs to. The second column can be configured 
+The first column shown in the browser is the first field of the note which the card belongs to 
+(or the http://ankisrs.net/docs/manual.html#fields["sort field"] configured in the desktop version). The second column can be configured 
 to show many different parameters by tapping the drop down menu in the column heading. Note that the content of the second column loads
 in the background after a search is complete, which can take a long time if you have a lot of cards.
 
+From the search results, you can tap on a card to edit it (see the <<editingNotes,edit note section>> above), or long-tapping on it will show a menu allowing you to 
+perform the following actions:
+
+Mark / unmark note :: Add / remove the "marked" tag from the note. Cards with a marked note are highlighted in purple.
+Suspend / unsuspend card :: Suspended cards are highlighted in yellow, and are not shown during review.
+Delete note :: Delete the note of the currently selected card, and all cards belonging to that note. 
+This action cannot be undone without <<backups,restoring from backup>>.
+Preview :: Render the currently selected card so that you can see what it looks like in the reviewer.
+
+=== Searching
 AnkiDroid supports all the search strings that the desktop version of Anki
 does, allowing you to perform quite complex searches. Some examples:
 
@@ -323,6 +334,10 @@ Anki has a free cloud synchronization service called AnkiWeb that makes it
 easy to keep your card decks in sync between mobile devices and your computer.
 If you cannot use sync for some reason, it's also possible to use USB, though this method is more laborious.
 
+++++++++++
+<img src="img/AnkiDesktop.png">
+++++++++++
+
 === Using Anki Desktop with AnkiDroid via Cloud Sync
 Before you can use AnkiWeb, you'll first need to create an account by visiting https://ankiweb.net and clicking the *Sign Up* button. If you have used
 AnkiWeb in the past, you can skip this step. After signing up, see the corresponding instructions below, depending on whether you want to sync from Anki Desktop 
@@ -339,7 +354,7 @@ on Anki Desktop. Anki will upload all your cards, images and audio to AnkiWeb. I
 you have a lot of media, this may take some time.
 
 Once the synchronization has completed, return to your mobile device, and tap the
-*Sync* button in the action bar at the top of the main deck list. 
+*Sync* button in the action bar at the top of the main <<deckPicker, deck list>>. 
 After entering your AnkiWeb credentials, AnkiDroid will download all your cards and media, 
 and remember your login information for next time.
 
@@ -362,7 +377,7 @@ button on AnkiDroid.
 The process of syncing from AnkiDroid to computer is essentially the same as syncing from computer to 
 AnkiDroid, but in reverse.
 
-From the deck list, tap the sync button. If it's your first time using AnkiWeb, you may need to 
+From the <<deckPicker, deck list>>, tap the sync button. If it's your first time using AnkiWeb, you may need to 
 enter your login credentials, and then press the "upload" button to upload your AnkiDroid collection 
 to AnkiWeb.
 
@@ -695,7 +710,7 @@ Bury card :: Hides the current card from review. When you return to the deck lis
 it will be added back for review.
 
 Suspend Card :: Prevent current card from being shown during review until you
-unsuspend it via the search action.
+unsuspend it via the card browser.
 
 Delete Card :: Deletes the currently shown note and all of its cards. If
 you're not studying in multiple directions, this will just delete a single
