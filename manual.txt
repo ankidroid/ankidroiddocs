@@ -641,9 +641,10 @@ Time to show answer :: Time to wait until answer is automatically shown
 Time to show next question :: Time to wait until next question is automatically shown.
 
 === Fonts
-In this screen you can change the font used by AnkiDroid, and some scaling options related to fonts.
+In this screen you can change the font used by AnkiDroid, and some scaling options related to fonts. 
+See the <<customFonts, custom fonts>> section for more information about using custom fonts.
 
-Default font :: Chose the default font used by AnkiDroid reviewer
+Default font :: Choose the default font used by the AnkiDroid reviewer. You can add fonts to this list by copying them to the "fonts" folder.
 
 Default font applicability :: The default setting is to only use the default font when no font has been specified in the card styling 
 via Anki Desktop, however you can also force the default font to be applied, ignoring any font specification in the card styling.
@@ -807,13 +808,19 @@ by following the instructions in the http://ankisrs.net/docs/manual.html#reverse
 [[customFonts]]
 === Custom Fonts
 
-AnkiDroid allows you to use non-system fonts on your cards. To set them up,
-the desktop client is required. Please see
-http://ankisrs.net/docs/manual.html#installingfonts[the section in the desktop
+AnkiDroid allows you to use non-system fonts on your cards. To set them up properly,
+it is strongly recommended to use Anki Desktop. Please see
+http://ankisrs.net/docs/manual.html#installingfonts[the corresponding section in the desktop
 manual] for more information.
 
+Alternatively, you can create a new subfolder "fonts" in the main AnkiDroid directory (i.e. the folder specified under 
+Settings > AnkiDroid > Collection path), copy a compatible ttf font file there, 
+and then set this as the default font under Settings > Fonts > Default font. 
+Note: using this method is much less reliable than the recommended way, and will likely lead to inconsistencies if you study on more than one device.
+
 Only fonts in the ttf format are officially supported in Anki/AnkiDroid; 
-the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages, and some other free fonts can be found https://code.google.com/p/ankidroid/wiki/FreelyDistributableFonts[here].
+the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages, 
+and some other free fonts can be found https://code.google.com/p/ankidroid/wiki/FreelyDistributableFonts[here].
 
 Please note that AnkiDroid has to load the entire font into memory in order
 to use it, and fonts for Asian languages can be quite large. If you have an
