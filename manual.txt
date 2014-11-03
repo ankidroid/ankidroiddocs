@@ -566,9 +566,9 @@ Error reporting mode:: Control whether or not AnkiDroid asks your permission bef
 when AnkiDroid crashes. You can also disable the reporting feature entirely if you wish.
 
 ==== Notifications
-This subsection allows you to set a notification system, where AnkiDroid shows an alert in the Android notification bar when it's time to review.
+This subsection allows you configure when and how AnkiDroid shows alerts in the Android notification bar.
 
-Notify when more than:: Threshold for minimum number of cards due to be reviewed before a notification is shown
+Notify when :: Disable all notifications, only show important status updates, or set a threshold where a notifcation is shown when you have more than n cards due.
 
 Vibrate:: Checking this will make your device vibrate when showing a notification
 
@@ -727,12 +727,14 @@ Abort learning :: Stop reviewing and go back to the deck overview page
 === Advanced
 Some less common features for advanced users are shown here
 
+Force full sync ::
+Tap this item to force a full upload or download on the next sync (for example, because you accidentally deleted a deck on one side and want to restore the deck rather than having its deletion synchronized).
+
 Safe Display Mode ::
 The safe display mode setting may be useful for users of e-ink devices such as Nooks who experience problems with content display, as well as for some users of older devices where custom fonts cause an `OutOfMemory` error. When enabled the setting does the following:
 
- * Disable all transition animations
- * Disable scrollbar fading
- * Use safer (but slower) method of drawing flashcards, where the underlying `Webview` is recreated for each flashcard.
+  * Disable scrollbar fading
+  * Use safer (but slower) method of rendering flashcards, where the underlying `Webview` is recreated for each flashcard.
 
 See https://code.google.com/p/ankidroid/issues/detail?id=762[issue 762], https://code.google.com/p/ankidroid/issues/detail?id=1253[issue 1253], and https://code.google.com/p/ankidroid/issues/detail?id=687[issue 687] for more details.
 
@@ -758,9 +760,11 @@ Improve Arabic Display ::
 This is a workaround to allow displaying of Arabic even on Android 2.2 (Hidden for API > 8).
 
 Text to Speech ::
-A broken / partially supported feature which is designed to allow the reading of card content by a text to speech engine. Use with caution.
+Enable this option to have Android read out all the text on your flashcards using the default text to speech engine. Google's built-in TTS engine should work; 3rd party TTS engines may or may not.
+AnkiDroid will ask you to select the language for the front and back of your cards once for each deck on the first time you review a card in that deck. 
+To change the language or disable TTS for a given deck after making your initial choice, you'll need to use the "reset languages" option described below and reconfigure for each deck.
 
-_This feature will likely be removed in the future in favor of a plugin_
+_This feature may be removed in the future in favor of a separately downloadable plugin_
 
 Lookup Dictionary ::
 Dictionary to use to lookup words copied to the clipboard in the reviewer. After setting up a dictionary, do the following to perform the lookup:
@@ -809,7 +813,7 @@ http://ankisrs.net/docs/manual.html#installingfonts[the section in the desktop
 manual] for more information.
 
 Only fonts in the ttf format are officially supported in Anki/AnkiDroid; 
-the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages.
+the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages, and some other free fonts can be found https://code.google.com/p/ankidroid/wiki/FreelyDistributableFonts[here].
 
 Please note that AnkiDroid has to load the entire font into memory in order
 to use it, and fonts for Asian languages can be quite large. If you have an
@@ -888,7 +892,7 @@ If you wish to leave the testing program at any time, simply visit the https://p
 == Contributing to AnkiDroid
 AnkiDroid is an open source project, and its development relies on contributions from volunteers. Here are some of the ways you can contribute to the AnkiDroid project:
 
-Get Involved :: Join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum], submit bug reports, become a <<betaTest, beta tester>>, etc.
+Get Involved :: Rate the app, join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum], submit bug reports, become a <<betaTest, beta tester>>, etc.
 
 Donate :: Although AnkiDroid does not accept donations directly, we encourage you to http://ankisrs.net/support/[donate to the main Anki project] which provides some support to the AnkiDroid project, 
 in addition to developing and maintaining Anki Desktop, and the algorithms and cloud sync service used by AnkiDroid.
