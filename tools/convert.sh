@@ -12,6 +12,6 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   git config user.email $GIT_EMAIL
   git config user.name "$GIT_NAME"
   git add -A .
-  git commit -m "Update site: Travis #$TRAVIS_BUILD_NUMBER."
+  git commit -m "Update site (Travis Build $TRAVIS_BUILD_NUMBER)."
   git push -q origin gh-pages
 fi
