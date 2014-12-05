@@ -4,6 +4,7 @@ set -ev
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   cd $TRAVIS_BUILD_DIR
   # Add private key to agent
+  eval $(ssh-agent) > /dev/null
   chmod 600 tools/id_rsa
   ssh-add tools/id_rsa
   # Clone remote branch into _site/
