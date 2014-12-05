@@ -7,6 +7,8 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   eval $(ssh-agent) > /dev/null
   chmod 600 tools/id_rsa
   ssh-add tools/id_rsa
+  # Disable host key checking
+  echo -e "Host ankidroid.org\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   # Clone remote branch into _site/
   git clone travis@ankidroid.org:/home/travis/ankidroiddocs.git _site/
   # Convert *.txt files to HTML5 and write them into _site/
