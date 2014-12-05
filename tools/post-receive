@@ -1,0 +1,2 @@
+#!/bin/sh
+git --git-dir=/home/travis/ankidroiddocs.git/ --work-tree=/usr/share/nginx/html/ checkout -f
