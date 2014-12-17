@@ -13,6 +13,8 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   git clone travis@ankidroid.org:/home/travis/ankidroiddocs.git _site/
   # Convert *.txt files to HTML5 and write them into _site/
   asciidoctor *.txt -D _site/
+  # Copy images
+  cp -r img _site/
   # Push changes to remote branch
   cd _site/
   git config user.name "Travis CI"
