@@ -1,0 +1,24 @@
+= AnkiDroid サポート
+:sectanchors:
+
+== お問い合わせの前に
+
+お問い合わせの前に、link:manual-ja.html[AnkiDroid 取扱説明書]、https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そしてhttp://wikiwiki.jp/rage2050/[Ankiマニュアル]をお読みください。Ankiマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
+
+== PC版Ankiと共通の事柄に関するお問い合わせ
+AnkiDroidに限らずPC版Anki（あるいは他のAnkiシリーズ）にもあてはまるような問題のサポートは、http://ankisrs.net/docs/help.html[Ankiのヘルプページ]で行われています。
+
+== AnkiDroidに関する質問
+AnkiDroidに関する質問は、https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のフォーラムはhttps://groups.google.com/forum/#!forum/ankidroid-nihon[こちら]）に投稿するか、フォーラムのmailto:public-forum@ankidroid.org[アドレス]（訳注：日本語用フォーラムのアドレスはmailto:ankidroid-nihon@googlegroups.com[こちら]）にメールしてください。
+
+== バグレポートや新機能リクエスト
+バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。ない場合は、新しいイシューを作成し、できるだけ詳しい情報を記載してください。バグ報告の場合は、できればエラーログも送信してください。
+
+エラーログを送る方法には次の2つがあります。
+
+ * クラッシュ(訳注：アプリの異常終了)を再現した後、http://ankidroid-triage.appspot.com/report_crashes/report_crashes[AnkiDroid トリアージ]のページを開き、「Filter on version」というプルダウンメニューで、あなたが使用しているAnkiDroidのバージョンを選択してください。選択後のリスト内に、あなたが先ほど送ったクラッシュレポートがあるはずです。そのレポートへのリンクをバグレポートの文中に記載してください。
+
+ * AnkiDroid自身でクラッシュレポートを送信できないエラーについては、https://play.google.com/store/apps/details?id=com.nolanlawson.logcat[Catlog]のようなアプリを使ってエラーログを作成し、バグレポートに添付してください。（注）Android 4.1以降では、こうしたログアプリを使うためにはroot権限が必要です。
+
+== AnkiDroidへの貢献
+AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidプロジェクトへの貢献に関心を持たれた方は、最初にAnkiDroidのhttps://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”](貢献)のページ（訳注：英語です）をご覧の上、https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のフォーラムはhttps://groups.google.com/forum/#!forum/ankidroid-nihon[こちら]）にお問い合わせください。
