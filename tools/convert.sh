@@ -3,6 +3,8 @@
 set -ev
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   cd $TRAVIS_BUILD_DIR
+  # Decrypt private key.
+  openssl aes-256-cbc -K $encrypted_3a5998253966_key -iv $encrypted_3a5998253966_iv -in tools/id_rsa.enc -out tools/id_rsa -d
   # Add private key to agent
   eval $(ssh-agent) > /dev/null
   chmod 600 tools/id_rsa
