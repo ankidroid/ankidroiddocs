@@ -13,7 +13,7 @@ AnkiDroidは，現在のところ，PC版のAnkiと合わせて使うことを�
 
 == サポートなど
 
-何か問題があった場合や，バグを報告したい場合，link:help.html[ヘルプ]を参照してください．
+何か問題があった場合や，バグを報告したい場合，link:help-ja.html[ヘルプ]を参照してください．
 
 == 更新履歴
 
@@ -686,7 +686,7 @@ AnkiDroidの最新の機能を試してみたいと思ったら，次のよう�
 
 ベータテストに参加すると，通常のアップデートと同じように，最新のベータ版が自動的にGoogle Playからインストールされるようになります．さらに勇敢な方は，上記の手順でベータテストに参加することに加えて， https://groups.google.com/forum/#!forum/ankidroidalphatesters[アルファテスターグループ] に参加することも可能です．
 
-ベータ版・アルファ版で見つけたバグはすべて，link:help.html[ヘルプ]の説明に従って，AnkiDroidの問題管理システムでの報告をお願いします．
+ベータ版・アルファ版で見つけたバグはすべて，link:help-ja.html[ヘルプ]の説明に従って，AnkiDroidの問題管理システムでの報告をお願いします．
 
 ベータテストの参加をやめたくなったら，いつでも https://play.google.com/apps/testing/com.ichi2.anki[Google Playのベータページ] にアクセスし，「Leave the test」をクリックするだけでOKです．
 
