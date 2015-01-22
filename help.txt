@@ -12,13 +12,17 @@ For support issues not limited to the Android version of Anki, please visit the 
 For questions and help concerning AnkiDroid, please visit the https://groups.google.com/forum/#!forum/anki-android[user forum], or send your questions to the forum's mailto:public-forum@ankidroid.org[public email address].
 
 == Bug Reports and Feature Requests
-For bug reports and feature requests, please search through the current list of open issues on the https://code.google.com/p/ankidroid/issues/list[AnkiDroid issue tracker], and if there are no existing issues, create a new issue including as much information as possible, including an error log whenever possible.
+For bug reports and feature requests, please search through the current list of open issues on the https://code.google.com/p/ankidroid/issues/list[AnkiDroid issue tracker], 
+and if there are no existing issues, create a new issue including as much information as possible. 
+Please also include the output of "debug info" from the AnkiDroid about dialog, which allows us to match your report with our internal crash report data.
 
-There are two ways to submit an error log: 
+To get the "debug info": 
 
- *  After reproducing a crash, submit a crash report from within AnkiDroid, then go to http://ankidroid-triage.appspot.com/report_crashes/report_crashes[AnkiDroid Triage], set the version filter to the correct version you are using, then find the report that you just submitted and post a link to it in your bug report.
-
- * For all other errors where it's _not possible_ to submit a crash report from within AnkiDroid, please use an app such as https://play.google.com/store/apps/details?id=com.nolanlawson.logcat[catlog] to capture the error log, and attach it in your bug report. Note that for Android 4.0+ root access is required to use these logging applications.
+1. Open the navigation drawer by tapping the button on the top left of the screen
+2. Tap "settings"
+3. Tap "about AnkiDroid" at the bottom
+4. Tap the "copy debug info" button at the bottom (which copies "debug info" to the clipboard)
+5. Paste the contents of the clipboard to the issue
 
 == Contributing to AnkiDroid
 AnkiDroid is an open source project, and anyone is welcome to contribute (including non-developers)! For help with contributing to AnkiDroid, please first check the https://code.google.com/p/ankidroid/wiki/Contribution[contribution wiki page], and ask any further questions in the https://groups.google.com/forum/#!forum/anki-android[main forum].
