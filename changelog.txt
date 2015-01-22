@@ -13,6 +13,7 @@
  * Improve detection of swipe gestures
  * Increase number of languages in Glosbe translator
  * Add support for Chromebooks
+ * New crash report system
  * Bug fixes
  
 == Version 2.3.2
