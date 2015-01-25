@@ -619,7 +619,7 @@ next be shown. If you disable this option, the times will not appear, and only l
 
 Answer button size :: If you find it difficult to press the answer button, you can use this setting to make it bigger.
 
-Show remaining :: Disabling this allows you to hide the card count in the top left of the screen, which will allow you to use more of the screen.
+Show remaining :: Disabling this allows you to hide the card count in the top left of the screen.
 
 Quieten Music :: When on, AnkiDroid will lower the volume of background music while
 Anki is active, so that audio on cards can be better heard.
