@@ -22,8 +22,7 @@ Please see the link:help.html[Help] page for how to get help with an issue, or r
 
 == Changes
 
-For information on recent changes, please see the https://github.com/ankidroid/Anki-Android/blob/master/res/values/13-newfeatures.xml[release notes]
-in the github repository.
+For information on recent changes, please see the https://ankidroid.org/docs/changelog.html[change log].
 
 [[gettingStarted]]
 == Getting started
@@ -224,19 +223,29 @@ To add a new note, tap the + button in the action bar at the top of the Deck Lis
 <img src="img/5-adding.png">
 ++++++++++
 
-The "Type" drop-down selector at the top allows you to select the type of note you'd like to add. 
+The following controls are available in the add note screen:
+
+Type :: Allows you to select the type of note you'd like to add. 
 For most purposes the "Basic" note type is sufficient, but for example if you would like an extra card generated which is the reverse of the main card  
 (i.e. shows the "Back" field on the front of the card), you could chose the "Basic (and reversed card)" note type.
 
-The "Deck" drop-down selector below this allows you to change the deck the generated card/cards will be added to.
+Deck :: Allows you to change the deck the generated card/cards will be added to.
 
-Below the deck selector are the fields for the note. When you tap on a field, a keyboard will come up, allowing you to type in
-information. Next to each field is a media button, which allows you to add media to your note 
-(this feature is currently in the experimental phase). 
+Fields :: Below the deck selector are the fields for the note (for example the "Basic" note type has two fields "Front" and "Back"). When you tap on a field, 
+a keyboard will come up, allowing you to type in information.
 
-You can add images either via your device's camera (if it has one), or from your photo library. 
+Media Buttons :: Next to each field is a media button, which allows you to add media to your note (this feature is currently in the experimental phase).  
+Add image lets you add images either via your device's camera (if it has one), or from your photo library. 
 Record audio allows you to record your voice and place it into a field. The advanced editor lets you automatically 
 search for either translations, pronunciation audio files, or images.
+
+Tags :: Brings up a dialog which lets you add / remove tags from the note.
+
+Cards :: Shows the names of the cards which will be generated for the selected note type. Tapping on this button will bring up a dialog which lets you preview
+the source code for the card template of the selected note type. Deleting of cards from a template can be done from directly from AnkiDroid via the menu, 
+but all other operations such as adding and editing cards can currently only be done in Anki Desktop. 
+See the http://ankisrs.net/docs/manual.html#cards-and-templates[cards and templates section] of the Anki Desktop manual for more information about card templates.
+
 
 When you've finished typing in the content of a note, tap the tick icon in the action bar at the top to add it to
 your collection. Alternatively, if you want to go back to what you were doing without saving, you can tap the app icon, or 
@@ -252,11 +261,17 @@ The edit note screen can be opened by chosing edit while reviewing, or by openin
 The edit screen is similar to the add new note screen mentioned above, with some key
 differences:
 
- * The note type selector is disabled. If you want to change the type of an existing note, you
-   currently need to do so with the desktop client.
- * An eye button is shown in the top right, which allows you to see a preview of the card
- * The "Deck" selector label is changed to "Card deck", and allows you to change the deck of the currently selected card.
+
+ * Changing the deck operates on the selected card (which is underlined in the "Cards" box). 
  If a note type is chosen which has more than one card, only the currently selected card will be moved to the new deck.
+ 
+ * Changing the "Type" dropdown selector changes to the note type edit mode. In this mode, editing the content of the note (i.e. deck, fields, etc) is disabled, 
+ and if a custom note type with more than two fields is being used, additional buttons will appear which let you control the mapping of the fields to the new note type.
+ 
+If a note type is selected which has less cards than the original note type, only the first n cards will be kept. For example changing from "Basic (and reversed card)" to "Basic"
+ will lead to only the first card being kept. To warn you of this, the text in the "Cards" box will appear red, and a confirmation dialog will be shown before the note is saved.
+ 
+ Hint: to change the type for multiple notes in one go, or to customize the mapping between cards, use the "Change note type" option in the browser on Anki Desktop.
  
 There are also several advanced options available in the main menu:
 
@@ -621,9 +636,6 @@ Answer button size :: If you find it difficult to press the answer button, you c
 
 Show remaining :: Disabling this allows you to hide the card count in the top left of the screen.
 
-Quieten Music :: When on, AnkiDroid will lower the volume of background music while
-Anki is active, so that audio on cards can be better heard.
-
 ==== Whiteboard
 This subsection controls the whiteboard in the reviewer.
 Note: the whiteboard must be enabled in each deck individually from the menu in the study screen.
@@ -675,7 +687,6 @@ The following gestures can be used:
  * Touch bottom
  * Touch left
  * Tough right
- * Long press
 
 The following actions are available for each gesture:
 
