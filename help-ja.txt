@@ -9,7 +9,7 @@
 AnkiDroidに限らずPC版Anki（あるいは他のAnkiシリーズ）にもあてはまるような問題のサポートは、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）で行われています。
 
 == AnkiDroidに関する質問
-AnkiDroidに関する質問は、 https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のユーザーフォーラムは https://groups.google.com/forum/\#!forum/ankidroid-nihon[こちら]）に投稿するか、フォーラムのmailto:public-forum@ankidroid.org[アドレス]（訳注：日本語用フォーラムのアドレスはmailto:ankidroid-nihon@googlegroups.com[こちら]）にメールしてください。
+AnkiDroidに関する質問は、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム]に投稿するか、フォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
 
 == バグレポートや新機能リクエスト
 バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
