@@ -24,5 +24,9 @@ AnkiDroidに関する質問は、 https://groups.google.com/forum/#!forum/ankidr
 4. 画面下の[デバッグ情報をコピー]をタップしてください。（「デバッグ情報」がクリップボードにコピーされます。）
 5. クリップボードの内容をイシューの文中に貼り付けてください。
 
+++++++++++
+<img src="img/DebugInfo.png">
+++++++++++
+
 == AnkiDroidへの貢献
 AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidへの貢献に関心を持たれた方は、最初にAnkiDroid公式サイトの https://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”](貢献)のページ（訳注：英語です）をご覧の上、 https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のユーザーフォーラムは https://groups.google.com/forum/\#!forum/ankidroid-nihon[こちら]）にお問い合わせください。
