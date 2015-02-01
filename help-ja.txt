@@ -3,10 +3,10 @@
 
 == お問い合わせの前に
 
-お問い合わせの前に、link:manual-ja.html[AnkiDroid 取扱説明書]、 https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そして http://wikiwiki.jp/rage2050/[Ankiマニュアル]をお読みください。Ankiマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
+お問い合わせの前に、link:manual-ja.html[AnkiDroid マニュアル]、 https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そして http://wikiwiki.jp/rage2050/[PCソフト「Anki」のマニュアル]をお読みください。Ankiのマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
 
-== PC版Ankiと共通の事柄に関するお問い合わせ
-AnkiDroidに限らずPC版Anki（あるいは他のAnkiシリーズ）にもあてはまるような問題のサポートは、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）で行われています。
+== PCソフトAnkiと共通の事柄に関するお問い合わせ
+AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）にお問い合わせください。
 
 == AnkiDroidに関する質問
 AnkiDroidに関する質問は、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム]に投稿するか、フォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
