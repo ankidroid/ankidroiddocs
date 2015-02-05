@@ -3,30 +3,30 @@
 
 == お問い合わせの前に
 
-お問い合わせの前に、link:manual-ja.html[AnkiDroid マニュアル]、 https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そして http://wikiwiki.jp/rage2050/[PCソフト「Anki」のマニュアル]をお読みください。Ankiのマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
+お問い合わせの前に、link:manual-ja.html[AnkiDroid マニュアル]、AnkiDroidプロジェクトのサイトに掲載されている https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そして http://wikiwiki.jp/rage2050/[PCソフト「Anki」のマニュアル]をお読みください。Ankiのマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
 
-== PCソフトAnkiと共通の事柄に関するお問い合わせ
-AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）にお問い合わせください。
+== サポート
+お求めの情報が上記リンク先のドキュメントで見つけられなかった場合は、下記の関連サイトをご覧ください。
 
-== AnkiDroidに関する質問
-AnkiDroidに関する質問は、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム]に投稿するか、フォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。。
 
-== バグレポートや新機能リクエスト
-バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
+AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム]に投稿するか、フォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+
+バグレポートや新機能リクエスト :: バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
 ない場合は、新しいイシューを作成し、できるだけ詳しい情報を記載してください。
-バグ報告の場合は、下記の手順で「デバッグ情報」も記載してください。これがあると、サポートチームはあなたが書いたレポートとあなたのAnkiDroidが送信したクラッシュレポートとを照らし合わせることができます。
-
-「デバック情報」の入手方法
+バグ報告の場合は、下記の手順で「デバッグ情報」も記載してください。
 
 1. 画面左上の星マークのボタンをタップしてドロワーメニューを開いてください。
 2. [設定]をタップしてください。
 3. [AnkiDroid について]をタップしてください。
 4. 画面下の[デバッグ情報をコピー]をタップしてください。（「デバッグ情報」がクリップボードにコピーされます。）
-5. クリップボードの内容をイシューの文中に貼り付けてください。
+5. ご使用中のAnkiDroidが入っているモバイル端末（スマホやタブレットなど）上で（訳注：上記の https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]を開いて、）バグレポートを書き上げた場合は、クリップボードの内容をそのレポート文中に直接貼り付けてください。または、（訳注：モバイル端末でこうしたレポートを書き上げるのは大変だと思う方などは、）端末のメール機能でメールを新規作成し、その本文にクリップボードの内容を貼り付け、そのメールをあなた自身に送信してください。それから、PC上でそのメールを開いて本文の内容をコピーし、PC上で（訳注：上記の https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]を開いて）書き上げたバグレポートの文中に貼り付けてください。
 
 ++++++++++
 <img src="img/DebugInfo.png">
 ++++++++++
+
+この「デバッグ情報」は重要です。これがあると、サポートチームはあなたが書いたバグレポートとあなたのAnkiDroidが送信したクラッシュレポートとを照らし合わせることができます。
 
 == AnkiDroidへの貢献
 AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidへの貢献に関心を持たれた方は、最初にAnkiDroid公式サイトの https://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”](貢献)のページ（訳注：英語です）をご覧の上、 https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のユーザーフォーラムは https://groups.google.com/forum/\#!forum/ankidroid-nihon[こちら]）にお問い合わせください。
