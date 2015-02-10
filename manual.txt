@@ -809,7 +809,8 @@ The Anki system has http://ankisrs.net/docs/manual.html#note-types[built-in note
 When <<addingNotes, creating new material>> in AnkiDroid, you should choose one of these note types, such as "Basic (and reversed card)", 
 which will automatically generate a reverse card for you.
 
-If you used the wrong note type when adding your material, you can change the note type for multiple cards at once using the browser in Anki Desktop. 
+If you used the wrong note type when adding your material, you can change the note type via the <<editingNotes, edit note screen>>, 
+or you can change the note type for multiple cards at once using the browser in Anki Desktop. 
 To do this, follow the instructions in the <<AnkiDesktop,syncing with Anki Desktop section>>, then in Anki Desktop open the browser, 
 select the cards you want to change, then choose *Change note type* from the menu.
 
