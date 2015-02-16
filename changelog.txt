@@ -7,10 +7,9 @@
 * Fix some bugs with filtered decks
 * Improve importing of shared decks
 * Open settings if AnkiDroid dir inaccesible
-* Fix crash when reloading statistics
 * Fix a bug with zooming
 * Fix some issues with cloze deletion
-* Fix crash when using simple interface
+* Fix various crashes
 * Update translations
 
 == Version 2.4
