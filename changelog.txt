@@ -8,7 +8,7 @@
  * Add ability to change note type of existing flashcards
  * Add ability to view and delete card templates
  * Fix TTS for most devices
- * Support playback of videos
+ * Support playback of videos ([officially supported formats](http://developer.android.com/guide/appendix/media-formats.html) only)
  * Improve rendering of second column in browser
  * Improve detection of swipe gestures
  * Increase number of languages in Glosbe translator
