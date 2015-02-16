@@ -3,6 +3,16 @@
 = AnkiDroid 2 Changelog
 :sectanchors:
 
+== Version 2.4.1 (beta)
+* Fix some bugs with filtered decks
+* Improve importing of shared decks
+* Open settings if AnkiDroid dir inaccesible
+* Fix crash when reloading statistics
+* Fix a bug with zooming
+* Fix some issues with cloze deletion
+* Fix crash when using simple interface
+* Update translations
+
 == Version 2.4
  * Move "preview" feature to browser
  * Add ability to change note type of existing flashcards
