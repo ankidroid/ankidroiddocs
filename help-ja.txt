@@ -8,9 +8,11 @@
 == サポート
 お求めの情報が上記リンク先のドキュメントで見つけられなかった場合は、下記の関連サイトをご覧ください。
 
-PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。。
+PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。
 
-AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム]に投稿するか、フォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]に投稿するか、このフォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+
+（訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]に投稿するか、このフォーラムのmailto:public-forum@ankidroid.org[アドレス]にメールしてください。）
 
 バグレポートや新機能リクエスト :: バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
 ない場合は、新しいイシューを作成し、できるだけ詳しい情報を記載してください。
@@ -29,4 +31,6 @@ AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わ�
 この「デバッグ情報」は重要です。これがあると、サポートチームはあなたが書いたバグレポートとあなたのAnkiDroidが送信したクラッシュレポートとを照らし合わせることができます。
 
 == AnkiDroidへの貢献
-AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidへの貢献に関心を持たれた方は、最初にAnkiDroid公式サイトの https://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”](貢献)のページ（訳注：英語です）をご覧の上、 https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]（訳注：日本語用のユーザーフォーラムは https://groups.google.com/forum/\#!forum/ankidroid-nihon[こちら]）にお問い合わせください。
+AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidへの貢献に関心を持たれた方は、最初にAnkiDroid公式サイトの https://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”]（貢献）のページ（訳注：英語です）をご覧の上、 https://groups.google.com/forum/\#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]）にお問い合わせください。
+
+（訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]にお問い合わせください。
