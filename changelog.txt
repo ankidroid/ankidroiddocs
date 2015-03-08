@@ -8,6 +8,7 @@
 * Improve importing of shared decks
 * Open settings if AnkiDroid dir inaccesible
 * Fix a bug with zooming
+* Fix a bug where old card was still shown in reviewer after changing deck
 * Fix some issues with cloze deletion
 * Fix various crashes
 * Update translations
