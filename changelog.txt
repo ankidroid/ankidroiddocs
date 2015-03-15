@@ -3,7 +3,7 @@
 = AnkiDroid 2 Changelog
 :sectanchors:
 
-== Version 2.4.1 (beta)
+== Version 2.4.1
 * Fix some bugs with filtered decks
 * Improve importing of shared decks
 * Open settings if AnkiDroid dir inaccesible
