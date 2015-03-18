@@ -3,11 +3,11 @@
 = AnkiDroid 2 Changelog
 :sectanchors:
 
-== Version 2.4.2
+== Version 2.4.2 (2015-03-18)
 * Fix some bugs with cloze templates
 * Fix a translation error
 
-== Version 2.4.1
+== Version 2.4.1 (2015-03-18)
 * Fix some bugs with filtered decks
 * Improve importing of shared decks
 * Open settings if AnkiDroid dir inaccesible
@@ -17,7 +17,7 @@
 * Fix various crashes
 * Update translations
 
-== Version 2.4
+== Version 2.4 (2015-01-28)
  * Move "preview" feature to browser
  * Add ability to change note type of existing flashcards
  * Add ability to view and delete card templates
@@ -30,10 +30,10 @@
  * New crash report system
  * Bug fixes
  
-== Version 2.3.2
+== Version 2.3.2 (2014-11-06)
  * Bug fixes: Sync, TTS, Remote images, Advanced editor, Export
  
-== Version 2.3
+== Version 2.3 (2014-10-27)
  * Add new user manual
  * Make statistics identical to Anki Desktop
  * Fixes to media sync
@@ -53,11 +53,11 @@
  * Support sticky fields when enabled in Anki Desktop
  * Many other bug fixes
  
-== Version 2.2.3
+== Version 2.2.3 (2014-08-04)
  * New media sync protocol
  * Fix 2 bugs for opening links and resuming the app
  
-== Version 2.2
+== Version 2.2 (2014-07-21)
  * Redesign layout
  * Add pictures and sounds to flashcards (experimental)
  * Make second column in card browser configurable
@@ -79,11 +79,11 @@
  * Make minimum Android version 2.1
  * Fix lots of bugs
  
-== Version 2.1.3
+== Version 2.1.3 (2014-04-05)
  * Create new notes in correct deck
  * TTS fixes
  
-== Version 2.1
+== Version 2.1 (2014-03-27)
  * Lots of Bug Fixes    
  * New custom study option with improved tag selection
  * New preview card feature in note editor (experimental)
@@ -97,14 +97,14 @@
  * Significantly increase speed for reducing filtered decks
  * Remove upgrade wizard
  
-== Version 2.0.4
+== Version 2.0.4 (2014-02-03)
  * Fix issue with typing answers
  * Default font now overrides card font
  * Fixed audio playback image being covered by text on Android 2.3
  * Fixed reviewer crash when language set to Romanian
  * Translation fixes
  
-== Version 2.0.2
+== Version 2.0.2 (2013-12-15)
  * Fixed lots of crashes
  * Tablet UI fixes
  * Fixed new card ordering issues
@@ -122,12 +122,12 @@
  * Filtered decks are now blue in deck list
  * Removed unused circle button in note editor
  
-== Version 2.0.1
+== Version 2.0.1 (2013-02-06)
  * Upgrade wizard
  * Fix importing apkgs
  * Fix media syncing
  
-== Version 2.0
+== Version 2.0 (2013-01-03)
  * complete revision
  * libanki2.0 scheduling
  * new learning mode
@@ -140,3 +140,5 @@
  * tons of performance improvements
  * card import function
  * collection can be saved on internal memory
+ 
+ == Version 0.1 to 1.1.3 (2009-08-24 to 2012-06-26)
