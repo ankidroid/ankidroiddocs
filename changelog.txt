@@ -7,7 +7,7 @@
 * Fix some bugs with cloze templates
 * Fix a translation error
 
-== Version 2.4.1 (2015-03-18)
+== Version 2.4.1 (2015-03-15)
 * Fix some bugs with filtered decks
 * Improve importing of shared decks
 * Open settings if AnkiDroid dir inaccesible
