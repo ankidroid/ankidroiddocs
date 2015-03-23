@@ -3,6 +3,10 @@
 = AnkiDroid 2 Changelog
 :sectanchors:
 
+== Version 2.4.3 (beta)
+* Fix "unknown field" bug
+* Update translations
+
 == Version 2.4.2 (2015-03-18)
 * Fix some bugs with cloze templates
 * Fix a translation error
