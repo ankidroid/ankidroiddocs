@@ -1,7 +1,6 @@
 :toc:
 
-= AnkiDroid 2 Changelog
-:sectanchors:
+= AnkiDroid Changelog
 
 == Version 2.4.3 (beta)
 * Fix "unknown field" bug
