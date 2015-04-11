@@ -6,6 +6,7 @@
 * Fix crash showing welcome screen on Android 2.3
 * Fix crash caused by widget
 * Fix a couple of sync issues
+* Fix crash starting AnkiDroid on a small number of devices
 * Update translations
 
 == Version 2.4.2 (2015-03-18)
