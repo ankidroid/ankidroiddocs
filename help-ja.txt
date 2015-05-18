@@ -11,6 +11,7 @@
 PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。
 
 AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]に投稿するか、このフォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+
 （訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]に投稿するか、このフォーラムのmailto:public-forum@ankidroid.org[アドレス]にメールしてください。）
 
 バグレポートや新機能リクエスト :: バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
