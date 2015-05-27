@@ -1,14 +1,17 @@
 = AnkiDroid Support
 :sectanchors:
 
+[.text-right.big]
+link:help-ja.html[日本語]
+
 == Before Asking
 
-Before asking for help, please try searching through the link:manual.html[AnkiDroid Manual], the list of https://code.google.com/p/ankidroid/wiki/FAQ[Frequently Asked Questions], and also the main http://ankisrs.net/docs/manual.html[Anki Manual] for general help with the Anki system and features, and any issues not limited to the Android version.
+Before asking for help, please try searching through the link:manual.html[AnkiDroid Manual], the list of https://code.google.com/p/ankidroid/wiki/FAQ[Frequently Asked Questions], and also the main http://ankisrs.net/docs/manual.html[Anki Manual] for general help with the Anki system and features, and any issues not limited to Android.
 
 == Support
 If you were unable to find what you needed in the documentation above, please visit the relevant site below:
 
-Non-Android Specific Issues :: For support issues not limited to the Android version of Anki, please visit the main http://ankisrs.net/docs/help.html[Anki help page].
+Non-Android-Specific Issues :: AnkiDroid (the Android version of Anki) is created and managed independently from other Anki versions. For the PC / Web / iOS versions, and general Anki issues that are not limited to Android, please visit the main https://anki.tenderapp.com/[Anki support site].
 
 AnkiDroid Questions :: For questions and help concerning AnkiDroid, please visit the https://groups.google.com/forum/#!forum/anki-android[user forum], or you can send your questions to the forum's mailto:public-forum@ankidroid.org[public email address] if you don't want to register on the forum.
 

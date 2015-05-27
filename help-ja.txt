@@ -1,6 +1,9 @@
 = AnkiDroid サポート
 :sectanchors:
 
+[.text-right.big]
+link:help.html[English]
+
 == お問い合わせの前に
 
 お問い合わせの前に、link:manual-ja.html[AnkiDroid マニュアル]、AnkiDroidプロジェクトのサイトに掲載されている https://code.google.com/p/ankidroid/wiki/FAQ[FAQ（よくある質問）]（訳注：英語です）、そして http://wikiwiki.jp/rage2050/[PCソフト「Anki」のマニュアル]をお読みください。Ankiのマニュアルは、AnkiDroidを含むAnkiシステム全般の機能や特徴、注意点について知るのに役立ちます。
@@ -10,7 +13,7 @@
 
 PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。
 
-AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]に投稿するか、このフォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
+AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/\#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]に投稿するか、このフォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
 （訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]に投稿するか、このフォーラムのmailto:public-forum@ankidroid.org[アドレス]にメールしてください。）
 
 バグレポートや新機能リクエスト :: バグ（不具合）の報告や新機能のリクエストを送りたい場合は、まず https://code.google.com/p/ankidroid/issues/list[AnkiDroidイシュートラッカー]に公開されているイシュー（課題）リストに同じ内容がないかどうか確認してみてください。
@@ -32,4 +35,4 @@ AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わ�
 == AnkiDroidへの貢献
 AnkiDroidはオープンソースプロジェクトですので、このアプリの発展に貢献したいという方であればどなたでも（アプリ開発者でない方も）歓迎いたします。AnkiDroidへの貢献に関心を持たれた方は、最初にAnkiDroid公式サイトの https://code.google.com/p/ankidroid/wiki/Contribution[“Contribution”]（貢献）のページ（訳注：英語です）をご覧の上、 https://groups.google.com/forum/#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]にお問い合わせください。
 
-（訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]にお問い合わせください。）
+（訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/\#!forum/anki-android[ユーザーフォーラム]にお問い合わせください。）
