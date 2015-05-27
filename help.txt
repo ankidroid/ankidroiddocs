@@ -8,7 +8,7 @@ Before asking for help, please try searching through the link:manual.html[AnkiDr
 == Support
 If you were unable to find what you needed in the documentation above, please visit the relevant site below:
 
-Non-Android-Specific Issues :: AnkiDroid (the Android version of Anki) is created and managed independently from other Anki versions. For Anki Desktop, AnkiWeb, Anki Mobile (IOS), and general Anki issues that are not limited to Android, please visit the main http://ankisrs.net/docs/help.html[Anki help page].
+Non-Android-Specific Issues :: AnkiDroid (the Android version of Anki) is created and managed independently from other Anki versions. For Anki Desktop, AnkiWeb, Anki Mobile (iOS), and general Anki issues that are not limited to Android, please visit the main http://ankisrs.net/docs/help.html[Anki help page].
 
 AnkiDroid Questions :: For questions and help concerning AnkiDroid, please visit the https://groups.google.com/forum/#!forum/anki-android[user forum], or you can send your questions to the forum's mailto:public-forum@ankidroid.org[public email address] if you don't want to register on the forum.
 
