@@ -1,6 +1,14 @@
 :sectanchors:
 = AnkiDroid Changelog
 
+== Version 2.4.4 (beta)
+* Fix playback of sound files with apostrophes in file name
+* Fix new card siblings not being buried for the same day
+* Fix media on cards when using the Hebrew Fix option
+* Fixed crashes related to "Relative overdueness" and make this sort order available on AnkiDroid
+* When mixing new and review cards, make their rotation more consistent with desktop
+
+
 == Version 2.4.3 (2015-04-21)
 * Fix "unknown field" bug
 * Fix crash showing welcome screen on Android 2.3
