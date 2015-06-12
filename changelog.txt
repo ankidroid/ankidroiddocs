@@ -47,6 +47,7 @@
  
 == Version 2.3.2 (2014-11-06)
  * Bug fixes: Sync, TTS, Remote images, Advanced editor, Export
+ * Note: This is the last version of AnkiDroid supported by AnkiWeb. Previous versions will not sync.
  
 == Version 2.3 (2014-10-27)
  * Add new user manual
