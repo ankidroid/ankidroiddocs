@@ -841,7 +841,8 @@ and some other free fonts can be found https://code.google.com/p/ankidroid/wiki/
 Please note that AnkiDroid has to load the entire font into memory in order
 to use it, and fonts for Asian languages can be quite large. If you have an
 older device and notice AnkiDroid crashing frequently after installing a
-font, you may have exceeded your device's memory limits.
+font, you may have exceeded your device's memory limits. For Google Noto, 
+it's not recommended to use the combined CJK font, rather get the individual languages https://github.com/googlei18n/noto-cjk[separately from here].
 
 *Note 1*: If you have "Fetch media on sync" disabled, you may need to manually copy the font file from Anki Desktop to your AnkiDroid/collection.media folder.
 
