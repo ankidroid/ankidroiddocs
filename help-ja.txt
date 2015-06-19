@@ -11,7 +11,7 @@ link:help.html[English]
 == サポート
 お求めの情報が上記リンク先のドキュメントで見つけられなかった場合は、下記の関連サイトをご覧ください。
 
-PCソフトAnkiと共通の事柄に関するお問い合わせ :: AnkiDroidに限らずPCソフトAnkiにもあてはまるような問題については、 http://ankisrs.net/docs/help.html[Ankiのヘルプページ]（訳注：英語です）でお問い合わせください。
+AnkiDroidに限定されない問題に関するお問い合わせ :: AnkiDroid（AnkiのAndroidアプリ版）は、Ankiの作者 Damien Elmes が管理する他のバージョンのAnkiと異なり、有志グループによって独自に開発・管理されています。PC版Anki、Web版Anki（AnkiWeb）、iOSアプリ版Anki（AnkiMobile）等に関する問題や、AnkiDroidに限らずAnki全体に共通する問題については、「本家」の https://anki.tenderapp.com/[Anki Support] （訳注：英語です）にお問い合わせください。
 
 AnkiDroidに関するお問い合わせ :: AnkiDroidに関するお問い合わせは、 https://groups.google.com/forum/\#!forum/ankidroid-nihon[ユーザーフォーラム（日本語用）]に投稿するか、このフォーラムのmailto:ankidroid-nihon@googlegroups.com[アドレス]にメールしてください。
 （訳注：お問い合わせを英語で行いたい場合は、こちらの https://groups.google.com/forum/#!forum/anki-android[ユーザーフォーラム]に投稿するか、このフォーラムのmailto:public-forum@ankidroid.org[アドレス]にメールしてください。）
