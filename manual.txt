@@ -825,14 +825,14 @@ by following the instructions in the http://ankisrs.net/docs/manual.html#reverse
 === Custom Fonts
 
 AnkiDroid allows you to use non-system fonts on your cards. To set them up properly,
-it is strongly recommended to use Anki Desktop. Please see
+it is strongly recommended to use the official method that is used by Anki Desktop. Please see
 http://ankisrs.net/docs/manual.html#installingfonts[the corresponding section in the desktop
 manual] for more information.
 
 Alternatively, you can create a new subfolder "fonts" in the main AnkiDroid directory (i.e. the folder specified under 
-Settings > AnkiDroid > Collection path), copy a compatible ttf font file there, 
+Settings > AnkiDroid > Collection path), copy a compatible font file (i.e. .ttf) there, 
 and then set this as the default font under Settings > Fonts > Default font. 
-Note: using this method is much less reliable than the recommended way, and will likely lead to inconsistencies if you study on more than one device.
+Note: this method will change the default font for *all* of your cards, whereas the official method can be more specific. Also, if you sync with AnkiWeb, using this method will lead to cards being displayed differently on different devices.
 
 Only fonts in the ttf format are officially supported in Anki/AnkiDroid; 
 the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages, 
