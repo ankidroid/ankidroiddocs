@@ -1,13 +1,29 @@
 :sectanchors:
 = AnkiDroid Changelog
 
-== Version 2.4.4 (beta)
+== Version 2.5 (beta)
+* Redesigned user interface to use material design
+* Added new dark theme
+* Simplified the study process by bypassing deck overview screen
+* Added ability to add, edit, delete note types
+* Added setting to enable auto-sync and a Tasker intent to trigger sync
+* Replaced "instant add" feature with new API for 3rd party apps to add cards directly to AnkiDroid
+* Improved "type in the answer" feature
+* Made fullscreen-mode immersive and added setting to hide answer buttons when using gestures
+* Added css class for customizing card background color when night mode is enabled
+* Allowed changing media volume from the deck picker
+* Added ability to save and view common searches in the card browser
+* Removed "simple interface"
+* Increased minimum Android version from 2.1 to 2.3.3
+* Added support for Android 6 Marshmallow
+* Many other bug fixes and small improvements
+
+== Version 2.4.4 (2015-10-20)
 * Fix playback of sound files with apostrophes in file name
 * Fix new card siblings not being buried for the same day
 * Fix media on cards when using the Hebrew Fix option
 * Fixed crashes related to "Relative overdueness" and make this sort order available on AnkiDroid
 * When mixing new and review cards, make their rotation more consistent with desktop
-
 
 == Version 2.4.3 (2015-04-21)
 * Fix "unknown field" bug
