@@ -899,8 +899,6 @@ this case.
 === Beta testing
 If you want to try out the latest features in AnkiDroid, you can sign up for the beta testing program as follows:
 
- . Vist the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid support forum]
- . Click *join group* at the top (select "no email" if you do not want to receive forum messages)
  . Visit the https://play.google.com/apps/testing/com.ichi2.anki[Google Play Beta page]
  . Click *Become a beta tester*
  
