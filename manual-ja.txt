@@ -689,8 +689,6 @@ PCソフトAnkiは，カード表面の`{{type:なんとか}}`というフィー
 
 AnkiDroidの最新の機能を試してみたいと思ったら，次のようにしてベータテストに参加できます．
 
- . https://groups.google.com/forum/#!forum/anki-android[AnkiDroidサポートフォーラム] にアクセスする
- . 上部の「グループに参加」ボタンをクリックする
  . https://play.google.com/apps/testing/com.ichi2.anki[Google Playのベータページ] にアクセスする
  . 「Become a beta tester」をクリックする
 
