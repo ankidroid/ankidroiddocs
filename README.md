@@ -2,9 +2,9 @@ ankidroiddocs
 =============
 Source files for the documentation on the AnkiDroid website ankidroid.org.
 
-* manual.txt → [manual.html](https://ankidroid.org/docs/manual.html)
-* help.txt → [manual.html](https://ankidroid.org/docs/help.html)
-* changelog.txt → [manual.html](https://ankidroid.org/docs/changelog.html)
+* manual.txt &rarr; [manual.html](https://ankidroid.org/docs/manual.html)
+* help.txt &rarr; [help.html](https://ankidroid.org/docs/help.html)
+* changelog.txt &rarr; [changelog.html](https://ankidroid.org/docs/changelog.html)
 
 # Compilation
 The documentation on this site is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/) as follows
