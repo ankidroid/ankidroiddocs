@@ -2,19 +2,24 @@ ankidroiddocs
 =============
 Source files for the documentation on the AnkiDroid website ankidroid.org.
 
-The documentation is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/)
+* manual.txt → [manual.html](https://ankidroid.org/docs/manual.html)
+* help.txt → [manual.html](https://ankidroid.org/docs/help.html)
+* changelog.txt → [manual.html](https://ankidroid.org/docs/changelog.html)
 
 # Compilation
+The documentation on this site is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/) as follows
 
-First install Asciidoctor:
+## Install Asciidoctor
   * [Install Ruby](https://www.ruby-lang.org/en/installation/)
   * Open command prompt with Ruby
   * Enter the command `gem install asciidoctor`
 
-Then compile the manual as follows:
+## Compile the .txt source files
   * Open command prompt with Ruby
   * Enter the command `asciidoctor FULL_PATH_TO_SOURCE_FILE`
   * A file will be generated with the same name as the source file, but with .html extension.
+
+# Contributing translations and corrections
 
 The preferred method of contributing to the documentation is to fork the `ankidroiddocs` project on github, and send a pull request with your additions in the usual way. However, if you don't know how to use github, you can simply download the "manual.txt" file and send it to a project member or the Google Group.
 
