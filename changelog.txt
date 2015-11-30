@@ -20,7 +20,6 @@
 * Increased minimum Android version from 2.1 to 2.3.3
 * Added support for Android 6 Marshmallow
 * Disable write-ahead-logging in sqlite database
-* 
 * Many other bug fixes and small improvements
 
 == Version 2.4.4 (2015-10-20)
