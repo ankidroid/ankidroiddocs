@@ -1,21 +1,26 @@
 :sectanchors:
 = AnkiDroid Changelog
 
-== Version 2.5 (beta)
+== Version 2.5 (2015-11-30)
 * Redesigned user interface to use material design
 * Added new dark theme
 * Simplified the study process by bypassing deck overview screen
 * Added ability to add, edit, delete note types
 * Added setting to enable auto-sync and a Tasker intent to trigger sync
 * Replaced "instant add" feature with new API for 3rd party apps to add cards directly to AnkiDroid
-* Improved "type in the answer" feature
+* "Type in the answer" input box now built into the card html itself
 * Made fullscreen-mode immersive and added setting to hide answer buttons when using gestures
 * Added css class for customizing card background color when night mode is enabled
 * Allowed changing media volume from the deck picker
 * Added ability to save and view common searches in the card browser
+* Browser now shows full question and answer in the results by default
+* Only show tags relevant to that deck when doing custom study by tag
+* Fixed some bugs in the widget
 * Removed "simple interface"
 * Increased minimum Android version from 2.1 to 2.3.3
 * Added support for Android 6 Marshmallow
+* Disable write-ahead-logging in sqlite database
+* 
 * Many other bug fixes and small improvements
 
 == Version 2.4.4 (2015-10-20)
