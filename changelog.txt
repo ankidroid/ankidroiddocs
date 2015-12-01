@@ -1,6 +1,10 @@
 :sectanchors:
 = AnkiDroid Changelog
 
+== Version 2.5.1 (2015-12-01)
+* Fixed crash when loading deck list (could not open collection bug)
+* Fixed visible progress bar when answering card
+
 == Version 2.5 (2015-11-30)
 * Redesigned user interface to use material design
 * Added new dark theme
