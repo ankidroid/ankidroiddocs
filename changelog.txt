@@ -1,7 +1,7 @@
 :sectanchors:
 = AnkiDroid Changelog
 
-== Version 2.5.1 (2015-12-04)
+== Version 2.5.2 (2015-12-04)
 * Fix start-up crashes on Samsung devices running Android 4.2
 * Fix crash for new users on Android 6.0
 * Reverted to old typing method. The new method is now an option which is off by default.
