@@ -21,9 +21,10 @@ For bug reports, please also include the output of "debug info" by following the
 
 1. Open the navigation drawer by tapping the button on the top left of the screen
 2. Tap "settings"
-3. Tap "about AnkiDroid" at the bottom
-4. Tap the "copy debug info" button at the bottom (which copies "debug info" to the clipboard)
-5. If filling out the bug report on your mobile device, paste the contents of the clipboard directly to the issue. Alternatively, you can paste the contents of the clipboard into a new email, send it to yourself, then copy and paste that into the bug report from your computer.
+3. Tap "advanced"
+4. Tap "about AnkiDroid" at the bottom
+5. Tap the "copy debug info" button at the bottom (which copies "debug info" to the clipboard)
+6. If filling out the bug report on your mobile device, paste the contents of the clipboard directly to the issue. Alternatively, you can paste the contents of the clipboard into a new email, send it to yourself, then copy and paste that into the bug report from your computer.
 
 ++++++++++
 <img src="img/DebugInfo.png">
