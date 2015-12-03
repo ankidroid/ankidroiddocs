@@ -1,6 +1,17 @@
 :sectanchors:
 = AnkiDroid Changelog
 
+== Version 2.5.1 (2015-12-04)
+* Fix start-up crashes on Samsung devices running Android 4.2
+* Fix crash for new users on Android 6.0
+* Reverted to old typing method. The new method is now an option which is off by default.
+* You can now click on the numbers in the right-most part of the deck list to open the deck overview screen
+* Various fixes to transition animations and progress bars
+* Added option to remove empty cards (previously only possible on desktop)
+* Removed: Google Translate filter. In practice, this feature had no effect and is not required
+* Removed: Google image search for multimedia card. The image search API has been discontinued by Google and no longer works
+
+
 == Version 2.5.1 (2015-12-01)
 * Fixed crash when loading deck list (could not open collection bug)
 * Fixed visible progress bar when answering card
