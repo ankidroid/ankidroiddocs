@@ -10,12 +10,15 @@ Source files for the documentation on the AnkiDroid website ankidroid.org.
 The documentation on this site is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/) as follows
 
 ## Install Asciidoctor
+On Ubuntu you should be able to install with apt: `sudo apt-get install asciidoctor`
+
+On Windows try the following:
   * [Install Ruby](https://www.ruby-lang.org/en/installation/)
   * Open command prompt with Ruby
   * Enter the command `gem install asciidoctor`
 
 ## Compile the .txt source files
-  * Open command prompt with Ruby
+  * Open terminal or command prompt with Ruby
   * Enter the command `asciidoctor FULL_PATH_TO_SOURCE_FILE`
   * A file will be generated with the same name as the source file, but with .html extension.
 
