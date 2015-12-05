@@ -109,18 +109,36 @@ Delete deck :: Use this option to delete a deck (note: this action is not revers
 
 Export deck :: This option can be used to share a deck with other users. See the <<exporting, exporting decks>> section for more information.
 
+Rebuild / Empty :: If the selected deck is a <<filtered,filtered deck>> then you also have the option to rebuild or empty the cards in it.
+
 ==== Clickable areas on the decks
 Each deck in the list has three clickable areas:
 
 Deck expander :: If you are using 
 http://ankisrs.net/docs/manual.html#decks[subdecks], then a deck expander button may appear on the far left of the deck, which can be used to show / hide the subdecks. Subdecks can be created by using the naming convention "PARENT::CHILD".
 
-Deck name :: This is the main clickable area, which will take you to the study screen if there are cards available to review. Note that in the case of <<filtered,"filtered decks">> you will be taken to the deck overview instead of directly to the reviewer.
+Deck name :: This is the main clickable area, which will take you to the study screen if there are cards available to review.
 
 Count buttons :: The count buttons on the far right of each deck act as a separate clickable area that takes you to the deck overview instead of the study screen. This can be useful if you want to quickly view the number of cards available in the deck.
 
 === Advanced Actions
-Some additional actions are located in the overflow menu for less common tasks, such as options for fixing or restoring your collection from backup if it gets corrupted. These are discussed elsewhere in the manual.
+Some additional actions are located in the overflow menu for less common tasks, which are summarized below:
+
+Undo :: After reviewing the last card in a study session, you can undo it from here.
+
+Check database :: This can automatically fix a lot of problems with your database, and will also purge any unused tags. If you experience any problems with your collection, this is the first action you should try.
+
+Check media :: Try to run this if you experience any issues with media syncing.
+
+Empty cards :: Remove any empty cards from your collection. See the http://ankisrs.net/docs/manual.html#card-generation-&-deletion[desktop documentation] for more.
+
+Restore from backup :: Allows you to restore from one of AnkiDroid's <<backups,automatic backups>>
+
+Manage note types :: Allows you to add, edit, and delete note types. See the <<customizingCardLayout, customizing card layout>> section for more help with this advanced feature.
+
+Import :: Import a .apkg anki file containing a deck. See the <<importing, importing>> section for more.
+
+Export collection :: Export entire collection as a collection.apkg file. See the <<exporting, exporting>> section for more.
 
 === Deck Counts
 Next to each deck, three numbers are displayed. The left, blue number, corresponds to how 
@@ -146,7 +164,7 @@ for quickly navigating between different parts of the application. You can switc
 Decks :: Takes you to the top level of the app where the list of cards are shown (<<deckPicker,more info here>>)
 Card Browser :: Shows a list of all your cards (<<browser,more info here>>)
 Statistics :: Helps you track your study progress (http://ankisrs.net/docs/manual.html#statistics[more info in Anki manual])
-Night mode :: This switches the app to a dark theme which many users find is less straining on the eyes, particularly when reviewing in the dark.
+Night mode :: This switches the app to a dark theme which many users find is less straining on the eyes, particularly when reviewing in the dark. See the https://github.com/ankidroid/Anki-Android/wiki/Advanced-formatting#customize-night-mode-colors[wiki] for instructions on how to customize the card background and font color used in night mode.
 Settings :: Allows you to customize the app (<<settings,more info here>>)
 Help :: Opens this web page
 Send feedback :: Get support from the AnkiDroid team
@@ -156,31 +174,26 @@ Send feedback :: Get support from the AnkiDroid team
 ++++++++++
 <img src="img/3-deck_overview.png">
 ++++++++++
-From the deck list, if you tap the counts area or even just the deck name in some cases (e.g. with filtered decks or tablets) then you will be taken to the deck overview screen. 
+From the deck list, if you tap the counts area you will be taken to the deck overview screen. On tablets it is always shown in the area to the right of the deck list.
 
-From here you can view a summary of the deck, build custom study sessions, rebuild / empty filtered decks, change deck options, and so on. When visible, pressing the study button will take you to the study screen for that deck.
+On this screen you can view a summary of the deck, build custom study sessions, rebuild / empty filtered decks, and change deck options. When visible, pressing the study button will take you to the study screen for that deck.
 
-The icons that are shown in the action bar depend on whether your deck is an ordinary deck or a filtered deck.
-
-=== Action bar (ordinary decks)
+=== Action bar
+The icons that are shown in the action bar depend on whether your deck is an ordinary deck or a filtered deck. For an ordinary deck you will get:
 
 Custom Study :: Tapping the wrench icon allows you to create a custom session, for example to do extra reviews outside your normal schedule, or study only certain cards inside a deck. See the <<filtered,filtered deck section>> for more information on this.
+
+Filtered decks will have the following instead:
+
+Empty deck :: Tapping the cross icon will empty all of the cards in the current filtered deck (i.e. return them to their original deck).
+
+Rebuild deck :: Tapping the rebuild icon will rebuild the current filtered deck according to the settings specified in filtered deck options.
 
 In the overflow menu you will find:
 
 Deck Options :: Allows you to configure some options related to the current 
 deck, such as the number of new cards and reviews to introduce each day.
 Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
-
-Add note :: Add a note to the deck
-
-=== Action bar (filtered decks)
-
-Empty deck :: Tapping the cross icon will empty all of the cards in the current filtered deck (i.e. return them to their original deck).
-
-Rebuild deck :: Tapping the rebuild icon will rebuild the current filtered deck according to the settings specified in filtered deck options.
-
-Deck options :: Change the filtered deck settings
 
 
 [[reviewer]]
@@ -225,7 +238,7 @@ Replay Audio :: If the card has audio on the front or back, it will be played ag
 Enable / Disable Whiteboard :: This action enables or disables the whiteboard feature for the current deck. The whiteboard feature allows you to draw on the screen, 
 which is particularly useful for practicing drawing characters from languages such as Japanese. When the whiteboard has been enabled for the current deck, 
 two new actions will become available for clearing and hiding the whiteboard. Disabling the whiteboard will hide these actions as well as the whiteboard itself.
-Deck options :: Open the deck specific study options. Please see the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
+Deck options :: Open the deck specific study options. See the http://ankisrs.net/docs/manual.html#deckoptions[desktop documentation] for more information about these study options.
 
 === Reaching the end of the study session
 When you've finished the cards that are due to be studied today, you'll be taken back to the decks list and shown a congratulations message. From here you can select a different deck, or if you've finished studying for the day, you can simply tap the home button in order to
@@ -258,7 +271,7 @@ a keyboard will come up, allowing you to type in information.
 Media Buttons :: Next to each field is an attach icon, which allows you to add media to your note (this feature is currently in the experimental phase).  
 Add image lets you add images either via your device's camera (if it has one), or from your photo library. 
 Record audio allows you to record your voice and place it into a field. The advanced editor lets you automatically 
-search for either translations, pronunciation audio files, or images.
+search for translations or pronunciation audio files online.
 
 Tags :: Brings up a dialog which lets you add / remove tags from the note.
 
@@ -827,8 +840,7 @@ or you can change the note type for multiple cards at once using the browser in 
 To do this, follow the instructions in the <<AnkiDesktop,syncing with Anki Desktop section>>, then in Anki Desktop open the browser, 
 select the cards you want to change, then choose *Change note type* from the menu.
 
-Alternatively, if your cards are using a custom note type which doesn't include a reverse card, you can add a reverse card to that note type 
-by following the instructions in the http://ankisrs.net/docs/manual.html#reverse-cards[reverse cards section] of the Anki Desktop user manual.
+Alternatively, if your cards are using a custom card layout which doesn't include a reverse card, you can edit the note type to include a reverse card by following the instructions in the http://ankisrs.net/docs/manual.html#reverse-cards[reverse cards section] of the Anki Desktop user manual. While less convenient than using Anki Desktop, it is possible to edit the note type from directly within AnkiDroid as well; see the <<customizingCardLayout, custom card layout section>> for more on this.
 
 [[customFonts]]
 === Custom Fonts
@@ -860,8 +872,11 @@ it's not recommended to use the combined CJK font, rather get the individual lan
 
 [[customizingCardLayout]]
 === Custom Card Layout
-The layout of flashcards is completely customizable, although it is currently necessary to do the customization using <<AnkiDesktop, Anki Desktop>>.
-The http://ankisrs.net/docs/manual.html#cards-and-templates[card templates section] of the Anki Desktop manual has detailed instructions on how to do this.
+The layout of flashcards is completely customizable, although this is an advanced topic with a fairly steep learning curve, and you will probably find it a lot more convenient to do the customization with <<AnkiDesktop, Anki Desktop>>. 
+
+The http://ankisrs.net/docs/manual.html#cards-and-templates[card templates section] of the Anki Desktop manual has detailed instructions on how to edit note types, and most of the actions discussed there are also available from AnkiDroid via by tapping "cards" at the bottom of the note editor, or choosing the "manage note types" option in the deck picker. Since detailed information on customizing card layouts is available in the Anki desktop manual, it will not be repeated here.
+
+There is an https://github.com/ankidroid/Anki-Android/wiki/Advanced-formatting[advanced formatting page] on the AnkiDroid wiki with various hints on how you can get the most out of your card formatting, and we encourage you to read it, and edit it freely if you have any tips that you'd like to share with the community.
 
 [[typeInAnswer]]
 === Type in the answer feature
@@ -921,7 +936,7 @@ If you wish to leave the testing program at any time, simply visit the https://p
 == Contributing to AnkiDroid
 AnkiDroid is an open source project, and its development relies on contributions from volunteers. Here are some of the ways you can contribute to the AnkiDroid project:
 
-Get Involved :: Rate the app, join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum] and answer questions for other users, submit bug reports, become a <<betaTest, beta tester>>, etc. More detailed information on ways you can contribute as a non-developer can be found on the https://github.com/ankidroid/Anki-Android/wiki/Contributing[Wiki].
+Get involved :: Rate the app, join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum] and answer questions for other users, submit bug reports, become a <<betaTest, beta tester>>, etc. More detailed information on ways you can contribute as a non-developer can be found on the https://github.com/ankidroid/Anki-Android/wiki/Contributing[Wiki].
 
 Translate :: Translations of AnkiDroid and this user manual are all contributed by users, and are greatly appreciated. 
 See the https://code.google.com/p/ankidroid/wiki/Contribution#Translate_AnkiDroid_into_your_language[translating] wiki page for detailed instructions on how to contribute translations.
