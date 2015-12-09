@@ -285,7 +285,7 @@ use the hardware back button.
 
 [[editingNotes]]
 == Edit Note Screen
-The edit note screen can be opened by chosing edit while reviewing, or by opening a card in the browser. 
+The edit note screen can be opened by choosing edit while reviewing, or by opening a card in the browser. 
 The edit screen is similar to the add new note screen mentioned above, with some key
 differences:
 
@@ -318,7 +318,7 @@ You can search for or browse cards by tapping the "Card browser" button from the
 ++++++++++
 
 The browser screen starts by displaying all the cards in the currently selected deck.  You can search for cards in the selected deck 
-by tapping the magnifiying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
+by tapping the magnifying glass icon in the top. You can change the selected deck (or change to all decks) by choosing the deck from the
 dropdown list on the top left.
 
 By default, the first column in the browser gives the text which will be shown on the question (i.e. front side) of the flashcard, and the second column shows the text from the answer (i.e. the back side) of the flashcard. 
@@ -360,7 +360,7 @@ returns: the amount of extra time spent going over the same cards again is
 generally not worth the moderate increase in retention you'll see.
 
 That said, if you have a test looming, or simply want to pass some time, it's
-possible to keep reviewing evean after you are shown the congratulations message.
+possible to keep reviewing even after you are shown the congratulations message.
 
 A 'filtered deck' is a temporary deck that contains cards based on various
 criteria, such as "forgotten today", "is tagged 'hard'", and so on. After
@@ -492,18 +492,18 @@ Once complete, the decks on your device will have been replaced with the decks f
 The process to copy your decks from AnkiDroid to Anki Desktop is essentially the same as above, but in reverse.
 
  . Start with your device disconnected from USB
- . Choose "Export" from the main menu in the Deck Screen
+ . Choose "Export collection" from the main menu in the Deck Screen
  . Ensure "Include scheduling information" remains checked and press *OK*
  . Connect device to computer using USB
  . Copy the "collection.apkg" from the path specified in the message to the desktop on your computer
  . Double click on the file to import into Anki Desktop
  
-See the <<exporting, exporting section>> below for more detailed information on exporting from Anki Droid.
+See the <<exporting, exporting section>> below for more detailed information on exporting from AnkiDroid.
 
 [[importing]]
 == Importing Anki Files
 You can import Anki files (with .apkg file format) directly into AnkiDroid. Other file formats cannot be imported directly into AnkiDroid, however 
-flashcards from most other applictions can be imported into Anki Desktop on your computer, which can then be <<adding,added into AnkiDroid in the usual way>>. 
+flashcards from most other applications can be imported into Anki Desktop on your computer, which can then be <<adding,added into AnkiDroid in the usual way>>. 
 See the http://ankisrs.net/docs/manual.html#importing[importing section of the Anki Desktop manual] for help on importing into Anki Desktop.
 
 As in Anki Desktop, AnkiDroid distinguishes between http://ankisrs.net/docs/manual.html#exporting-packaged-decks[the two types of .apkg files] 
@@ -532,7 +532,7 @@ You can also manually import .apkg files as follows:
 == Exporting Anki Files
 AnkiDroid can export your flashcards in the .apkg Anki file format so that you can import them into Anki Desktop, or share them with other people. 
 As in Anki Desktop, you can either export a http://ankisrs.net/docs/manual.html#exporting-packaged-decks[collection package or deck package], depending 
-on what you are trying to acheive.
+on what you are trying to achieve.
 
 There are two export options available: "include scheduling information" and "include media". Generally the default options are sufficient, 
 if you choose not to include scheduling information, Anki will assume that you are sharing the deck with other people, 
@@ -597,7 +597,7 @@ Fetch media on sync:: By default, AnkiDroid will sync sounds and images as well 
 
 Automatic synchronization:: Enable this option if you want AnkiDroid to sync every time you open and close the app. There is a limit of once every ten minutes for this behavior. Once a sync begins you can cancel it by pressing your device's back button, however it can take some time for the cancellation to take effect.
 
-Users that want more fine-grained control over when sync occured might like to use a 3rd party app like Tasker to automate synchronization. See the https://github.com/ankidroid/Anki-Android/wiki/AnkiDroid-API#sync-intent[API documentation] for more information on this.
+Users that want more fine-grained control over when sync occurred might like to use a 3rd party app like Tasker to automate synchronization. See the https://github.com/ankidroid/Anki-Android/wiki/AnkiDroid-API#sync-intent[API documentation] for more information on this.
  
 Deck for new cards:: The default of "When adding, default to current deck" means that Anki saves the last-used note type for each deck 
 and selects it again then next time you choose the deck (and, in addition, will start with the current deck selected when choosing 
@@ -606,7 +606,7 @@ Add from anywhere). The other option, "Change deck depending on note type," save
 type for each deck.
 
 Language:: Change the language. Note: AnkiDroid translations are contributed by volunteers. If you find missing or incorrect translations, 
-feel free to contribute to the translation project. More details can be found on the https://code.google.com/p/ankidroid/wiki/Contribution#Translate_AnkiDroid_into_your_language[AnkiDroid Wiki].
+feel free to contribute to the translation project. More details can be found on the https://github.com/ankidroid/Anki-Android/wiki/Contributing#translate-ankidroid[AnkiDroid Wiki].
 
 Error reporting mode:: Control whether or not AnkiDroid asks your permission before sending error reports to our error reporting system
 when AnkiDroid crashes. You can also disable the reporting feature entirely if you wish.
@@ -614,7 +614,7 @@ when AnkiDroid crashes. You can also disable the reporting feature entirely if y
 ==== Notifications
 This subsection allows you configure when and how AnkiDroid shows alerts in the Android notification bar.
 
-Notify when :: Disable all notifications, only show important status updates, or set a threshold where a notifcation is shown when you have more than n cards due.
+Notify when :: Disable all notifications, only show important status updates, or set a threshold where a notification is shown when you have more than n cards due.
 
 Vibrate:: Checking this will make your device vibrate when showing a notification
 
@@ -647,7 +647,7 @@ This subsection relates to the way cards are displayed during reviewing
 
 Keep screen on :: Ignore the automatic screen timeout setting in Android to always keep the screen on.
 
-Fullscren mode :: Switches to an immersive fullscreen mode so that you can use more of the screen. You can choose between "Hide the system bars" which will hide the system status bar, action bar, and bottom navigation buttons. Alternatively you can choose "Hide the system bars and answer buttons", which will hide everything except for the actual card content itself. You can temporarily exit fullscreen mode by swiping inwards (i.e. down or up) from the system bars.
+Fullscreen mode :: Switches to an immersive fullscreen mode so that you can use more of the screen. You can choose between "Hide the system bars" which will hide the system status bar, action bar, and bottom navigation buttons. Alternatively you can choose "Hide the system bars and answer buttons", which will hide everything except for the actual card content itself. You can temporarily exit fullscreen mode by swiping inwards (i.e. down or up) from the system bars.
 
 Note that immersive fullscreen mode is only supported on Android 4.4+
 
@@ -782,7 +782,7 @@ If you have set up your cards to ask you to type in the answer (as explained in 
 
 In order to improve user experience when working with the whiteboard and gestures, we use a typing box separate from the card, which is inconsistent with the way the feature works on Anki Desktop.
 
-For full consistency with Anki Desktop, you can enable this option which allows you to save screen area, and choose an appropriate font (e.g. Japanse vs Chinese) for the input box.
+For full consistency with Anki Desktop, you can enable this option which allows you to save screen area, and choose an appropriate font (e.g. Japanese vs Chinese) for the input box.
 
 Input Workaround ::
 Some older devices couldn't gain focus into the text input box for typed-answer fields, so this was added (Hidden for API > 14).
@@ -806,7 +806,7 @@ Dictionary to use to lookup words copied to the clipboard in the reviewer. After
  * Longclick on the text you want to copy in the reviewer
  * After selecting the word you want to copy, press the "copy" icon in the action bar at the top of the screen
  * Tap once anywhere on the flashcard
- * A magnifying class icon should appear, which performs the lookup when clicked
+ * A magnifying glass icon should appear, which performs the lookup when clicked
 
 Alternatively, the lookup action can be performed via a gesture.
 
@@ -816,7 +816,7 @@ Reset Languages ::
 Useful for resetting the TTS language
 
 eReader (up/down buttons) ::
-Support for eReader hardware buttons (see https://code.google.com/p/ankidroid/issues/detail?id=722[issue 722])
+Support for eReader hardware buttons (see https://github.com/ankidroid/Anki-Android/issues/1625[issue 1625])
 
 _This feature will likely be removed in the future in favor of a plugin_
 
@@ -857,7 +857,7 @@ Note: this method will change the default font for *all* of your cards, whereas 
 
 Only fonts in the ttf format are officially supported in Anki/AnkiDroid; 
 the https://www.google.com/get/noto/#/[Google Noto] font set is highly recommended for all languages, 
-and some other free fonts can be found https://code.google.com/p/ankidroid/wiki/FreelyDistributableFonts[here].
+and some other free fonts can be found https://github.com/ankidroid/Anki-Android/wiki/Freely-distributable-fonts[here].
 
 Please note that AnkiDroid has to load the entire font into memory in order
 to use it, and fonts for Asian languages can be quite large. If you have an
@@ -874,7 +874,7 @@ it's not recommended to use the combined CJK font, rather get the individual lan
 === Custom Card Layout
 The layout of flashcards is completely customizable, although this is an advanced topic with a fairly steep learning curve, and you will probably find it a lot more convenient to do the customization with <<AnkiDesktop, Anki Desktop>>. 
 
-The http://ankisrs.net/docs/manual.html#cards-and-templates[card templates section] of the Anki Desktop manual has detailed instructions on how to edit note types, and most of the actions discussed there are also available from AnkiDroid via by tapping "cards" at the bottom of the note editor, or choosing the "manage note types" option in the deck picker. Since detailed information on customizing card layouts is available in the Anki desktop manual, it will not be repeated here.
+The http://ankisrs.net/docs/manual.html#cards-and-templates[card templates section] of the Anki Desktop manual has detailed instructions on how to edit note types, and most of the actions discussed there are also available from AnkiDroid by tapping "cards" at the bottom of the note editor, or choosing the "manage note types" option in the deck picker. Since detailed information on customizing card layouts is available in the Anki desktop manual, it will not be repeated here.
 
 There is an https://github.com/ankidroid/Anki-Android/wiki/Advanced-formatting[advanced formatting page] on the AnkiDroid wiki with various hints on how you can get the most out of your card formatting, and we encourage you to read it, and edit it freely if you have any tips that you'd like to share with the community.
 
@@ -939,7 +939,7 @@ AnkiDroid is an open source project, and its development relies on contributions
 Get involved :: Rate the app, join the https://groups.google.com/forum/#!forum/anki-android[AnkiDroid forum] and answer questions for other users, submit bug reports, become a <<betaTest, beta tester>>, etc. More detailed information on ways you can contribute as a non-developer can be found on the https://github.com/ankidroid/Anki-Android/wiki/Contributing[Wiki].
 
 Translate :: Translations of AnkiDroid and this user manual are all contributed by users, and are greatly appreciated. 
-See the https://code.google.com/p/ankidroid/wiki/Contribution#Translate_AnkiDroid_into_your_language[translating] wiki page for detailed instructions on how to contribute translations.
+See the https://github.com/ankidroid/Anki-Android/wiki/Contributing#translate-ankidroid[translating] wiki page for detailed instructions on how to contribute translations.
 
 Develop :: The source code for AnkiDroid is available on our main https://github.com/ankidroid/Anki-Android[Github page], and bug fixes as well as new features are very welcome. 
 Before investing a lot of time on working on a new feature, you may like to ask on the forum first if it's likely to be merged into the main project, as not all features will be accepted.
