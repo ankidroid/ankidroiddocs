@@ -76,6 +76,17 @@ list of your card decks, and allows you to perform various actions:
 <img src="img/1-decks.png">
 ++++++++++
 
+=== Add button
+The big blue + button in the bottom right corner is used to add new material to AnkiDroid. Pressing it expands to give the following three options:
+
+Add note :: Create a new note (i.e. card)
+
+Get shared decks :: Download a deck of cards from the internet that another user has contributed
+
+Create deck :: Create a new empty deck
+
+See the https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video] for a demo of how to use each of these options.
+
 === Action Bar
 At the top of each screen in AnkiDroid is the Action Bar, with buttons for performing various actions. 
 The following actions are available from the action bar in the deck list:
