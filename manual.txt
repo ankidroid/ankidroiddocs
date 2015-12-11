@@ -610,9 +610,9 @@ Automatic synchronization:: Enable this option if you want AnkiDroid to sync eve
 
 Users that want more fine-grained control over when sync occurred might like to use a 3rd party app like Tasker to automate synchronization. See the https://github.com/ankidroid/Anki-Android/wiki/AnkiDroid-API#sync-intent[API documentation] for more information on this.
  
-Deck for new cards:: The default of "When adding, default to current deck" means that Anki saves the last-used note type for each deck 
+Deck for new cards:: The default of "Use current deck" means that Anki saves the last-used note type for each deck 
 and selects it again then next time you choose the deck (and, in addition, will start with the current deck selected when choosing 
-Add from anywhere). The other option, "Change deck depending on note type," saves the last-used deck for each note type 
+Add from anywhere). The other option, "Decide by note type," saves the last-used deck for each note type 
 (and opens the add window to the last-used note type when you choose Add). This may be more convenient if you always use a single note 
 type for each deck.
 
@@ -703,11 +703,6 @@ Default font applicability :: The default setting is to only use the default fon
 via Anki Desktop, however you can also force the default font to be applied, ignoring any font specification in the card styling.
 
 Browser and editor font :: The font to be used by the browser and editor
-
-Reviewer font scaling :: Allows you to increase or decrease the size of the text on cards without modifying how they appear on a computer. 
-It is not specific to a deck - when changed, it changes all cards in all decks in the same way.
-
-Reviewer image scaling :: This feature may be useful if you want images to also be scaled in the same proportion as the font
 
 Card browser font scaling :: Lets you change the font size used in the card browser.
 
