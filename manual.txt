@@ -26,23 +26,32 @@ For information on recent changes, please see the https://ankidroid.org/docs/cha
 
 [[gettingStarted]]
 == Getting started
-To start using AnkiDroid, we need to add some cards to study. From the main screen, we can either
-download card decks that other people have shared, create new empty decks directly from AnkiDroid, 
-or add existing decks from the computer.
+To start using AnkiDroid, we need to add some cards to study. From the main screen, tapping the big blue plus button will allow you to either add a new "note" (i.e. create new flashcards), download shared decks (decks that other people have created and shared online), or create new empty decks.
 
-Please check this https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video] which gives an introduction to the basics of using AnkiDroid.
+Please watch this 5 minute https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video], which gives an introduction to adding, downloading, and studying cards in AnkiDroid. More detailed information can be found in the sections below.
 
 If you are an existing user of Anki Desktop wishing to import your decks from the computer, 
-please jump directly to the <<AnkiDesktop, using AnkiDroid with Anki Desktop>> section. Other users may like
-to start by trying out some shared decks:
+you might like to skip straight to the <<AnkiDesktop, using AnkiDroid with Anki Desktop>> section.
 
-=== Shared Decks
+[[deckPicker]]
+== The Deck List
+*_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#the-basics[decks and cards] are_
 
-To download a shared deck directly to your mobile device:
+The deck list is the screen you see when you start AnkiDroid. It displays a 
+list of the decks which contain all of your flashcards, and allows you to perform various actions:
 
+++++++++++
+<img src="img/1-decks.png">
+++++++++++
+
+=== Add button
+The big blue + button in the bottom right corner is used to add new material to AnkiDroid. Pressing it expands to give the following three options, which are also described in the https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video].
+
+Add note :: Choose this option if you want to create your own flashcards with AnkiDroid. "Notes" and "cards" have specific meanings in Anki, which are http://ankisrs.net/docs/manual.html#the-basics[explained in the main Anki manual]. Please see the tutorial video for a quick introduction to adding notes, or refer to the <<addingNotes,adding notes>> section below for more detailed information.
+
+Get shared decks :: Download a deck of cards from the internet that another user has contributed
  . Ensure you're connected to the internet.
- . Tap the + button at the bottom of the screen.
- . Choose *Get shared decks*. AnkiWeb will open.
+ . Tap + and then *Get shared decks*. AnkiWeb will open.
  . Select a category, or type in a search.
  . Tap *Info* on a deck you'd like to study.
  . Scroll down and tap *Download*.
@@ -51,41 +60,10 @@ To download a shared deck directly to your mobile device:
  . AnkiDroid will appear, and show a confirmation dialog. Tap the *Add* button.
  . When the import completes, your deck should be ready to study.
 
-You can start studying the shared deck by tapping on it, and then pressing the "study" button, 
-as discussed in more detail in the video above and the <<reviewer, studying section>> below.
-
-=== New Decks
-To add new flashcards directly from AnkiDroid:
-
- . Tap the + button in the at the bottom
- . Choose "Create deck"
- . Choose a name for the deck, for example "New Japanese"
- . Tap on the newly created deck to open it
- . You can now add new cards to the deck by tapping the Add button in the Action bar again
- 
-See the <<addingNotes,adding notes>> section below for detailed information on adding new cards to a deck.
-
-[[deckPicker]]
-== The Deck List
-*_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#the-basics[decks and cards] are_
-
-The deck list is the screen you see when you start AnkiDroid. It displays a 
-list of your card decks, and allows you to perform various actions:
-
-++++++++++
-<img src="img/1-decks.png">
-++++++++++
-
-=== Add button
-The big blue + button in the bottom right corner is used to add new material to AnkiDroid. Pressing it expands to give the following three options:
-
-Add note :: Create a new note (i.e. card)
-
-Get shared decks :: Download a deck of cards from the internet that another user has contributed
-
 Create deck :: Create a new empty deck
-
-See the https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video] for a demo of how to use each of these options.
+ . Tap the + button and choose "Create deck"
+ . Choose a name for the deck, for example "New Japanese"
+ . Add cards to it following the "add note" instructions above
 
 === Action Bar
 At the top of each screen in AnkiDroid is the Action Bar, with buttons for performing various actions. 
