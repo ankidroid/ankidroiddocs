@@ -126,7 +126,7 @@ Rebuild / Empty :: If the selected deck is a <<filtered,filtered deck>> then you
 Each deck in the list has three clickable areas:
 
 Deck expander :: If you are using 
-http://ankisrs.net/docs/manual.html#decks[subdecks], then a deck expander button may appear on the far left of the deck, which can be used to show / hide the subdecks. Subdecks can be created by using the naming convention "PARENT::CHILD".
+http://ankisrs.net/docs/manual.html#decks[subdecks], then a deck expander button may appear on the far left of the deck, which can be used to show / hide the subdecks. A ▶ icon means the deck has hidden subdecks which can be shown, a ▼ icon means the deck has visible subdecks that can be hidden, and no icon means that the deck has no subdecks. Note: subdecks can be created by using the naming convention "PARENT::CHILD".
 
 Deck name :: This is the main clickable area, which will take you to the study screen if there are cards available to review.
 
@@ -625,7 +625,7 @@ when AnkiDroid crashes. You can also disable the reporting feature entirely if y
 ==== Notifications
 This subsection allows you configure when and how AnkiDroid shows alerts in the Android notification bar.
 
-Notify when :: Disable all notifications, only show important status updates, or set a threshold where a notification is shown when you have more than n cards due.
+Notify when :: *Never notify* will disable all notifications from AnkiDroid. *Pending messages available* will only show important status updates like when a sync completed. *More than n cards due* will show a notification when you have more than n cards due (requires the widget to be enabled).
 
 Vibrate:: Checking this will make your device vibrate when showing a notification
 
