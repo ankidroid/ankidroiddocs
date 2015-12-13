@@ -8,21 +8,10 @@
 Thank you for using AnkiDroid, the Android client for the popular 
 http://ankisrs.net/[Anki] spaced repetition system. 
 
-AnkiDroid is currently intended to be used in conjunction with Anki on your computer. 
-While it is possible to download shared decks and study without using the desktop 
-version at all, card layout editing and many advanced operations can only be done
- on a computer. While this is expected to change over time, for now please ensure you
- have access to a computer in order to perform some of the operations mentioned below.
- 
-It is *strongly recommended* to at least read http://ankisrs.net/docs/manual.html#the-basics[The Basics section of the main Anki manual] to understand the terminology used here.
+AnkiDroid is intended to be used in conjunction with Anki on your computer. While it is possible to function without it, 
+some tasks are either only possible with, or a lot more efficient with Anki Desktop. Furthermore, it is *strongly recommended* to at least read http://ankisrs.net/docs/manual.html#the-basics["The Basics"] section of the main Anki manual to understand the terminology used here.
 
-== Help & Bugs
-
-Please see the link:help.html[Help] page for how to get help with an issue, or report a bug.
-
-== Changes
-
-For information on recent changes, please see the https://ankidroid.org/docs/changelog.html[change log].
+If this manual doesn't contain what you are looking for, please check the https://github.com/ankidroid/Anki-Android/wiki[AnkiDroid Wiki] for a list of changes, instructions for submitting bug reports and feature requests, a list of frequently asked questions, and much more.
 
 [[gettingStarted]]
 == Getting started
