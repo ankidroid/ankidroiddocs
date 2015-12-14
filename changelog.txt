@@ -1,6 +1,18 @@
 :sectanchors:
 = AnkiDroid Changelog
 
+== Version 2.5.3 (2015-12-14)
+* Fix floating action button (blue +) interfering with deck list on Android 2.3
+* Fix opening apkg files from Gmail
+* Fix automatic playback of consecutive videos
+* Added a new launch screen
+* Improved behaviour surrounding the study options screen
+* Multiple media files can now be added to one field in the note editor
+* Don't include unused media files on export
+* Undo behaviour is now consistent with the desktop client (can no longer undo note edits)
+* Enhancements to sync canceling
+* Minor performance enhancements, crash fixes, and UI tweaks
+
 == Version 2.5.2 (2015-12-04)
 * Fix start-up crashes on Samsung devices running Android 4.2
 * Fix crash for new users on Android 6.0
