@@ -481,7 +481,7 @@ See the <<exporting, exporting section>> below for more detailed information on 
 [[importing]]
 == Importing Anki Files
 You can import Anki files (with .apkg file format) directly into AnkiDroid. Other file formats cannot be imported directly into AnkiDroid, however 
-flashcards from most other applications can be imported into Anki Desktop on your computer, which can then be <<adding,added into AnkiDroid in the usual way>>. 
+flashcards from most other applications can be imported into Anki Desktop on your computer, which can then be <<AnkiDesktop,added into AnkiDroid in the usual way>>. 
 See the http://ankisrs.net/docs/manual.html#importing[importing section of the Anki Desktop manual] for help on importing into Anki Desktop.
 
 As in Anki Desktop, AnkiDroid distinguishes between http://ankisrs.net/docs/manual.html#exporting-packaged-decks[the two types of .apkg files] 
