@@ -36,7 +36,7 @@ list of the decks which contain all of your flashcards, and allows you to perfor
 === Add button
 The big blue + button in the bottom right corner is used to add new material to AnkiDroid. Pressing it expands to give the following three options, which are also described in the https://www.youtube.com/watch?v=F2K1gOSdIZA[tutorial video].
 
-Add note :: Choose this option if you want to create your own flashcards with AnkiDroid. "Notes" and "cards" have specific meanings in Anki, which are http://ankisrs.net/docs/manual.html#the-basics[explained in the main Anki manual]. Please see the tutorial video for a quick introduction to adding notes, or refer to the <<addingNotes,adding notes>> section below for more detailed information.
+Add :: Choose this option if you want to create your own flashcards (notes) with AnkiDroid. "Notes" and "cards" have specific meanings in Anki, which are http://ankisrs.net/docs/manual.html#the-basics[explained in the main Anki manual]. Please see the tutorial video for a quick introduction to adding notes, or refer to the <<addingNotes,adding notes>> section below for more detailed information.
 
 Get shared decks :: Download a deck of cards from the internet that another user has contributed
  . Ensure you're connected to the internet.
@@ -52,7 +52,7 @@ Get shared decks :: Download a deck of cards from the internet that another user
 Create deck :: Create a new empty deck
  . Tap the + button and choose "Create deck"
  . Choose a name for the deck, for example "New Japanese"
- . Add cards to it following the "add note" instructions above
+ . Add cards to it following the "Add" instructions above
 
 === Action Bar
 At the top of each screen in AnkiDroid is the Action Bar, with buttons for performing various actions. 
@@ -230,7 +230,7 @@ If you wish to keep studying the same deck further, tap on the deck again which 
 == Add Note Screen
 *_Note:_* _This section onwards assumes you understand what http://ankisrs.net/docs/manual.html#notes-&-fields[notes, fields, card templates, and note types] are_
 
-To add a new note, tap the + button at the bottom of the deck list.
+To add a new note, tap the + button at the bottom of the deck list and choose "Add".
 ++++++++++
 <img src="img/5-adding.png">
 ++++++++++
