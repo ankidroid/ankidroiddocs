@@ -6,7 +6,7 @@
 * Fix opening apkg files from Gmail
 * Fix automatic playback of consecutive videos
 * Added a new launch screen
-* Improved behaviour surrounding the study options screen
+* Improved behaviour surrounding the deck overview screen
 * Multiple media files can now be added to one field in the note editor
 * Don't include unused media files on export
 * Undo behaviour is now consistent with the desktop client (can no longer undo note edits)
