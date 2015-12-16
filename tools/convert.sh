@@ -13,8 +13,8 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   echo -e "Host ankidroid.org\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   # Clone remote branch into _site/
   git clone travis@ankidroid.org:/home/travis/ankidroiddocs.git _site/
-  # Convert *.txt files to HTML5 and write them into _site/
-  asciidoctor *.txt -D _site/
+  # Convert *.asc files to HTML5 and write them into _site/
+  asciidoctor *.asc -D _site/
   # Copy images
   cp -r img _site/
   # Push changes to remote branch
