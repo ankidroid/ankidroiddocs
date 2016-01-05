@@ -1,10 +1,10 @@
 #!/bin/bash
-# Environment variables are defined in the Travis project settings.
 set -e
 # Only run on normal commits, ignore pull requests.
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   cd $TRAVIS_BUILD_DIR
-  # Decrypt private key.
+  # Decrypt private key: https://docs.travis-ci.com/user/encrypting-files/
+  # Environment variables are defined in the Travis project settings.
   openssl aes-256-cbc -K $encrypted_3a5998253966_key -iv $encrypted_3a5998253966_iv -in tools/id_rsa.enc -out tools/id_rsa -d
   # Add private key to agent
   eval $(ssh-agent) > /dev/null
