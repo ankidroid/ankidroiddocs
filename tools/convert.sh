@@ -6,9 +6,9 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   # Decrypt private key: https://docs.travis-ci.com/user/encrypting-files/
   # Environment variables are defined in the Travis project settings.
   openssl aes-256-cbc -K $encrypted_3a5998253966_key -iv $encrypted_3a5998253966_iv -in tools/id_rsa.enc -out tools/id_rsa -d
+  chmod 600 tools/id_rsa
   # Add private key to agent
   eval $(ssh-agent) > /dev/null
-  chmod 600 tools/id_rsa
   ssh-add tools/id_rsa
   # Disable host key checking
   echo -e "Host ankidroid.org\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
