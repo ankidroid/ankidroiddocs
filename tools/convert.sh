@@ -1,6 +1,6 @@
 #!/bin/bash
 # Environment variables are defined in the Travis project settings.
-set -ev
+set -e
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   cd $TRAVIS_BUILD_DIR
   # Decrypt private key.
