@@ -1,6 +1,7 @@
 #!/bin/bash
 # Environment variables are defined in the Travis project settings.
 set -e
+# Only run on normal commits, ignore pull requests.
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   cd $TRAVIS_BUILD_DIR
   # Decrypt private key.
