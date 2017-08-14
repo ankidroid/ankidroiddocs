@@ -18,8 +18,7 @@ if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   # Copy images
   cp -r img _site/
   # Copy icons and manifest
-  cp icons/*.png _site/
-  cp icons/manifest.json _site/
+  cp icons/* _site/
   # Push changes to remote branch
   cd _site/
   git config user.name "Travis CI"
