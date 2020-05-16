@@ -4,4 +4,4 @@ install: gem install asciidoctor
 script: "./tools/convert.sh"
 notifications:
   email:
-    - alexander.grueneberg@googlemail.com
+    - github@mikehardy.net
