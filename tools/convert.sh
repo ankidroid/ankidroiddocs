@@ -29,7 +29,7 @@ fi
 # Decrypt private key: https://docs.travis-ci.com/user/encrypting-files/
 # Environment variables are defined in the Travis project settings.
 # shellcheck disable=SC2154
-openssl aes-256-cbc -K "$encrypted_3a5998253966_key" -iv "$encrypted_3a5998253966_key" -in tools/id_rsa.enc -out tools/id_rsa -d
+openssl aes-256-cbc -K "$encrypted_3a5998253966_key" -iv "$encrypted_3a5998253966_iv" -in tools/id_rsa.enc -out tools/id_rsa -d
 chmod 600 tools/id_rsa
 # Add private key to agent
 eval "$(ssh-agent)" > /dev/null
