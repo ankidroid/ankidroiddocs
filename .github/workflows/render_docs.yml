@@ -1,0 +1,32 @@
+name: Render Docs
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+  render_docs:
+    name: 'Render Docs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'master'
+          fetch-depth: 0
+
+      - name: Install Asciidoctor
+        run: |
+          sudo chown -R $USER /var/lib/gems/
+          sudo chown -R $USER /usr/local/bin
+          gem install asciidoctor
+        shell: bash
+
+      - name: Render Docs
+        run: asciidoctor ./*.asc
+
+      - name: Publish Rendered Site As Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs.ankidroid.org
+          path: ./
