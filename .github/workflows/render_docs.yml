@@ -10,10 +10,8 @@ jobs:
     name: 'Render Docs'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: 'master'
-          fetch-depth: 0
+      - name: Git Checkout
+        uses: actions/checkout@v2
 
       - name: Install Asciidoctor
         run: |
