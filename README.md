@@ -6,8 +6,12 @@ Source files for the documentation on the AnkiDroid website ankidroid.org.
 * help.asc &rarr; [help.html](https://ankidroid.org/docs/help.html)
 * changelog.asc &rarr; [changelog.html](https://ankidroid.org/docs/changelog.html)
 
+# Preview
+
+Pull requests generate the HTML manual as an artifact which can be viewed on the [GitHub Actions](https://github.com/ankidroid/ankidroiddocs/actions) page.
+
 # Compilation
-The documentation on this site is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/) as follows
+The documentation on this site is written in the Asciidoc syntax, and should be compiled with [Asciidoctor](http://asciidoctor.org/docs/install-toolchain/)
 
 ## Install Asciidoctor
 On Ubuntu you should be able to install with apt: `sudo apt-get install asciidoctor`
