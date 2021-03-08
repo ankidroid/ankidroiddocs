@@ -50,7 +50,3 @@ jobs:
         # This alloww people with publish access a button-push way to force a restart if necessary,
         # and the restart is quick enough that doing it on publish is fine.
         run: ssh travis@ankidroid.org /usr/bin/sudo /usr/sbin/service nginx restart
-# Cleanup:
-# - remove .travis.yml
-# - remove tools/convert.sh
-# - remove ankidroid.org:~travis/ankidroiddocs.git
