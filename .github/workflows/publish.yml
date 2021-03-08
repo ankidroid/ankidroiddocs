@@ -1,0 +1,45 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  main:
+    name: "Publish docs.ankidroid.org"
+    if: github.repository == 'ankidroid/ankidroiddocs'
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH key setup
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Git Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Asciidoctor
+        run: |
+          sudo chown -R $USER /var/lib/gems/
+          sudo chown -R $USER /usr/local/bin
+          gem install asciidoctor
+        shell: bash
+
+      - name: Render Docs
+        run: asciidoctor ./*.asc
+
+      - name: Copy Docs to ankidroid.org
+        run: scp -r travis@ankidroid.org:/usr/share/nginx/html/docs/
+        shell: bash
+
+      - name: Restart nginx web server
+        #  - why? nginx used to fail periodically requiring a restart. But who has access? How to restart?
+        # This alloww people with publish access a button-push way to force a restart if necessary,
+        # and the restart is quick enough that doing it on publish is fine.
+        run: ssh travis@ankidroid.org -c '/usr/bin/sudo /usr/sbin/service nginx restart'
+# Cleanup:
+# - remove .travis.yml
+# - remove tools/convert.sh
+# - remove ankidroid.org:~travis/ankidroiddocs.git
