@@ -49,7 +49,7 @@ jobs:
         #  - why? nginx used to fail periodically requiring a restart. But who has access? How to restart?
         # This alloww people with publish access a button-push way to force a restart if necessary,
         # and the restart is quick enough that doing it on publish is fine.
-        run: ssh travis@ankidroid.org -c '/usr/bin/sudo /usr/sbin/service nginx restart'
+        run: ssh travis@ankidroid.org /usr/bin/sudo /usr/sbin/service nginx restart
 # Cleanup:
 # - remove .travis.yml
 # - remove tools/convert.sh
