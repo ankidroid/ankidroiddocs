@@ -20,6 +20,12 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
 
+      - name: Prepare website directory
+        run: |
+          mkdir _site
+          cp -r img _site/
+          cp icons/* _site/
+
       - name: Install Asciidoctor
         run: |
           sudo chown -R $USER /var/lib/gems/
@@ -28,10 +34,10 @@ jobs:
         shell: bash
 
       - name: Render Docs
-        run: asciidoctor ./*.asc
+        run: asciidoctor ./*.asc -D _site/
 
       - name: Copy Docs to ankidroid.org
-        run: scp -r travis@ankidroid.org:/usr/share/nginx/html/docs/
+        run: scp -r _site/* travis@ankidroid.org:/usr/share/nginx/html/docs/
         shell: bash
 
       - name: Restart nginx web server
