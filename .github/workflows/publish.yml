@@ -15,7 +15,7 @@ jobs:
       - name: SSH key setup
         uses: webfactory/ssh-agent@v0.5.0
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.DOCS_SSH_PRIVATE_KEY }}
 
       - name: SSH server key setup
         run: |
@@ -42,11 +42,11 @@ jobs:
         run: asciidoctor ./*.asc -D _site/
 
       - name: Copy Docs to ankidroid.org
-        run: scp -r _site/* travis@ankidroid.org:/usr/share/nginx/html/docs/
+        run: scp -r _site/* ankidroid@ankidroid.org:/usr/share/nginx/html/
         shell: bash
 
       - name: Restart nginx web server
         #  - why? nginx used to fail periodically requiring a restart. But who has access? How to restart?
         # This alloww people with publish access a button-push way to force a restart if necessary,
         # and the restart is quick enough that doing it on publish is fine.
-        run: ssh travis@ankidroid.org /usr/bin/sudo /usr/sbin/service nginx restart
+        run: ssh ankidroid@ankidroid.org /usr/bin/sudo /usr/sbin/service nginx restart
