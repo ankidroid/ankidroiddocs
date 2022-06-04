@@ -16,7 +16,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        run: ./tools/build.sh
+        run: |
+          chmod +x ./tools/build.sh
+          ./tools/build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -32,7 +34,10 @@ jobs:
 
       - name: Build
         run: |
+          chmod +x ./tools/setup.sh
           CHECK=1 ./tools/setup.sh
+
+          chmod +x ./tools/build.sh
           ./tools/build.sh
           
 
