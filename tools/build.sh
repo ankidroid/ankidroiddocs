@@ -1,5 +1,8 @@
 #!/bin/bash
 
+rm -rf docs
+mkdir docs
+
 # build for english
 lang="en"
 cd mdbook/$lang

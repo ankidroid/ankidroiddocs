@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - test
+      - docs
 
 jobs:
   deploy:
@@ -22,7 +23,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book/html
+          publish_dir: ./docs/en
           cname: ${{ env.cname }}
 
   check:
