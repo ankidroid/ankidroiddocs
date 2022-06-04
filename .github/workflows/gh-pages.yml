@@ -17,6 +17,9 @@ jobs:
 
       - name: Build
         run: |
+          chmod +x ./tools/setup.sh
+          ./tools/setup.sh
+
           chmod +x ./tools/build.sh
           ./tools/build.sh
 
