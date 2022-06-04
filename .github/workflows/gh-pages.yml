@@ -8,7 +8,6 @@ on:
     branches:
       - main
       - test
-      - docs
 
 jobs:
   deploy:
@@ -17,13 +16,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        run: .github/workflows/build.sh
+        run: ./tools/build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/en
+          publish_dir: ./docs
           cname: ${{ env.cname }}
 
   check:
@@ -33,17 +32,7 @@ jobs:
 
       - name: Build
         run: |
-          git branch docs
-          git checkout docs
-
-          chmod +x ./tools/setup.sh
-          chmod +x ./tools/build.sh
-
           CHECK=1 ./tools/setup.sh
-
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git add .
-          git commit -am "updated docs"
-          git push --set-upstream origin docs -f
+          ./tools/build.sh
+          
 
