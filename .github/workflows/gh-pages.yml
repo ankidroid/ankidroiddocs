@@ -31,4 +31,18 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        run: CHECK=1 .github/workflows/build.sh
+        run: |
+          git branch docs
+          git checkout docs
+
+          chmod +x ./tools/setup.sh
+          chmod +x ./tools/build.sh
+
+          CHECK=1 ./tools/setup.sh
+
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git add .
+          git commit -am "updated docs"
+          git push --set-upstream origin docs -f
+

@@ -1,0 +1,28 @@
+[book]
+authors = ["AnkiDroid Open Source Team"]
+language = "ro"
+multilingual = false
+src = "src"
+title = "AnkiDroid Manual"
+
+[build]
+create-missing = true
+build-dir = "../../docs/ro"
+
+[output.html]
+git-repository-url = "https://github.com/ankidroid/ankidroiddocs/"
+cname = "docs.ankidroid.org"
+additional-css = ["css/kbd.css"]
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output.linkcheck]
+optional = true
+warning-policy = "warn"
+follow-web-links = true
+
+[output.html.fold]
+enable = true
+level = 0
