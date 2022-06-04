@@ -1,124 +1,127 @@
-# قائمة الرزم
-*_ملاحظة:_* يفترض هذا القسم أنك تفهم معنى https://docs.ankiweb.net/#/getting-started?id=key-concepts[الرزم والبطاقات]_
+# The Deck List
 
-قائمة الرزم هي ما تراه عندما تبدأ أنكيدرويد. إنها تعرض قائمة رزم تحوي كل بطاقاتك،
-وتسمح لك بتنفيذ عدة إجراءات:
+<!-- toc -->
 
-++++++++++
-<img src="img/1-decks.png">
-++++++++++
+*_Note:_* _This section onwards assumes you understand what [decks and cards](https://docs.ankiweb.net/getting-started.html#key-concepts) are_
 
-## زر الإضافة
-يُستخدم زر + الأزرق في أسفل اليمين لإضافة محتوى إلى أنكيدرويد. يؤدي الضغط عليه إلى إظهار الخيارات
-الثلاث التالية المشروحة في https://www.youtube.com/watch?v=F2K1gOSdIZA[الفيديو].
+The deck list is the screen you see when you start AnkiDroid. It displays a list of the decks which contain all of your flashcards, and allows you to perform various actions:
 
-إضافة :: اختر هذا الخيار إذا كنت تريد إنشاء بطاقات استذكار خاصة بك (ملحوظات) في أنكيدرويد.
-كلمتا «ملحوظات» و «بطاقات» لها معاني محددة في أنكي، وهي مشروحة في https://docs.ankiweb.net/#/getting-started?id=key-concepts[دليل أنكي الرئيسي].
-شاهد الفيديو في الأعلى لمقدمة سريعة لإضافة الملحوظات، أو اطلع على قسم <<addingNotes,إضافة الملحوظات>> في الأسفل لتفاصيل أكثر.
+![decks.png](img/1-decks.png)
 
-الحصول على رزم مشتركة :: ينزل رزمة بطاقات من الإنترنت شاركها مستخدم آخر
- . تأكد من أنك متصل بالإنترنت.
- . انقر + ثم *الحصول على رزم مشتركة* ليفتح أنكي ويب.
- . اختر فئة، أو أدخل عبارة بحث.
- . انقر *Info* على رزمة تريد دراستها.
- . اسحب للأسفل وانقر *Download*.
- . سينزل متصفح الويب الملف ويعرض تنبيه «اكتمل التنزيل».
- انقر هذا الزر.
- . سيظهر أنكيدرويد، وتظهر نافذة تأكيد. انقر زر *إضافة*.
- . عند اكتمال الاستيراد، يجب أن تكون رزمتك جاهزة للدراسة.
+## Add button
+The big blue + button in the bottom right corner is used to add new material to AnkiDroid. Pressing it expands to give the following three options, which are also described in the [tutorial video](https://www.youtube.com/watch?v=F2K1gOSdIZA).
 
-إنشاء رزمة :: ينشئ رزمة جديدة فارغة
- . انقر زر + واختر «إنشاء رزمة»
- . اختر اسمًا للرزمة، «ياباني جديد» مثلًا
- . أضف بطاقات إليها حسب تعليمات «إضافة» في الأعلى
+### Add
+Choose this option if you want to create your own flashcards (notes) with AnkiDroid. "Notes" and "cards" have specific meanings in Anki, which are [explained in the main Anki manual](https://docs.ankiweb.net/getting-started.html#key-concepts). Please see the tutorial video for a quick introduction to adding notes, or refer to the [adding notes](adding-notes.md#add-note-screen) section below for more detailed information.
 
-## شريط التطبيق
-في أعلى الشاشة في أنكيدرويد هناك شريط تطبيق يحتوي أزرار لتنفيذ عدة إجراءات.
-الإجراءات التالية متوفرة في شريط التطبيق في قائمة الرزم:
+### Get shared decks
+To download a deck of cards from the internet that another user has contributed:
+ 1. Ensure you're connected to the internet.
+ 2. Tap + and then **Get shared decks**. AnkiWeb will open.
+ 3. Select a category, or type in a search.
+ 4. Tap **Info** on a deck you'd like to study.
+ 5. Scroll down and tap **Download**.
+ 6. You browser will download the file and display a `download complete` notification. 
+ Tap this button.
+ 7. AnkiDroid will appear, and show a confirmation dialog. Tap the **Add** button.
+ 8. When the import completes, your deck should be ready to study.
 
-زر قائمة التنقل :: يؤدي النقر على الأيقونة في أقصى اليسار إلى إظهار <<drawer,قائمة التنقل اليسرى>>
-للتنقل السريع بين الأقسام الرئيسية من التطبيق.
+### Create deck
+To create a new empty deck:
+ 1. Tap the **+** button and choose `Create deck`
+ 2. Choose a name for the deck, for example `New Japanese`
+ 3. Add cards to it following the `Add` instructions above
 
-زر المزامنة :: الزر الدائري الذي له أسهم على اليمين هو لمزامنة بطاقاتك مع السحابة،
-كما هو مشروح في قسم <<AnkiDesktop,إضافة رزم من السحابة>>.
+## App Bar
+At the top of each screen in AnkiDroid is the App Bar, with buttons for performing various actions. 
+The following actions are available from the app bar in the deck list:
 
-زر القائمة المنسدلة :: في أقصى اليمين هناك قائمة منسدلة تحوي إجراءات مستخدمة بشكل أقل.
-هذه الإجراءات مشروحة في الأسفل.
+### Navigation menu button
+Tapping the icon on the far left will show the [left navigation menu](drawer.md#navigation-drawer) for quickly navigating between the main parts of the app.
 
-**إرشاد:** يؤدي النقر المطول على أي مكان في شريط التطبيق إلى إظهار تلميح نصي
-يصف وظيفة الزر!
+### Sync button
+The circular button with arrows on the right is for synchronizing your cards with the cloud, as described in the [adding decks from cloud](anki-desktop.md#using-anki-desktop-with-ankidroid) section.
 
-## دراسة رزمة
-لدراسة بطاقات رزمة، انقر على اسم الرزمة (أو زر «دراسة» في الأجهزة اللوحية التي حجمها 10 بوصات)، لينتقل أنكيدرويد إلى وضع الدراسة.
+### Overflow menu button
+On the far right is the overflow menu which contains less commonly used actions. These actions are described further below.
 
-لاحظ أن الرزمة المحددة حاليًا معلّمة بخلفية رمادية، وإذا كان لديك أي <<filtered, رزم مفلترة>>
-فستُعلَّم بلون خط أزرق. الرزم المفلترة مشروحة في قسم آخر من هذا الدليل.
+**Hint:** long tapping on a button in the app bar anywhere in the app will display a textual hint describing what the button does!
 
-## إجراءات الرزمة الأخرى
-يؤدي النقر المطول على رزمة إلى إظهار قائمة الإجراءات الأخرى التي يمكن إجراؤها على تلك الرزمة:
+## Studying a Deck
+To study the cards in a deck, simply tap on the deck name (or the "STUDY" button on a 10" tablet), and AnkiDroid will switch to study mode. 
 
-إعادة تسمية :: استخدم هذا الخيار لإعادة تسمية الرزمة
+Note that the currently selected deck is highlighted with a grey background, and if you have any [filtered decks](filtered-deck.md#filtered-decks) they will be highlighted using a blue font. Filtered decks are discussed elsewhere in the manual.
 
-خيارات الرزمة :: يسمح لك النقر على خيارات الرزمة بضبط عدة خيارات دراسة مخصوصة بالرزمة.
-انظر https://docs.ankiweb.net/#/deck-options?id=deck-options[دليل الحاسوب] لمزيد من المعلومات
-عن هذه الخيارات.
+## Other Deck Actions
+Long tapping on a deck will show a list of other actions available to perform on that deck:
 
-دراسة مخصصة :: يسمح لك باختيار إعدادات مضبوطة مسبقًا للدراسة خارج الجدول المعتاد، مثل رفع حد الدراسة لذلك اليوم.
-انظر قسم <<filtered,الرزم المفلترة>> لمعلومات أكثر.
+### Rename deck
+Use this option to rename a deck
 
-حذف الرزمة :: استخدم هذا الخيار لحذف الرزمة (ملاحظة: لا يمكن التراجع عن هذا الخيار، لكن تستطيع <<backups,الاسترجاع من نسخة احتياطية>>)
+### Deck options
+Tapping on deck options allows you to configure various deck specific study options.
+Please see the [desktop documentation](https://docs.ankiweb.net/deck-options.html) for more information about these study options.
 
-تصدير الرزمة :: يمكن استخدام هذا الخيار لمشاركة رزمة مع المستخدمين الآخرين. انظر قسم <<exporting, تصدير الرزم>> لمزيد من المعلومات.
+### Custom study
+Allows you to choose from some convenient presets for studying outside of your normal schedule, for example increasing the study limit for the day. See the section on [filtered decks](filtered-deck.md#filtered-decks) for more detailed information.
 
-نكش :: هذا الخيار مرئي فقط عندما تحتوي الرزمة المحددة على بطاقات مدفونة يدويًا أو تلقائيًا.
+### Delete deck
+Use this option to delete a deck (note: this action is not reversible, although you can [restore from a backup](backups.md#automatic-backups)
 
-إعادة إنشاء / إفراغ :: إذا كانت الرزمة المحددة <<filtered, رزمة مفلترة>>، يسمح لك هذا الخيار
-بإعادة إنشائها أو إفراغها من البطاقات.
+### Export deck
+This option can be used to share a deck with other users. See the [exporting decks](exporting.md#exporting-anki-files) section for more information.
 
-###= المناطق التي يمكن النقر عليها في الرزم
-لكل رزمة في القائمة ثلاث مناطق يمكن النقر عليها:
+### Unbury
+This option is only visble when the selected deck has cards that have been manually or automatically buried.
 
-مُوسِع الرزمة :: إذا كنت تستخدم https://docs.ankiweb.net/#/getting-started?id=decks[الرزم الفرعية]،
-فقد يظهر زر إيساع في أقصى يسار الرزمة، والذي يمكن استخدامه لإظهار الرزم الفرعية وإخفائها.
-أيقونة ▶ تعني أن للرزمة رزمًا فرعية يمكن إظهارها، وأيقونة ▼ تعني أن للرزمة رزمًا فرعية يمكن إخفاؤها،
-وعدم وجود أيقونة يعني أن الرزمة ليس لها رزم فرعية. ملاحظة: يمكن إنشاء الرزم الفرعية باستخدام طريقة التسمية "والد::فرعي".
+### Rebuild / Empty
+If the selected deck is a [filtered decks](filtered-deck.md#filtered-decks) then you also have the option to rebuild or empty the cards in it.
 
-اسم الرزمة :: هذه المنطقة الرئيسية القابلة للنقر، والتي تأخذك إلى شاشة الدراسة إذا كان هناك بطاقات لتراجعها.
 
-أزرار العد :: أزرار العد في أقصى يمين كل رزمة هي بمثابة منطقة منفصلة قابلة للنقر تأخذك إلى موجز الرزمة
-بدلًا من شاشة الدراسة. هذا مفيد إذا كنت تريد الاطلاع السريع على عدد البطاقات المتوفرة في الرزمة.
+#### Clickable areas on the decks
+Each deck in the list has three clickable areas:
 
-## إجراءات متقدمة
-بعض الإجراءات الإضافية الأقل استخدامًا موجودة في القائمة المنسدلة، وهي مختصرة كالتالي:
+### Deck expander
+If you are using [subdecks](https://docs.ankiweb.net/getting-started.html#decks), then a deck expander button may appear on the far left of the deck, which can be used to show / hide the subdecks. A ▶ icon means the deck has hidden subdecks which can be shown, a ▼ icon means the deck has visible subdecks that can be hidden, and no icon means that the deck has no subdecks. 
 
-تراجع :: بعد مراجعة البطاقة الأخيرة في جلسة دراسة، تستطيع التراجع عنها من هنا.
+**Note:** subdecks can be created by using the naming convention `PARENT::CHILD`.
 
-فحص قاعدة البيانات :: يمكن لهذا أن يصلح كثيرًا من مشاكل قاعدة البيانات، كما يحذف أي وسوم غير مستخدمة.
-إذا واجهت أي مشكلة في مجموعتك، فهذا أول شيء عليك تجربته.
+### Deck name
+This is the main clickable area, which will take you to the study screen if there are cards available to review.
 
-ملاحظة: تحت بعض الظروف، تنقل هذه الميزة البطاقات إلى رزمة تدعى _!Recovered Cards_.
-إذا حدث هذا، انقل البطاقات إلى رزمتها المناسبة من خلال <<browser, متصفح البطاقات>>
-واحذف رزمة _!Recovered Cards_ بعد أن تفرغ.
+### Count buttons
+The count buttons on the far right of each deck act as a separate clickable area that takes you to the deck overview instead of the study screen. This can be useful if you want to quickly view the number of cards available in the deck.
 
-فحص الوسائط :: جرب هذا إذا واجهت أي مشكلة عند مزامنة الوسائط.
+## Advanced Actions
+Some additional actions are located in the overflow menu for less common tasks, which are summarized below:
 
-البطاقات الفارغة :: يحذف البطاقات الفارغة من مجموعتك. انظر https://docs.ankiweb.net/#/templates/generation?id=card-generation-amp-deletion[دليل الحاسوب]
-لمزيد من المعلومات.
+### Undo
+After reviewing the last card in a study session, you can undo it from here.
 
-استعادة من نسخة احتياطية :: يسمح لك باستعادة واحدة من <<backups,النسخ الاحتياطية>>.
+### Check database
+This can automatically fix a lot of problems with your database, and will also purge any unused tags. If you experience any problems with your collection, this is the first action you should try. 
 
-إدارة أنواع الملحوظات :: يسمح لك بإضافة أنواع الملحوظات، وتعديلها، وحذفها.
-انظر قسم <<customizingCardLayout, تخصيص مخطط البطاقات>> لمزيد من المعلومات حول هذه الميزة المتقدمة.
+>**NOTE:** Under some circumstances, check database will move cards to a deck named _!Recovered Cards_. If this occurs, please move the cards to an appropriate deck via the [card browser](browser.md#findingsearchingbrowsing), and delete _!Recovered Cards_ when it is empty.  
 
-استيراد :: يستورد ملف أنكي .apkg يحتوي رزمة. انظر قسم <<importing, الاستيراد>> لمزيد من المعلومات.
+### Check media
+Try to run this if you experience any issues with media syncing.
 
-تصدير المجموعة :: يصدر كل مجموعتك كملف collection.apkg. انظر قسم <<exporting, التصدير>> لمزيد من المعلومات.
+### Empty cards
+Remove any empty cards from your collection. See the [desktop documentation](https://docs.ankiweb.net/templates/generation.html#card-generation--deletion) for more.
 
-## عدادات الرزم
-هناك ثلاث أرقام بجانب كل رزمة. يشير الرقم الأزرق على اليسار إلى عدد البطاقات الجديدة
-التي عليك تعلمها اليوم. يعرض أنكي 20 بطاقة جديدة كل يوم بشكل افتراضي، وتستطيع تغيير
-هذا إذا أردت. يشير الرقم الأحمر في الوسط إلى البطاقات المستحقة للدراسة اليوم والتي هي
-في طور التعلم، ويشير الرقم الأخضر إلى البطاقات المستحقة للمراجعة (البطاقات التي
-تخرجت من طور التعلم). في رزمة لم تدرسها من قبل أبدًا، سيكون كلا الرقمان الأخيران صفرًا.
+### Restore from backup
+Allows you to restore from one of AnkiDroid's [automatic backups](backups.md#automatic-backups)
 
-كما هو موضح في الأعلى، يؤدي النقر على العدادات إلى أخذك إلى شاشة موجز الرزمة.
+### Manage note types
+Allows you to add, edit, and delete note types. See the [customizing card layout](advanced-features/customizing-card-layout.md) section for more help with this advanced feature.Keyboard Shortcuts
+
+### Import
+Import a .apkg anki file containing a deck. See the [importing](importing/importing-anki-files.md) section for more.
+
+### Export collection
+Export entire collection as a collection.apkg file. See the [exporting](exporting.md) section for more.
+
+## Deck Counts
+Next to each deck, three numbers are displayed. The left, blue number, corresponds to how many new cards you have to learn today. Anki will introduce 20 new cards a day by default, and you can customize this number if you'd like. The red number in the middle is for the cards due to be studied today which are currently in the learning phase, and the green number is the cards which are due for review (i.e. cards which have already graduated from the learning phase). On a deck you've never studied before, these numbers will both be zero.
+
+As explained above, tapping on the counts will take you to the deck overview screen.

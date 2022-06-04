@@ -1,5 +1,17 @@
 #!/bin/bash
 
+MDBOOK="$HOME/mdbook-binaries"
+
+if [ ! -d "$MDBOOK" ]; then
+  (cd && git clone https://github.com/ankitects/mdbook-binaries.git)
+fi
+
+export PATH="$MDBOOK:$PATH"
+
+if [ "$CHECK" = "" ]; then
+    rm $HOME/mdbook-binaries/mdbook-linkcheck
+fi
+
 rm -rf docs
 mkdir docs
 
