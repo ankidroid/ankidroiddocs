@@ -1,1 +1,1 @@
-- [Introduction](intro.md)
+- [ajutor si sustinere](help.md)

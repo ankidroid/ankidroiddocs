@@ -1,1 +1,1 @@
-- [Introduction](intro.md)
+- [Помощь и поддержка](help.md)
