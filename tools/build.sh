@@ -15,6 +15,17 @@ fi
 rm -rf docs
 mkdir docs
 
+
+# build changelog
+cd mdbook/changelog
+mdbook build
+
+cd ../../
+cd docs
+cp -r changelog/html/* changelog
+rm -rf changelog/html/*
+cd ..
+
 # build for english
 lang="en"
 cd mdbook/$lang
