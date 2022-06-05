@@ -1,9 +1,9 @@
-== はじめに
+# はじめに
 
 AnkiDroidをお使いいただき、ありがとうございます。AnkiDroidは、よく使われているSRS（訳注：間隔反復システム。復習までの時間を管理することで効率よく暗記する方法）ソフト
- http://ankisrs.net/[「Anki」] （対応OS: Windows / Mac / Linux / BSD）の、Android用クライアントアプリです。
+ [「Anki」](http://ankisrs.net) （対応OS: Windows / Mac / Linux / BSD）の、Android用クライアントアプリです。
  
 AnkiDroidは、このAnkiと連携して使うことを想定して作られています。Ankiを全く使わずに学習することも、オンライン上で共有されているデッキ（＝カードのセット）をダウンロードするなどすればできなくはありませんが、
-Ankiでのみ実行できる機能や、Ankiで実行するほうがずっと効率的な機能もあります。なお、このマニュアルで使われている用語を理解するため、Anki自体のマニュアルのうち、少なくとも http://wikiwiki.jp/rage2050/?2.0%2FTheBasics[「基本」の節] を読んでおくことを**強くおすすめ**します。
+Ankiでのみ実行できる機能や、Ankiで実行するほうがずっと効率的な機能もあります。なお、このマニュアルで使われている用語を理解するため、Anki自体のマニュアルのうち、少なくとも [「基本」の節](http://wikiwiki.jp/rage2050/?2.0%2FTheBasics) を読んでおくことを**強くおすすめ**します。
 
-もし探している事柄がこのマニュアルに書かれていなかった場合は、 https://github.com/ankidroid/Anki-Android/wiki[AnkiDroidのWiki] を確認してください。更新履歴、バグレポートや新機能リクエストを投稿するための手順、FAQ（よくある質問）などを見ることができます。
+もし探している事柄がこのマニュアルに書かれていなかった場合は、 [AnkiDroidのWiki](https://github.com/ankidroid/Anki-Android/wiki) を確認してください。更新履歴、バグレポートや新機能リクエストを投稿するための手順、FAQ（よくある質問）などを見ることができます。
