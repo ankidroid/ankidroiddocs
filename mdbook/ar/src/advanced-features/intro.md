@@ -1,10 +1,10 @@
-# Advanced Features
+# ميزات متقدمة
 
-- [MathJax Support](mathjax.md)
-- [Reverse Cards](reverse-cards.md)
-- [Custom Fonts](custom-fonts.md)
-- [Custom Card Layout](customizing-card-layout.md)
-- [Type in the answer feature](type-in-answer.md)
-- [Advanced Statistics](advanced-statistics.md)
-- [Reminders](reminders.md)
-- [Automatic Language Selection](set-language-hint.md)
+- [دعم MathJax](mathjax.md)
+- [البطاقات المعكوسة](reverse-cards.md)
+- [خطوط مخصصة](custom-fonts.md)
+- [تخصيص قوالب البطاقات](customizing-card-layout.md)
+- [ميزة إدخال الجواب](type-in-answer.md)
+- [الإحصائيات المتقدمة](advanced-statistics.md)
+- [التذكيرات](reminders.md)
+- [التحديد التلقائي للغة](set-language-hint.md)

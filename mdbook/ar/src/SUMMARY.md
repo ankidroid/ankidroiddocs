@@ -1,54 +1,56 @@
 # Summary
 
-[Introduction](intro.md)
-- [Getting started](getting-started.md)
+[مقدمة](intro.md)
+- [البدء](getting-started.md)
 
-- [The Deck List](deck-picker.md)
+- [قائمة الرزم](deck-picker.md)
 
-- [Navigation Drawer](drawer.md)
+- [قائمة التنقل](drawer.md)
 
-- [Deck Overview Screen](deck-overview.md)
+- [شاشة موجز الرزمة](deck-overview.md)
 
-- [Study Screen](reviewer.md)
+- [شاشة الدراسة](reviewer.md)
 
-- [Add Note Screen](adding-notes.md)
+- [شاشة إضافة ملحوظة](adding-notes.md)
 
-- [Edit Note Screen](editing-notes.md)
+- [شاشة تحرير الملحوظة](editing-notes.md)
 
-- [Finding/Searching/Browsing](browser.md)
+- [البحث/التصفح](browser.md)
 
-- [Filtered Decks](filtered-deck.md)
+- [الرزم المفلترة](filtered-deck.md)
 
-- [Importing Anki Files](importing/importing-anki-files.md)
-    - [Importing Anki Databases (.anki2)](importing/importing-anki-databases.md)
+- [استيراد ملفات أنكي](importing/importing-anki-files.md)
+    - [استيراد قواعد بيانات أنكي (.anki2)](importing/importing-anki-databases.md)
 
-- [Exporting Anki Files](exporting.md)
+- [تصدير ملفات أنكي](exporting.md)
 
-- [Automatic Backups](backups.md)
+- [نسخ احتياطية تلقائية](backups.md)
 
-- [Preferences](settings.md)
+- [التفضيلات](settings.md)
 
-- [Gestures](gestures.md)
+- [الإيماءات](gestures.md)
 
-- [Note Formatting Toolbar](note-formatting-toolbar.md)
+- [شريط أدوات تنسيق الملحوظات](note-formatting-toolbar.md)
 
-- [Keyboard Shortcuts](keyboard-shortcuts.md)
+- [اختصارات لوحة المفاتيح](keyboard-shortcuts.md)
 
-- [Using Right-To-Left Languages with AnkiDroid](rtl.md)
+- [استخدام اللغات المكتوبة من اليمين إلى اليسار في أنكيدرويد](rtl.md)
 
-- [Using Anki Desktop with AnkiDroid](anki-desktop.md)
+- [استخدام أنكي للحاسوب مع أنكيدرويد](anki-desktop.md)
 
-- [Advanced Features](advanced-features/intro.md)
-    - [MathJax Support](advanced-features/mathjax.md)
-    - [Reverse Cards](advanced-features/reverse-cards.md)
-    - [Custom Fonts](advanced-features/custom-fonts.md)
-    - [Custom Card Layout](advanced-features/customizing-card-layout.md)
-    - [Type in the answer feature](advanced-features/type-in-answer.md)
-    - [Advanced Statistics](advanced-features/advanced-statistics.md)
-    - [Reminders](advanced-features/reminders.md)
-    - [Automatic Language Selection](advanced-features/set-language-hint.md)
+- [التعامل مع تعارضات الدمج في أنكي ويب](ankiweb-conflicts.md)
+
+- [ميزات متقدمة](advanced-features/intro.md)
+    - [دعم MathJax](advanced-features/mathjax.md)
+    - [البطاقات المعكوسة](advanced-features/reverse-cards.md)
+    - [خطوط مخصصة](advanced-features/custom-fonts.md)
+    - [مخطط بطاقات مخصص](advanced-features/customizing-card-layout.md)
+    - [ميزة إدخال الجواب](advanced-features/type-in-answer.md)
+    - [الإحصائيات المتقدمة](advanced-features/advanced-statistics.md)
+    - [التذكيرات](advanced-features/reminders.md)
+    - [التحديد التلقائي للغة](advanced-features/set-language-hint.md)
 
 
-- [Help & Supports](help.md)
-- [Beta testing](beta-testing.md)
-- [Contributing to AnkiDroid](contributing.md)
+- [دعم أنكيدرويد](help.md)
+- [تجربة النسخ التجريبية](beta-testing.md)
+- [المساهمة في أنكيدرويد](contributing.md)

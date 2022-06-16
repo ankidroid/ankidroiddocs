@@ -1,34 +1,44 @@
-# Help & Support
+# دعم أنكيدرويد
 
-## Before Asking
+## قبل السؤال
 
-Before asking for help, please try searching through the [AnkiDroid Manual](intro.md), the list of [Frequently Asked Questions](https://github.com/ankidroid/Anki-Android/wiki/FAQ), and also the main [Anki Manual](https://docs.ankiweb.net) for general help with the Anki system and features, and any issues not limited to Android.
+قبل طلب المساعدة، الرجاء محاولة البحث في [دليل أنكيدرويد](intro.md)،
+و[قائمة الأسئلة المتكررة](https://github.com/ankidroid/Anki-Android/wiki/FAQ)،
+و [دليل أنكي الرئيسي](https://docs.ankiweb.net) للمساعدة العامة بخصوص نظام أنكي وميزاته، وأي أمور غير محصورة بأنكيدرويد.
 
-## Support
-If you were unable to find what you needed in the documentation above, please visit the relevant site below:
+## دعم
+إذا لم تجد ما تبحث عنه في الوثائق المذكورة في الأعلى، الرجاء زيارة واحد من المواقع التالية:
 
-### Non-Android-Specific Issues 
-AnkiDroid (the Android version of Anki) is created and managed independently from other Anki versions. For the PC / Web / iOS versions, and general Anki issues that are not limited to Android, please visit the main [Anki support site](https://forums.ankiweb.net).
+### أمور غير محصورة بأنكيدرويد 
+أنكيدرويد (نسخة الأندرويد من أنكي) منشأ ومدار بشكل مستقل عن النسخ الأخرى. لإصدارات الحاسوب / الويب / أي أو إس، والأمور غير المحصورة بأنكيدرويد،
+الرجاء زيارة [موقع دعم أنكي الرئيسي](https://forums.ankiweb.net).
 
-### AnkiDroid Questions
-For questions and help concerning AnkiDroid, please visit the [user forum](https://groups.google.com/g/anki-android), or you can send your questions to the forum's [public email address](mailto:public-forum@ankidroid.org) if you don't want to register on the forum.
+### أسئلة أنكيدرويد 
+للأسئلة والمساعدة بخصوص أنكيدرويد، الرجاء زيارة [منتدى المستخدمين](https://groups.google.com/forum/#!forum/anki-android)،
+كما يمكنك إرسال أسئلتك إلى [عنوان البريد الإلكتروني العام](mailto:public-forum@ankidroid.org)
+والمخصص للمنتدى إذا لم تكن تريد التسجيل في المنتدى.
 
-### Bug Reports and Feature Requests
-For bug reports and feature requests, please search through the current list of open issues on the [AnkiDroid issue tracker](https://github.com/ankidroid/Anki-Android/issues), and if there are no existing issues, create a new issue including as much information as possible. 
-For bug reports, please also include the output of **debug info** by following the steps below: 
+### تقارير الأعطال وطلبات الميزات
+لتقارير الأخطاء وطلبات الميزات، الرجاء الاطلاع على القائمة الحالية للمشاكل المفتوحة في [متعقب أعطال أنكيدرويد](https://github.com/ankidroid/Anki-Android/issues)،
+وإذا لم تكن هناك منشورات تخص مشكلتك، أنشئ واحدًا جديدًا مع توفير أكبر قدر ممكن من المعلومات. لتقارير الأعطال،
+الرجاء تضمين **معلومات التصحيح** أيضًا باتباع الخطوات التالية:
 
-1. Open the navigation drawer by tapping the button on the top left of the screen
-2. Tap **settings**
-3. Tap **advanced**
-4. Tap **about AnkiDroid** at the bottom
-5. Tap the **copy debug info** button at the bottom (which copies **debug info** to the clipboard)
-6. If filling out the bug report on your mobile device, paste the contents of the clipboard directly to the issue. Alternatively, you can paste the contents of the clipboard into a new email, send it to yourself, then copy and paste that into the bug report from your computer.
+1. افتح قائمة التنقل بالنقر على الزر في أعلى يسار الشاشة
+2. انقر **إعدادات**
+3. انقر **خيارات متقدمة**
+4. انقر **حول أنكيدرويد** في الأسفل
+5. انقر زر **نسخ معلومات التصحيح** في الأسفل لنسخ المعلومات إلى الحافظة
+6. إذا كنت تكتب تقرير العطل على هاتف محمول، الصق محتوى الحافظة في المنشور. كبديل، تستطيع لصق محتوى الحافظة في بريد إلكتروني جديد، وإرساله إلى نفسك، ثم نسخه ولصقه في تقرير العطل على حاسوبك.
 
-![DebugInfo.png](img/DebugInfo.png)
+![معلومات التصحيح](img/DebugInfo.png)
 
-**Note:** if you are unable to open the app at all, so cannot even access **settings** then please follow [these instructions](https://github.com/ankidroid/Anki-Android/wiki/Unopenable-collections).
+**ملاحظة:** إذا لم تكن قادرًا على فتح التطبيق أبدًا، وبالتالي لا يمكنك الوصول إلى الإعدادات،
+الرجاء الاطلاع على [هذه التعليمات](https://github.com/ankidroid/Anki-Android/wiki/Unopenable-collections).
 
-This **debug info** is important as it allows us to match your report with our internal crash report data. 
+إن معلومات التصحيح هذه مهمة لأنها تسمح لنا بمطابقة تقريرك مع معلومات تقارير الأعطال الداخلية عندنا.
 
-### Contributing to AnkiDroid
-AnkiDroid is an open source project, and anyone is welcome to contribute (including non-developers)! For help with contributing to AnkiDroid, please first check the [contribution wiki page](https://github.com/ankidroid/Anki-Android/wiki/Contributing), and ask any further questions in the [main forum](https://groups.google.com/g/anki-android).
+### المساهمة في أنكيدرويد
+
+إن أنكيدرويد مشروع مفتوح المصدر، والجميع مشجع على المساهمة (بما في ذلك غير المطورين)! لمعلومات حول كيفية المساهمة،
+الرجاء الاطلاع على [صفحة ويكي المساهمة](https://github.com/ankidroid/Anki-Android/wiki/Contributing)،
+وطرح أي أسئلة إضافية في [المنتدى الرئيسي](https://groups.google.com/g/anki-android).
