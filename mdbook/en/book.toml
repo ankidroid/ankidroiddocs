@@ -12,7 +12,8 @@ build-dir = "../../docs/en"
 [output.html]
 git-repository-url = "https://github.com/ankidroid/ankidroiddocs/"
 cname = "docs.ankidroid.org"
-additional-css = ["css/kbd.css"]
+additional-css = ["css/kbd.css", "css/language-button.css"]
+additional-js = ["js/language-button.js"]
 
 [preprocessor.toc]
 command = "mdbook-toc"
