@@ -12,61 +12,34 @@ if [ "$CHECK" = "" ]; then
     rm $HOME/mdbook-binaries/mdbook-linkcheck
 fi
 
+SRC_DIR=$(pwd)
+MDBOOK_DIR=$SRC_DIR/mdbook
+
+echo "cleaning docs dir"
 rm -rf docs
 mkdir docs
 
+declare -a arr=("changelog" "en" "zh" "ar" "ja")
 
-# build changelog
-cd mdbook/changelog
-mdbook build
+# build for each book
+for book in "${arr[@]}"; do
+   echo "building book for $book"
+   # copy kbd.css to css dir of the book
+   mkdir -p $MDBOOK_DIR/$book/css/
+   cp $SRC_DIR/res/css/kbd.css $MDBOOK_DIR/$book/css/
+   cd $MDBOOK_DIR/$book
 
-cd ../../
-cd docs
-cp -r changelog/html/* changelog
-rm -rf changelog/html/*
-cd ..
+   # add langauge buttons
+   mkdir -p $MDBOOK_DIR/$book/js/
+   cp $SRC_DIR/res/css/language-button.css $MDBOOK_DIR/$book/css/
+   cp $SRC_DIR/res/js/language-button.js $MDBOOK_DIR/$book/js/
 
-# build for english
-lang="en"
-cd mdbook/$lang
-mdbook build
+   mdbook build
 
-cd ../../
-cd docs
-cp -r $lang/html/* $lang
-rm -rf $lang/html/*
+   mv $SRC_DIR/docs/$book/html/* $SRC_DIR/docs/$book/
 
-
-# build for chinese
-lang="zh"
-cd ..
-cd mdbook/$lang
-mdbook build
-
-cd ../../
-cd docs
-cp -r $lang/html/* $lang
-rm -rf $lang/html/*
-
-
-# build for arabic
-lang="ar"
-cd ..
-cd mdbook/$lang
-mdbook build
-
-cd ../../
-cd docs
-cp -r $lang/html/* $lang
-rm -rf $lang/html/*
-
-# build for japanese
-lang="ja"
-cd ..
-cd mdbook/$lang
-mdbook build
-
-cd ../../
-cd docs
-cp -r $lang/html/* $lang
-rm -rf $lang/html/*
+   # clean copied file from mdbook
+   rm $MDBOOK_DIR/$book/css/kbd.css
+   rm $MDBOOK_DIR/$book/css/language-button.css
+   rm $MDBOOK_DIR/$book/js/language-button.js
+done
