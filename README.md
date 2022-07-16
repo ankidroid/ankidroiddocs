@@ -24,7 +24,7 @@ On Windows try the following:
 ## Compile the .asc source files
   * Open terminal or command prompt with Ruby
   * Enter the command `asciidoctor FULL_PATH_TO_SOURCE_FILE`
-  * A file will be generated with the same name as the source file, but with .html extension.
+  * A file will be generated with the same name as the source file, but with `.html` extension.
 
 # Contributing translations and corrections
 
