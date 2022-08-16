@@ -10,7 +10,7 @@ Mathjax مضبوط لتوقع صيغ TeX، مع `\(` و `\)` لإحاطة للم
 
 وعاين البطاقة.
 
-لمزيد من التفاصيل، انظر [دعم Mathjax](https://docs.ankiweb.net/math.html#mathjax)
+لمزيد من التفاصيل، انظر [دعم Mathjax](https://www.abdnh.net/anki-manual/math.html#mathjax)
 في دليل أنكي الحاسوب.
 
 لم تعد [الحلول السابقة](https://www.reddit.com/r/Anki/comments/ar7lxd/how_to_load_mathjax_color_extension_on_anki/egm6u5j)
