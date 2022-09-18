@@ -1,0 +1,10 @@
+body { direction: rtl; }
+code { direction: ltr; }
+
+.nav-wide-wrapper, #menu-bar {
+    direction: ltr;
+}
+
+h1:target::before, h2:target::before, h3:target::before, h4:target::before, h5:target::before, h6:target::before {
+    margin-left: -10px !important;
+}

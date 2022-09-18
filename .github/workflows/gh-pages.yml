@@ -1,0 +1,40 @@
+env:
+  cname: docs.ankidroid.org
+
+name: github pages
+
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          chmod +x ./tools/build.sh
+          ./tools/build.sh
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          cname: ${{ env.cname }}
+
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          chmod +x ./tools/build.sh
+          CHECK=1 ./tools/build.sh
+          
+
