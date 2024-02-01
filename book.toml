@@ -1,0 +1,6 @@
+[book]
+authors = ["krmanik"]
+language = "en"
+multilingual = false
+src = "src"
+title = "AnkiDroid Manual"
