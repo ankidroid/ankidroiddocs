@@ -1,0 +1,14 @@
+#language-list {
+    left: auto;
+    right: 10px;
+  }
+  
+  #language-list a {
+    color: inherit;
+  }
+  
+  [dir=rtl] #language-list {
+    left: 10px;
+    right: auto;
+  }
+  
