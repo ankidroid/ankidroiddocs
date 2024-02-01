@@ -1,0 +1,47 @@
+[book]
+authors = ["AnkiDroid Open Source Team"]
+language = "en"
+multilingual = false
+src = "src"
+title = "AnkiDroid Manual"
+
+[rust]
+edition = "2021"
+
+[build]
+extra-watch-dirs = ["po", "third_party"]
+
+[preprocessor.gettext]
+after = ["links"]
+
+[preprocessor.svgbob]
+renderers = ["html"]
+after = ["gettext"]
+class = "bob"
+
+[output.html]
+curly-quotes = true
+cname = "docs.ankidroid.org"
+additional-css = [
+  "theme/css/kbd.css",
+  "theme/css/language-picker.css",
+  "theme/css/rtl.css",
+]
+git-repository-url = "https://github.com/ankidroid/ankidroiddocs/"
+edit-url-template = "https://github.com/ankidroid/ankidroiddocs/edit/main/{path}"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output.linkcheck]
+optional = true
+warning-policy = "warn"
+follow-web-links = true
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.search]
+use-boolean-and = true
