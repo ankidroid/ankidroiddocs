@@ -1,5 +1,6 @@
 # AnkiDroid Changelog
 
+- [Version 2.16](/changelog/v2.16.html)
 - [Version 2.15](/changelog/v2.15.html)
 - [Version 2.14](/changelog/v2.14.html)
 - [Version 2.13](/changelog/v2.13.html)

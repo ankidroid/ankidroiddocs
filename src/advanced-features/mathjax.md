@@ -1,5 +1,6 @@
 # MathJax Support
-Mathjax is a modern typesetting library for math and chemistry.  AnkiDroid supports Mathjax cards out of the box.  Mathjax is configured to expect TeX formatting, with `\(` and `\)` delimiting inline equations and `\[` and `\]` for display equations.
+
+Mathjax is a modern typesetting library for math and chemistry. AnkiDroid supports Mathjax cards out of the box. Mathjax is configured to expect TeX formatting, with `\(` and `\)` delimiting inline equations and `\[` and `\]` for display equations.
 
 To try it out, enter the following into a field:
 

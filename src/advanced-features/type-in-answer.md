@@ -8,8 +8,9 @@ The text input box and the soft keyboard can be hidden by ticking **Disable typi
 
 Even with typing disabled, the correct answer is shown on the answer side. This is done on purpose; otherwise the correct answer might not be shown at all.
 
-To hide the comparison (e.g. because the correct answer is shown anyway), the HTML id **typeans** can be used. 
+To hide the comparison (e.g. because the correct answer is shown anyway), the HTML id **typeans** can be used.
 Add following to the [card styling](https://docs.ankiweb.net/templates/styling.html#card-styling) using Anki Desktop.
+
 ```css
 .mobile #typeans {
     display: none;

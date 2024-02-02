@@ -6,7 +6,7 @@ That said, if you have a test looming, or simply want to pass some time, it's po
 
 A **filtered deck** is a temporary deck that contains cards based on various criteria, such as **forgotten today**, `is tagged 'hard'`, and so on. After studying cards in a filtered deck, or when the filtered deck is deleted, the cards are automatically returned to their original deck.
 
-The easiest way to create a filtered deck is by long clicking on a deck and choosing the **custom study** option. 
+The easiest way to create a filtered deck is by long clicking on a deck and choosing the **custom study** option.
 
 Advanced users can create a filtered deck manually, by choosing **Create filtered deck** from the overflow menu in the deck list screen.
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Thank you for using AnkiDroid, the Android client for the popular [Anki](http://ankisrs.net) spaced repetition system. 
+Thank you for using AnkiDroid, the Android client for the popular [Anki](http://ankisrs.net) spaced repetition system.
 
 Anki is spaced repetition technique which is simple but highly effective. It helps you memorize things by automatically repeating them across increasing intervals based on your responses with no need for you to keep track of what to study or when to study it. You create notes (or download shared decks) with content you need to memorize, and the scheduler will make sure you see the content when you need to.
 

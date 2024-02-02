@@ -31,10 +31,12 @@ Run
 mdbook serve
 ```
 
-to start a web server with the course. You'll find the content on `http://localhost:3000`. You can use mdbook build to create a static version of the course in the book/ directory. To build any of the translated versions of the course, run 
+to start a web server with the course. You'll find the content on `http://localhost:3000`. You can use mdbook build to create a static version of the course in the book/ directory. To build any of the translated versions of the course, run
+
 ```
 MDBOOK_BOOK__LANGUAGE=xx mdbook build -d book/xx
 ```
+
 where xx is the ISO 639 language code (e.g. ja for the Japanese translation).
 
 # Translations of AnkiDroid Docs
@@ -45,14 +47,14 @@ We use `crowdin.com` for AnkiDroid docs.
 
 Translating is easy and fun:
 
-* Go to http://crowdin.net/project/ankidroiddocs
-* Register, if you don't have an account yet
-* Click on the flag of your language
-* Click on a file (they are sorted by descending priority)
-* Click on "Sort"
-* Click on "Missing translation"
-* Grey bullet=missing, Green bullet=done
-* For each grey bullet, translate the English text to your language.
+- Go to http://crowdin.net/project/ankidroiddocs
+- Register, if you don't have an account yet
+- Click on the flag of your language
+- Click on a file (they are sorted by descending priority)
+- Click on "Sort"
+- Click on "Missing translation"
+- Grey bullet=missing, Green bullet=done
+- For each grey bullet, translate the English text to your language.
 
 ## Add new language entry if not exists
 
@@ -72,6 +74,7 @@ Translating is easy and fun:
     };
 </script>
 ```
+
 5. Commit changes and create pull request to ankidroiddocs
 6. Update translations on Crowdin
 

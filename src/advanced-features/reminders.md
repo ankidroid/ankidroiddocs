@@ -1,4 +1,5 @@
 # Reminders
+
 AnkiDroid can remind you to devote some time to reviewing cards every day at a specific time via Android's notification framework.
 You can configure reminders for each options group independently.
 To configure a notification go to Deck options > Reminders, then tick the checkbox and select the time you want to be notified at.
