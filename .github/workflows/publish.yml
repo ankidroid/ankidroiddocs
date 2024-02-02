@@ -19,7 +19,7 @@ concurrency:
 env:
   CARGO_TERM_COLOR: always
   # Update the language picker in index.hbs to link new languages.
-  LANGUAGES: ar ja zh-CN
+  LANGUAGES: ar ja ru zh-CN
 
 jobs:
   publish:
