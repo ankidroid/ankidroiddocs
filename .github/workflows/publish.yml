@@ -1,52 +1,65 @@
 name: Publish
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - "main"
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+  # Update the language picker in index.hbs to link new languages.
+  LANGUAGES: ar ja ru zh-CN
 
 jobs:
-  main:
-    name: "Publish docs.ankidroid.org"
-    if: github.repository == 'ankidroid/ankidroiddocs'
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: SSH key setup
-        uses: webfactory/ssh-agent@v0.8.0
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          ssh-private-key: ${{ secrets.DOCS_SSH_PRIVATE_KEY }}
+          fetch-depth: 0 # We need the full history for build.sh below.
 
-      - name: SSH server key setup
+      - name: Setup Rust cache
+        uses: ./.github/workflows/setup-rust-cache
+
+      - name: Install mdbook
+        uses: ./.github/workflows/install-mdbook
+
+      - name: Make executable
+        run: chmod +x .github/workflows/build.sh
+
+      - name: Build course in English
+        run: .github/workflows/build.sh en book
+
+      - name: Build all translations
         run: |
-          ssh-keyscan ankidroid.org >> ~/.ssh/known_hosts
-        shell: bash
+          for po_lang in ${{ env.LANGUAGES }}; do
+              .github/workflows/build.sh $po_lang book/$po_lang
+              mv book/$po_lang/html book/html/$po_lang
+          done
 
-      - name: Git Checkout
-        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Prepare website directory
-        run: |
-          mkdir _site
-          cp -r img _site/
-          cp icons/* _site/
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: book/html
 
-      - name: Install Asciidoctor
-        run: |
-          sudo chown -R $USER /var/lib/gems/
-          sudo chown -R $USER /usr/local/bin
-          gem install asciidoctor
-        shell: bash
-
-      - name: Render Docs
-        run: asciidoctor ./*.asc -D _site/
-
-      - name: Copy Docs to ankidroid.org
-        run: scp -r _site/* ankidroid@ankidroid.org:/usr/share/nginx/html/
-        shell: bash
-
-      - name: Restart nginx web server
-        #  - why? nginx used to fail periodically requiring a restart. But who has access? How to restart?
-        # This alloww people with publish access a button-push way to force a restart if necessary,
-        # and the restart is quick enough that doing it on publish is fine.
-        run: ssh ankidroid@ankidroid.org /usr/bin/sudo /usr/sbin/service nginx restart
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

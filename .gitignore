@@ -1,9 +1,18 @@
-tools/id_rsa
-*.html
-*~
+# Build artifacts
+/book/
+target/
+*.bin
 
-# KDE directory preferences
-.directory
+# Translation artifacts
+po/messages.pot
+po/*.mo
+po/*.po~
 
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
+# macOS artifacts
+.DS_Store
+
+# Jetbrains IDEs project files
+.idea/
+.iml
+.iws
+count.dat
