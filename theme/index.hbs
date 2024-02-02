@@ -179,19 +179,8 @@
                           <li role="none"><button role="menuitem" class="theme">
                               <a id="en" href="en/index.html">English</a>
                           </button></li>
-                          <li role="none"><button role="menuitem" class="theme">
-                              <a id="zh-CN" href="zh-CN/index.html">Chinese Simplified (汉语)</a>
-                          </button></li>
                         </ul>
-
                         <script>
-                          let langToggle = document.getElementById("language-toggle");
-                          let langList = document.getElementById("language-list");
-                          langToggle.addEventListener("click", (event) => {
-                              langList.style.display = langList.style.display == "block" ? "none" : "block";
-                          });
-                          let selectedLang = document.getElementById("{{ language }}");
-                          selectedLang.parentNode.classList.add("theme-selected");
                           // The path to the root, taking the current
                           // language into account.
                           {{#if (eq language "en")}}
@@ -199,17 +188,39 @@
                           {{else}}
                           let full_path_to_root = "{{ path_to_root }}../";
                           {{/if}}
+
                           // The page path (mdbook only gives us
                           // access to the path to the Markdown file).
                           let path = "{{ path }}".replace(/\.md$/, ".html");
-                          for (let lang of langList.querySelectorAll("a")) {
-                              if (lang.id == "en") {
-                                  lang.href = `${full_path_to_root}${path}`;
-                              } else {
-                                  lang.href = `${full_path_to_root}${lang.id}/${path}`;
-                              }
+                          let langToggle = document.getElementById("language-toggle");
+                          let langList = document.getElementById("language-list");
+
+                          for (let lang in book_lang) {
+                            let langButton = document.createElement("button");
+                            langButton.setAttribute("role", "menuitem");
+                            langButton.setAttribute("class", "theme");
+                            let langLink = document.createElement("a");
+                            langLink.setAttribute("id", lang);
+                            if (lang == "en") {
+                                langLink.href = `${full_path_to_root}${path}`;
+                            } else {
+                                langLink.href = `${full_path_to_root}${lang}/${path}`;
+                            }
+                            langLink.textContent = book_lang[lang];
+                            langButton.appendChild(langLink);
+                            let langLi = document.createElement("li");
+                            langLi.setAttribute("role", "none");
+                            langLi.appendChild(langButton);
+                            langList.appendChild(langLi);
                           }
+
+                          langToggle.addEventListener("click", (event) => {
+                              langList.style.display = langList.style.display == "block" ? "none" : "block";
+                          });
+                          let selectedLang = document.getElementById("{{ language }}");
+                          selectedLang.parentNode.classList.add("theme-selected");
                         </script>
+
                         {{#if print_enable}}
                         <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>

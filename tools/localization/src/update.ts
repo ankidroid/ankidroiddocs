@@ -14,7 +14,6 @@
 
 import fs from "fs";
 import {
-    LANGUAGES,
     TEMP_DIR,
     poDirectory,
 } from "./constants";
@@ -58,8 +57,9 @@ async function update(
  * Update translated I18n files in po/ dir
  */
 export async function updateI18nFiles() {
+    const tempDir = fs.readdirSync(TEMP_DIR);
 
-    for (const language of LANGUAGES) {
+    for (const language of tempDir) {
 
         console.log(`\nCopying language files from temp_dir/${language}/messages-${language}.po to po/${language}.po`);
 

@@ -28,9 +28,3 @@ export const messagesPotFile = path.join(poDirectory, "messages.pot");
 
 export const TEMP_DIR = path.join(__dirname, "../temp_dir");
 createDirIfNotExisting(TEMP_DIR);
-
-export const LANGUAGES = [
-    "ar",
-    "ja",
-    "zh-CN",
-];
