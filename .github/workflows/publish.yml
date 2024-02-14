@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SSH key setup
-        uses: webfactory/ssh-agent@v0.8.0
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.DOCS_SSH_PRIVATE_KEY }}
 
@@ -23,7 +23,7 @@ jobs:
         shell: bash
 
       - name: Git Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Prepare website directory
         run: |
