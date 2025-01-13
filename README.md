@@ -21,6 +21,8 @@ On Windows try the following:
   * Open command prompt with Ruby
   * Enter the command `gem install asciidoctor`
 
+On Mac use following command on terminal : `brew install asciidoctor`
+
 ## Compile the .asc source files
   * Open terminal or command prompt with Ruby
   * Enter the command `asciidoctor FULL_PATH_TO_SOURCE_FILE`
