@@ -17,7 +17,7 @@ The documentation on this site is written in the Asciidoc syntax, and should be 
 On Ubuntu you should be able to install with apt: `sudo apt-get install asciidoctor`
 
 On Windows try the following:
-  * [Install Ruby](https://www.ruby-lang.org/en/installation/)
+  * [Install Ruby](https://rubyinstaller.org/)
   * Open command prompt with Ruby
   * Enter the command `gem install asciidoctor`
 
