@@ -1,0 +1,22 @@
+name: Preview Website
+
+on:
+  pull_request:
+    paths:
+      - "ankidroid.org/**"
+      - ".github/workflows/website_preview.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: HTML Preview
+        uses: pavi2410/html-preview-action@v4
+        id: html_preview
+        with:
+          html_file: 'ankidroid.org/index.html'
+          job_summary: true

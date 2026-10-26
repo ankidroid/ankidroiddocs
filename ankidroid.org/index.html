@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnkiDroid | Remember Forever</title>
+    <meta
+      name="description"
+      content="AnkiDroid is a free flashcard app that learns how you learn. Use spaced repetition to remember anything forever. Download now!"
+    />
+    <meta
+      name="keywords"
+      content="AnkiDroid, Anki, flashcards, spaced repetition, learning app, study app, memorization, Android, free app"
+    />
+    <meta name="author" content="AnkiDroid Open Source Team" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ankidroid.org/" />
+    <meta property="og:site_name" content="AnkiDroid" />
+    <meta property="og:title" content="AnkiDroid | Remember Forever" />
+    <meta
+      property="og:description"
+      content="The free flashcard app that learns how you learn. Use spaced repetition to remember anything forever."
+    />
+    <meta
+      property="og:image"
+      content="https://ankidroid.org/assets/ankidroid_logo.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ankidroid.org/" />
+    <meta name="twitter:title" content="AnkiDroid | Remember Forever" />
+    <meta
+      name="twitter:description"
+      content="The free flashcard app that learns how you learn. Use spaced repetition to remember anything forever."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ankidroid.org/assets/ankidroid_logo.png"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ankidroid.org/" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        AnkiDroid
+        <img
+          src="assets/logo_star.svg"
+          alt=""
+          height="576"
+          width="601"
+          class="ankidroid-logo-img"
+        />
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <menu>
+        <!-- We don't include 'Decks' here as it's an off-site link and makes it hard to get a user to download -->
+        <a href="https://docs.ankidroid.org/">Manual</a>
+        <a href="https://forums.ankiweb.net">Forums</a>
+        <a href="https://github.com/sponsors/ankidroid">Donate</a>
+        <a href="https://github.com/ankidroid/Anki-Android/wiki/Contributing"
+          >Get Involved</a
+        >
+      </menu>
+    </header>
+    <main>
+      <!-- Image credits: see credits.html -->
+
+      <div class="beforeTheFold">
+        <h1 class="page-heading">AnkiDroid: Remember Forever</h1>
+
+        <div class="title-container">
+          <h2 class="sc">
+            Our <span class="free-text">free</span> flashcard app learns how you
+            learn, so you only review what you need, when you need it
+          </h2>
+        </div>
+
+        <div class="cardcard cardcard-spacing">
+          <div class="download-container download-container-stats">
+            <div class="grid-container">
+              <div class="item large">4.8&#8198;★</div>
+              <div class="item regular">rating</div>
+              <div class="item large">10,000,000+</div>
+              <div class="item regular">downloads</div>
+              <div class="item large">160,000+</div>
+              <div class="item regular">reviews</div>
+            </div>
+
+            <div class="download-item download-item-spacing">
+              <div class="download-item-flex">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en"
+                >
+                  <img
+                    src="assets/home/google_play_en.png"
+                    alt="Get it on Google Play"
+                    height="80"
+                    width="270"
+                    class="google-play-img"
+                  />
+                </a>
+                <span class="download-subtext">Official Anki for Android</span>
+              </div>
+              <div class="download-item-flex">
+                <a
+                  href="https://apps.ankiweb.net/"
+                  class="download-anki download-anki-button"
+                >
+                  <img
+                    src="assets/logo_star.svg"
+                    height="576"
+                    width="601"
+                    class="ankidroid-logo-img"
+                    alt=""
+                  />
+                  <!-- TODO: Better font -->
+                  <div class="download-anki-button-text">
+                    <span>Get Anki</span>
+                  </div>
+                </a>
+                <span class="download-subtext">Windows/macOS/Linux/iOS</span>
+              </div>
+            </div>
+          </div>
+          <!-- TODO: Uncomment when we have a more end-user-appropriate page to link to
+          <div class="download-container download-container-already">
+            <h2 class="helvetica">Already<br />downloaded?</h2>
+            <span class="helvetica">
+              <a href="https://docs.ankidroid.org/"
+                >Learn how to get the most out of AnkiDroid &rarr;</a
+              >
+            </span>
+          </div>
+          -->
+        </div>
+      </div>
+      <div class="content">
+        <div class="img-block hide-on-mobile">
+          <img
+            src="assets/home/pixel_tab_light.png"
+            width="2798"
+            height="1837"
+            alt="AnkiDroid card on a tablet. The card shows a hippocampus illustration and rating buttons"
+            class="hero-tablet hero-tablet-light"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <img
+            src="assets/home/pixel_tab_dark.png"
+            width="2798"
+            height="1837"
+            alt="AnkiDroid card on a tablet. The card shows a hippocampus illustration and rating buttons"
+            aria-hidden="true"
+            class="hero-tablet hero-tablet-dark"
+            decoding="async"
+          />
+        </div>
+
+        <h1>Meet AnkiDroid.</h1>
+
+        <div class="points">
+          <div class="point">
+            <div>
+              <h2>Uncompromising efficiency.</h2>
+              <p>
+                <span>
+                  An estimated 70% of US medical students use Anki to study<span
+                    popovertarget="ref-1"
+                    ><sup class="inline-reference">1</sup></span
+                  >. Whether you want to rank 1st at Cambridge<span
+                    popovertarget="ref-2"
+                    ><sup class="inline-reference">2</sup></span
+                  >, win over $200,000 breaking quiz show records<span
+                    popovertarget="ref-3"
+                    ><sup class="inline-reference">3</sup></span
+                  >, talk to someone in their native language<span
+                    popovertarget="ref-4"
+                    ><sup class="inline-reference">4</sup>
+                  </span>
+                  or just ace your French test, you're in good company.
+                </span>
+              </p>
+            </div>
+            <!--
+                Intervals obtained from the FSRS-6 visualizer using default parameters 2025-11-11
+                https://open-spaced-repetition.github.io/anki_fsrs_visualizer/
+                enter '3333' => 2, 11, 46, 163
+                Use Anki's month calculation: [Days / (365/12)]: https://github.com/ankitects/anki/blob/main/ts/lib/tslib/time.ts
+                example: 163 days / (365/12) = 5.358 => 5.4 months
+            -->
+            <div class="point-img-container">
+              <figure>
+                <img
+                  src="assets/home/intervals.svg"
+                  alt="Infographic showing the time between flashcard reviews increasing. It takes 3 reviews to move from an interval of 2 days to 5.4 months"
+                  height="508"
+                  width="434"
+                  class="point-img point-img-intervals"
+                />
+                <figcaption>
+                  Study only when you need to<span popovertarget="ref-5"
+                    ><sup class="inline-reference">5</sup></span
+                  >.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="point">
+            <div>
+              <h2>Unlimited flexibility.</h2>
+              <p>
+                <span
+                  >From radiology to calligraphy, chess games to geography: if
+                  it has a question and answer then it can be an Anki
+                  card.</span
+                >
+              </p>
+              <p>
+                <span
+                  >For advanced users, our note-based templates mean one change
+                  can instantly generate or update related cards, and our HTML,
+                  CSS &amp; JS support enables any functionality you
+                  desire.</span
+                >
+              </p>
+            </div>
+            <div class="point-img-container">
+              <img
+                src="assets/home/feature_layout.svg"
+                width="500"
+                class="point-img-reviewer point-img"
+                alt="User traces out hanzi on AnkiDroid"
+              />
+            </div>
+          </div>
+
+          <div class="point">
+            <div>
+              <h2>Open by design.</h2>
+              <span>
+                With AnkiDroid, you can review cards created using Anki
+                Desktop's vast library of addons, or create cards instantly from
+                a web browser or spreadsheet (CSV). Over 10,000 decks are also
+                available to download for free, and AnkiDroid uniquely supports
+                direct data input from other apps.
+              </span>
+            </div>
+            <div class="point-img-container">
+              <figure>
+                <img
+                  src="assets/home/add-card.svg"
+                  width="368"
+                  height="545"
+                  class="point-img-periphery point-img"
+                  alt="User adding a card from the web browser"
+                />
+                <figcaption>Create cards from highlights</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="point">
+            <div>
+              <h2>Sync up.</h2>
+              <span>
+                AnkiDroid can optionally sync with
+                <a href="https://apps.ankiweb.net/">AnkiWeb</a>, giving you a
+                free online backup of your cards, media, settings and review
+                history. All major platforms have Anki clients which sync with
+                AnkiWeb, so if you ever want to switch from a Chromebook to a
+                Steam Deck, we've got you covered. The AnkiWeb site supports
+                basic reviewing for places where you can't install apps.
+              </span>
+            </div>
+            <div class="point-img-container">
+              <img
+                src="assets/home/Mobile_and_desktop_device_templates.svg"
+                width="2917"
+                height="1891"
+                class="hide-on-mobile point-img-device-templates point-img"
+                alt="Various devices showing Anki interfaces"
+              />
+            </div>
+          </div>
+
+          <div class="point">
+            <div>
+              <h2>Here to stay.</h2>
+              <span>
+                AnkiDroid has been around for over 15 years, with over 2,000
+                people contributing code and translations from all over the
+                world. Our code is public, our past releases are available, and
+                your data is yours to export and use as you please.
+              </span>
+            </div>
+            <div class="point-img-container">
+              <img
+                src="assets/home/Globe-outline.svg"
+                width="150"
+                height="150"
+                alt=""
+                class="hide-on-mobile point-img-periphery point-img point-img-globe"
+              />
+            </div>
+          </div>
+
+          <div class="point">
+            <div>
+              <h2>We're on your side.</h2>
+              <span>
+                AnkiDroid is
+                <a href="https://github.com/ankidroid/Anki-Android"
+                  >open source</a
+                >
+                and developed by a team of volunteers. Free means free: no ads,
+                no paywalls, and no in-app purchases. We have no financial
+                interest in your data, no desire to lock you in to our app, and
+                no reason to waste your time. All we want is for you to learn in
+                the most effective way possible.
+              </span>
+            </div>
+            <div class="point-img-container">
+              <img
+                src="assets/home/anki-shield-final.png"
+                height="350"
+                width="297"
+                class="point-img-periphery hide-on-mobile point-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <h2>Download now</h2>
+
+        <div class="cardcard">
+          <div class="download-container download-container-stats">
+            <div class="download-item download-item-spacing">
+              <div class="download-item-flex">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en"
+                >
+                  <img
+                    src="assets/home/google_play_en.png"
+                    alt="Get it on Google Play"
+                    height="80"
+                    width="270"
+                    class="google-play-img"
+                  />
+                </a>
+                <span class="download-subtext">Official Anki for Android</span>
+              </div>
+              <div class="download-item-flex">
+                <a
+                  href="https://apps.ankiweb.net/"
+                  class="download-anki download-anki-button"
+                >
+                  <img
+                    src="assets/logo_star.svg"
+                    height="576"
+                    width="601"
+                    class="ankidroid-logo-img"
+                    alt=""
+                  />
+                  <div class="download-anki-button-text">
+                    <span>Get Anki</span>
+                  </div>
+                </a>
+                <span class="download-subtext">Windows/macOS/Linux/iOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="preFooter references-section">
+        <h3>References</h3>
+        <hr />
+        <sup class="reference-sup">1</sup>
+        <blockquote class="reference-blockquote">
+          <b>Summary</b> — In 2022, 70% of first-year medical students were
+          utilizing Anki in conjunction with formal lectures by the 13th week at
+          the University of Central Florida College of Medicine.
+        </blockquote>
+        <a href="https://doi.org/10.7759/cureus.23530"
+          >Harris, D. M., & Chiang, M. (2022). An Analysis of Anki Usage and
+          Strategy of First-Year Medical Students in a Structure and Function
+          Course</a
+        >
+        <hr />
+        <sup class="reference-sup">2</sup>
+        <blockquote class="reference-blockquote">
+          Discovering Anki really did change the game for me in my medschool
+          career and meant that I had the time to do other stuff other than just
+          [...] be bogged down by the struggles of doing medicine at Cambridge
+        </blockquote>
+        <a href="https://www.youtube.com/watch?v=_5nw6gLRe34#t=3m20s"
+          >Ali Abdaal: How I Ranked 1st at Cambridge University - My Secret |
+          YouTube</a
+        >
+        <hr />
+        <sup class="reference-sup">3</sup>
+        <blockquote class="reference-blockquote">
+          [Craig] held the record for highest single-day winnings on the quiz
+          show Jeopardy! from September 14, 2010 ... to April 9, 2019 ... In his
+          seven-day run, Craig earned $231,200. ... [Craig] identified the
+          topics most likely to occur in game questions, then used the spaced
+          repetition program Anki for memorization
+        </blockquote>
+        <a
+          href="https://en.wikipedia.org/w/index.php?title=Roger_Craig_(Jeopardy!_contestant)&oldid=1219919600#Preparation"
+          >Roger Craig | Wikipedia</a
+        >
+        <hr />
+        <sup class="reference-sup">4</sup>
+        <blockquote class="reference-blockquote">
+          Spaced repetition systems like Anki are an absolute game-changer
+          because they help me review these phrases at intervals optimized for
+          memory retention. So by reviewing my Anki for just a few minutes every
+          day, I actually ensure that these phrases stick in my long-term
+          memory, ready to be whipped out in any conversation.
+        </blockquote>
+        <a href="https://www.youtube.com/watch?v=YSpYBTGa8t8#t=9m49s"
+          >Xiaomanyc: How I Learn to Speak Any Language in 24 Hours | YouTube</a
+        >
+        <hr />
+        <sup class="reference-sup">5</sup>
+        <blockquote class="reference-blockquote">
+          Default schedule by FSRS-6, an open-source algorithm built on memory
+          research.
+        </blockquote>
+        <a
+          href="https://open-spaced-repetition.github.io/anki_fsrs_visualizer/?w=0.2120,1.2931,2.3065,8.2956,6.4133,0.8334,3.0194,0.0010,1.8722,0.1666,0.7960,1.4835,0.0614,0.2629,1.6483,0.6014,1.8729,0.5425,0.0912,0.0658,0.1542&m=0.90"
+          >FSRS-6 Simulator | GitHub Pages</a
+        >
+        <a href="https://github.com/open-spaced-repetition/fsrs4anki"
+          >FSRS4Anki | GitHub</a
+        >
+        <hr />
+
+        <!-- Hidden popovers for references -->
+        <span class="inline-popover" popover="auto" id="ref-1">
+          In 2022, 70% of first-year medical students were utilizing Anki in
+          conjunction with formal lectures by the 13th week at the University of
+          Central Florida College of Medicine.
+
+          <a href="https://doi.org/10.7759/cureus.23530"
+            >Harris, D. M., & Chiang, M. (2022). An Analysis of Anki Usage and
+            Strategy of First-Year Medical Students in a Structure and Function
+            Course</a
+          ></span
+        >
+        <span class="inline-popover" popover="auto" id="ref-2">
+          Discovering Anki really did change the game for me in my medschool
+          career and meant that I had the time to do other stuff other than just
+          [...] be bogged down by the struggles of doing medicine at Cambridge
+
+          <a href="https://www.youtube.com/watch?v=_5nw6gLRe34#t=3m20s"
+            >Ali Abdaal: How I Ranked 1st at Cambridge University - My Secret |
+            YouTube</a
+          ></span
+        >
+        <span class="inline-popover" popover="auto" id="ref-3">
+          [Craig] held the record for highest single-day winnings on the quiz
+          show Jeopardy! from September 14, 2010 ... to April 9, 2019 ... In his
+          seven-day run, Craig earned $231,200. ... [Craig] identified the
+          topics most likely to occur in game questions, then used the spaced
+          repetition program Anki for memorization
+
+          <a
+            href="https://en.wikipedia.org/w/index.php?title=Roger_Craig_(Jeopardy!_contestant)&oldid=1219919600#Preparation"
+            >Roger Craig | Wikipedia</a
+          ></span
+        >
+        <span class="inline-popover" popover="auto" id="ref-4">
+          Spaced repetition systems like Anki are an absolute game-changer
+          because they help me review these phrases at intervals optimized for
+          memory retention. So by reviewing my Anki for just a few minutes every
+          day, I actually ensure that these phrases stick in my long-term
+          memory, ready to be whipped out in any conversation.
+          <a href="https://www.youtube.com/watch?v=YSpYBTGa8t8#t=9m49s"
+            >Xiaomanyc: How I Learn to Speak Any Language in 24 Hours |
+            YouTube</a
+          ></span
+        >
+
+        <span class="inline-popover" popover="auto" id="ref-5">
+          Default schedule by FSRS-6, an open-source algorithm built on memory
+          research.
+
+          <a
+            href="https://open-spaced-repetition.github.io/anki_fsrs_visualizer/?w=0.2120,1.2931,2.3065,8.2956,6.4133,0.8334,3.0194,0.0010,1.8722,0.1666,0.7960,1.4835,0.0614,0.2629,1.6483,0.6014,1.8729,0.5425,0.0912,0.0658,0.1542&m=0.90"
+            >FSRS-6 Simulator | GitHub Pages</a
+          >
+          <a href="https://github.com/open-spaced-repetition/fsrs4anki"
+            >FSRS4Anki | GitHub</a
+          >
+        </span>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div>Made with ☕️ by the AnkiDroid Open Source Team.</div>
+        <div class="footer-links">
+          <a href="https://ankiweb.net/account/terms">Terms</a>
+          <a
+            href="https://github.com/ankidroid/Anki-Android/wiki/Privacy-Policy"
+            >Privacy Policy</a
+          >
+          <a href="credits.html">Credits</a>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-label-dark">Dark mode</span
+            ><span class="theme-label-light">Light mode</span>
+          </button>
+          <a href="https://github.com/ankidroid/Anki-Android"
+            ><img
+              src="assets/github-mark.svg"
+              alt="AnkiDroid on GitHub"
+              height="96"
+              width="96"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

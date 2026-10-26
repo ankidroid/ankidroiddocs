@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 -150 470 550" width="434" height="508">
+  <!-- Silo 1: 2 days, body height 26px (floored from true linear ~5.3px) -->
+  <path d="M 22 364 L 22 390 A 46 10 0 0 0 114 390 L 114 364 Z" fill="rgb(243, 243, 243)"/>
+  <ellipse cx="68" cy="364" rx="46" ry="10" fill="rgb(253, 253, 253)" stroke="rgb(216, 216, 216)" stroke-width="4.5"/>
+  <text x="68" y="364" text-anchor="middle" style="fill: rgb(140, 195, 240); font-family: Arial; font-size: 56px; font-weight: 700; font-variant-numeric: tabular-nums; text-transform: capitalize; white-space: pre;">2</text>
+  <text x="68" y="388" text-anchor="middle" dominant-baseline="middle" style="fill: rgb(121, 120, 123); font-family: 'Arial Black'; font-size: 15px; text-transform: uppercase;">Days</text>
+
+  <!-- Silo 2: 11 days, body height 29px (strict linear, 2.64 px/day) -->
+  <path d="M 135 361 L 135 390 A 46 10 0 0 0 227 390 L 227 361 Z" fill="rgb(243, 243, 243)"/>
+  <ellipse cx="181" cy="361" rx="46" ry="10" fill="rgb(253, 253, 253)" stroke="rgb(216, 216, 216)" stroke-width="4.5"/>
+  <text x="177" y="361" text-anchor="middle" style="fill: rgb(100, 175, 235); font-family: Arial; font-size: 56px; font-weight: 700; letter-spacing: -6px; font-variant-numeric: tabular-nums; text-transform: capitalize; white-space: pre;">11</text>
+  <text x="181" y="387" text-anchor="middle" dominant-baseline="middle" style="fill: rgb(121, 120, 123); font-family: 'Arial Black'; font-size: 15px; text-transform: uppercase;">Days</text>
+
+  <!-- Silo 3: 46 days, body height 121.4px (strict linear) -->
+  <path d="M 249 268.6 L 249 390 A 46 10 0 0 0 341 390 L 341 268.6 Z" fill="rgb(243, 243, 243)"/>
+  <ellipse cx="295" cy="268.6" rx="46" ry="10" fill="rgb(253, 253, 253)" stroke="rgb(216, 216, 216)" stroke-width="4.5"/>
+  <text x="292" y="268.6" text-anchor="middle" style="fill: rgb(50, 150, 230); font-family: Arial; font-size: 56px; font-weight: 700; letter-spacing: -3px; font-variant-numeric: tabular-nums; text-transform: capitalize; white-space: pre;">1.5</text>
+  <text x="295" y="296.6" text-anchor="middle" dominant-baseline="middle" style="fill: rgb(121, 120, 123); font-family: 'Arial Black'; font-size: 15px; text-transform: uppercase;">Months</text>
+
+  <!-- Silo 4: 163 days, body height 430px (strict linear) -->
+  <path d="M 364 -40 L 364 390 A 46 10 0 0 0 456 390 L 456 -40 Z" fill="rgb(243, 243, 243)"/>
+  <ellipse cx="410" cy="-40" rx="46" ry="10" fill="rgb(253, 253, 253)" stroke="rgb(216, 216, 216)" stroke-width="4.5"/>
+  <text x="410.5" y="-40" text-anchor="middle" style="fill: rgb(0, 157, 254); font-family: Arial; font-size: 56px; font-weight: 700; letter-spacing: -3px; font-variant-numeric: tabular-nums; text-transform: capitalize; white-space: pre;">5.4</text>
+  <text x="410" y="-12" text-anchor="middle" dominant-baseline="middle" style="fill: rgb(121, 120, 123); font-family: 'Arial Black'; font-size: 15px; text-transform: uppercase;">Months</text>
+
+  <!-- Arrow 1: silo 1 -> silo 2 -->
+  <path d="M 65 316 L 65 283 C 65 243 164 243 164 283 L 164 303" fill="none" stroke="rgb(147, 148, 155)" stroke-width="2" stroke-dasharray="10"/>
+  <polygon points="157,303 171,303 164,313" fill="rgb(147, 148, 155)"/>
+
+  <!-- Arrow 2: silo 2 -> silo 3 -->
+  <path d="M 190 313 L 190 190.6 C 190 150.6 281 150.6 281 190.6 L 281 210.6" fill="none" stroke="rgb(147, 148, 155)" stroke-width="2" stroke-dasharray="10"/>
+  <polygon points="274,210.6 288,210.6 281,220.6" fill="rgb(147, 148, 155)"/>
+
+  <!-- Arrow 3: silo 3 -> silo 4 -->
+  <path d="M 310 220.6 L 310 -118 C 310 -158 413 -158 413 -118 L 413 -98" fill="none" stroke="rgb(147, 148, 155)" stroke-width="2" stroke-dasharray="10"/>
+  <polygon points="406,-98 420,-98 413,-88" fill="rgb(147, 148, 155)"/>
+</svg>
