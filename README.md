@@ -2,9 +2,11 @@ ankidroiddocs
 =============
 Source files for the documentation on the AnkiDroid website ankidroid.org.
 
-* manual.asc &rarr; [manual.html](https://ankidroid.org/docs/manual.html)
-* help.asc &rarr; [help.html](https://ankidroid.org/docs/help.html)
-* changelog.asc &rarr; [changelog.html](https://ankidroid.org/docs/changelog.html)
+The documentation lives in the [`docs.ankidroid.org`](./docs.ankidroid.org/) folder:
+
+* docs.ankidroid.org/manual.asc &rarr; [manual.html](https://ankidroid.org/docs/manual.html)
+* docs.ankidroid.org/help.asc &rarr; [help.html](https://ankidroid.org/docs/help.html)
+* docs.ankidroid.org/changelog.asc &rarr; [changelog.html](https://ankidroid.org/docs/changelog.html)
 
 # Preview
 

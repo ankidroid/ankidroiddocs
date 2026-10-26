@@ -35,8 +35,8 @@ jobs:
       - name: Prepare website directory
         run: |
           mkdir _site
-          cp -r img _site/
-          cp icons/* _site/
+          cp -r docs.ankidroid.org/img _site/
+          cp docs.ankidroid.org/icons/* _site/
 
       - name: Install Asciidoctor
         run: |
@@ -46,7 +46,7 @@ jobs:
         shell: bash
 
       - name: Render Docs
-        run: asciidoctor ./*.asc -D _site/
+        run: asciidoctor docs.ankidroid.org/*.asc -D _site/
 
       - name: Copy Docs to ankidroid.org
         run: scp -r _site/* ankidroid@ankidroid.org:/usr/share/nginx/html/

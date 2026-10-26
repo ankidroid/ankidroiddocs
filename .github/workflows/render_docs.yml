@@ -28,10 +28,10 @@ jobs:
         shell: bash
 
       - name: Render Docs
-        run: asciidoctor ./*.asc
+        run: asciidoctor docs.ankidroid.org/*.asc
 
       - name: Publish Rendered Site As Artifact
         uses: actions/upload-artifact@v4
         with:
           name: docs.ankidroid.org
-          path: ./
+          path: docs.ankidroid.org/
